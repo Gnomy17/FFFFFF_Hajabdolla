@@ -13,12 +13,13 @@
 --applicable agreement for further details.
 
 
-component shftreg
-	PORT
-	(
-		aclr		: IN STD_LOGIC ;
-		clock		: IN STD_LOGIC ;
-		shiftin		: IN STD_LOGIC ;
-		q		: OUT STD_LOGIC_VECTOR (3 DOWNTO 0)
-	);
-end component;
+FUNCTION cntr 
+(
+	aclr,
+	clock,
+	cnt_en
+)
+
+RETURNS (
+	q[1..0]
+);

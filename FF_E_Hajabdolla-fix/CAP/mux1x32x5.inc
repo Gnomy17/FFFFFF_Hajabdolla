@@ -13,12 +13,43 @@
 --applicable agreement for further details.
 
 
-component shftreg
-	PORT
-	(
-		aclr		: IN STD_LOGIC ;
-		clock		: IN STD_LOGIC ;
-		shiftin		: IN STD_LOGIC ;
-		q		: OUT STD_LOGIC_VECTOR (3 DOWNTO 0)
-	);
-end component;
+FUNCTION mux1x32x5 
+(
+	data0,
+	data1,
+	data10,
+	data11,
+	data12,
+	data13,
+	data14,
+	data15,
+	data16,
+	data17,
+	data18,
+	data19,
+	data2,
+	data20,
+	data21,
+	data22,
+	data23,
+	data24,
+	data25,
+	data26,
+	data27,
+	data28,
+	data29,
+	data3,
+	data30,
+	data31,
+	data4,
+	data5,
+	data6,
+	data7,
+	data8,
+	data9,
+	sel[4..0]
+)
+
+RETURNS (
+	result
+);

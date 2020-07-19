@@ -17,7 +17,8 @@ FUNCTION ff5
 (
 	aclr,
 	clock,
-	data[4..0]
+	data[4..0],
+	enable
 )
 
 RETURNS (

@@ -1,12 +1,12 @@
-// megafunction wizard: %LPM_FF%
+// megafunction wizard: %LPM_COUNTER%VBB%
 // GENERATION: STANDARD
 // VERSION: WM1.0
-// MODULE: lpm_ff 
+// MODULE: lpm_counter 
 
 // ============================================================
-// File Name: ff5.v
+// File Name: cntr.v
 // Megafunction Name(s):
-// 			lpm_ff
+// 			lpm_counter
 //
 // Simulation Library Files(s):
 // 			lpm
@@ -16,7 +16,6 @@
 //
 // 9.0 Build 132 02/25/2009 SJ Web Edition
 // ************************************************************
-
 
 //Copyright (C) 1991-2009 Altera Corporation
 //Your use of Altera Corporation's design tools, logic functions 
@@ -32,46 +31,16 @@
 //Altera or its authorized distributors.  Please refer to the 
 //applicable agreement for further details.
 
-
-// synopsys translate_off
-`timescale 1 ps / 1 ps
-// synopsys translate_on
-module ff5 (
+module cntr (
 	aclr,
 	clock,
-	data,
-	enable,
+	cnt_en,
 	q);
 
 	input	  aclr;
 	input	  clock;
-	input	[4:0]  data;
-	input	  enable;
-	output	[4:0]  q;
-
-	wire [4:0] sub_wire0;
-	wire [4:0] q = sub_wire0[4:0];
-
-	lpm_ff	lpm_ff_component (
-				.enable (enable),
-				.aclr (aclr),
-				.clock (clock),
-				.data (data),
-				.q (sub_wire0)
-				// synopsys translate_off
-				,
-				.aload (),
-				.aset (),
-				.sclr (),
-				.sload (),
-				.sset ()
-				// synopsys translate_on
-				);
-	defparam
-		lpm_ff_component.lpm_fftype = "DFF",
-		lpm_ff_component.lpm_type = "LPM_FF",
-		lpm_ff_component.lpm_width = 5;
-
+	input	  cnt_en;
+	output	[1:0]  q;
 
 endmodule
 
@@ -82,35 +51,39 @@ endmodule
 // Retrieval info: PRIVATE: ALOAD NUMERIC "0"
 // Retrieval info: PRIVATE: ASET NUMERIC "0"
 // Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "1"
-// Retrieval info: PRIVATE: CLK_EN NUMERIC "1"
-// Retrieval info: PRIVATE: DFF NUMERIC "1"
+// Retrieval info: PRIVATE: CLK_EN NUMERIC "0"
+// Retrieval info: PRIVATE: CNT_EN NUMERIC "1"
+// Retrieval info: PRIVATE: CarryIn NUMERIC "0"
+// Retrieval info: PRIVATE: CarryOut NUMERIC "0"
+// Retrieval info: PRIVATE: Direction NUMERIC "0"
 // Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
+// Retrieval info: PRIVATE: ModulusCounter NUMERIC "0"
+// Retrieval info: PRIVATE: ModulusValue NUMERIC "3"
 // Retrieval info: PRIVATE: SCLR NUMERIC "0"
 // Retrieval info: PRIVATE: SLOAD NUMERIC "0"
 // Retrieval info: PRIVATE: SSET NUMERIC "0"
 // Retrieval info: PRIVATE: SSET_ALL1 NUMERIC "1"
-// Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "1"
-// Retrieval info: PRIVATE: UseTFFdataPort NUMERIC "0"
-// Retrieval info: PRIVATE: nBit NUMERIC "5"
-// Retrieval info: CONSTANT: LPM_FFTYPE STRING "DFF"
-// Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_FF"
-// Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "5"
+// Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
+// Retrieval info: PRIVATE: nBit NUMERIC "2"
+// Retrieval info: CONSTANT: LPM_DIRECTION STRING "UP"
+// Retrieval info: CONSTANT: LPM_PORT_UPDOWN STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COUNTER"
+// Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "2"
 // Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT NODEFVAL aclr
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
-// Retrieval info: USED_PORT: data 0 0 5 0 INPUT NODEFVAL data[4..0]
-// Retrieval info: USED_PORT: enable 0 0 0 0 INPUT NODEFVAL enable
-// Retrieval info: USED_PORT: q 0 0 5 0 OUTPUT NODEFVAL q[4..0]
+// Retrieval info: USED_PORT: cnt_en 0 0 0 0 INPUT NODEFVAL cnt_en
+// Retrieval info: USED_PORT: q 0 0 2 0 OUTPUT NODEFVAL q[1..0]
 // Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
-// Retrieval info: CONNECT: q 0 0 5 0 @q 0 0 5 0
-// Retrieval info: CONNECT: @enable 0 0 0 0 enable 0 0 0 0
+// Retrieval info: CONNECT: q 0 0 2 0 @q 0 0 2 0
+// Retrieval info: CONNECT: @cnt_en 0 0 0 0 cnt_en 0 0 0 0
 // Retrieval info: CONNECT: @aclr 0 0 0 0 aclr 0 0 0 0
-// Retrieval info: CONNECT: @data 0 0 5 0 data 0 0 5 0
 // Retrieval info: LIBRARY: lpm lpm.lpm_components.all
-// Retrieval info: GEN_FILE: TYPE_NORMAL ff5.v TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL ff5.inc TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL ff5.cmp TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL ff5.bsf TRUE FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL ff5_inst.v TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL ff5_bb.v TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL ff5_syn.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL cntr.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL cntr.inc TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL cntr.cmp TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL cntr.bsf TRUE FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL cntr_inst.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL cntr_bb.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL cntr_waveforms.html TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL cntr_wave*.jpg FALSE
 // Retrieval info: LIB_FILE: lpm

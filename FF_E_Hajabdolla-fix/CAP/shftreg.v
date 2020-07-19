@@ -37,10 +37,12 @@
 `timescale 1 ps / 1 ps
 // synopsys translate_on
 module shftreg (
+	aclr,
 	clock,
 	shiftin,
 	q);
 
+	input	  aclr;
 	input	  clock;
 	input	  shiftin;
 	output	[3:0]  q;
@@ -49,12 +51,12 @@ module shftreg (
 	wire [3:0] q = sub_wire0[3:0];
 
 	lpm_shiftreg	lpm_shiftreg_component (
+				.aclr (aclr),
 				.clock (clock),
 				.shiftin (shiftin),
 				.q (sub_wire0)
 				// synopsys translate_off
 				,
-				.aclr (),
 				.aset (),
 				.data (),
 				.enable (),
@@ -65,7 +67,7 @@ module shftreg (
 				// synopsys translate_on
 				);
 	defparam
-		lpm_shiftreg_component.lpm_direction = "LEFT",
+		lpm_shiftreg_component.lpm_direction = "RIGHT",
 		lpm_shiftreg_component.lpm_type = "LPM_SHIFTREG",
 		lpm_shiftreg_component.lpm_width = 4;
 
@@ -75,13 +77,13 @@ endmodule
 // ============================================================
 // CNX file retrieval info
 // ============================================================
-// Retrieval info: PRIVATE: ACLR NUMERIC "0"
+// Retrieval info: PRIVATE: ACLR NUMERIC "1"
 // Retrieval info: PRIVATE: ALOAD NUMERIC "0"
 // Retrieval info: PRIVATE: ASET NUMERIC "0"
 // Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "1"
 // Retrieval info: PRIVATE: CLK_EN NUMERIC "0"
 // Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
-// Retrieval info: PRIVATE: LeftShift NUMERIC "1"
+// Retrieval info: PRIVATE: LeftShift NUMERIC "0"
 // Retrieval info: PRIVATE: ParallelDataInput NUMERIC "0"
 // Retrieval info: PRIVATE: Q_OUT NUMERIC "1"
 // Retrieval info: PRIVATE: SCLR NUMERIC "0"
@@ -92,15 +94,17 @@ endmodule
 // Retrieval info: PRIVATE: SerialShiftInput NUMERIC "1"
 // Retrieval info: PRIVATE: SerialShiftOutput NUMERIC "0"
 // Retrieval info: PRIVATE: nBit NUMERIC "4"
-// Retrieval info: CONSTANT: LPM_DIRECTION STRING "LEFT"
+// Retrieval info: CONSTANT: LPM_DIRECTION STRING "RIGHT"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_SHIFTREG"
 // Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "4"
+// Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT NODEFVAL aclr
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
 // Retrieval info: USED_PORT: q 0 0 4 0 OUTPUT NODEFVAL q[3..0]
 // Retrieval info: USED_PORT: shiftin 0 0 0 0 INPUT NODEFVAL shiftin
 // Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
 // Retrieval info: CONNECT: q 0 0 4 0 @q 0 0 4 0
 // Retrieval info: CONNECT: @shiftin 0 0 0 0 shiftin 0 0 0 0
+// Retrieval info: CONNECT: @aclr 0 0 0 0 aclr 0 0 0 0
 // Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 // Retrieval info: GEN_FILE: TYPE_NORMAL shftreg.v TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL shftreg.inc TRUE

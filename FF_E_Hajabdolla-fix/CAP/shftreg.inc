@@ -15,6 +15,7 @@
 
 FUNCTION shftreg 
 (
+	aclr,
 	clock,
 	shiftin
 )
