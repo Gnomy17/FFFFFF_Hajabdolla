@@ -1,40 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="CAP">
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst59|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst16|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst43|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst61|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst26|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst35|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst53|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst8|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst10|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst18|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst45|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst63|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst20|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst28|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst2|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst37|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst55|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst12|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst30|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst47|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst65|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|decoder:inst66|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_ktf.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst22|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst39|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst4|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst57|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|reg_selector:inst|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_2rc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst14|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst41|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst49|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|reg_selector:inst100|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_2rc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst24|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst33|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst51|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Register_File|mux32x2x1:inst6|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Stall_Array|decdr:inst34|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_d9f.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Stall_Array|decdr:inst35|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_d9f.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

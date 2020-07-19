@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Stratix II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY Register_File
+set_global_assignment -name TOP_LEVEL_ENTITY Stall_Array
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "04:04:36  JULY 09, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION 9.0
@@ -47,6 +47,7 @@ set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
 set_global_assignment -name MISC_FILE "C:/Users/Masih/Desktop/CAP/FF_E_Hajabdolla/CAP/CAP.dpf"
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE Instruction_MEM.vwf
+set_global_assignment -name BDF_FILE Stall_Array.bdf
 set_global_assignment -name BDF_FILE PC_selector.bdf
 set_global_assignment -name QIP_FILE ram.qip
 set_global_assignment -name BDF_FILE CAP.bdf
