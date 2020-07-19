@@ -1,0 +1,8 @@
+set_global_assignment -name IP_TOOL_NAME "LPM_DECODE"
+set_global_assignment -name IP_TOOL_VERSION "9.0"
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "decdr.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "decdr.bsf"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "decdr_inst.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "decdr_bb.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "decdr.inc"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "decdr.cmp"]
