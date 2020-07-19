@@ -10369,23 +10369,6 @@ address_a0
 
 # end
 # entity
-data_MEM
-# storage
-db|CAP.(4).cnf
-db|CAP.(4).cnf
-# case_insensitive
-# source_file
-data_MEM.bdf
-f9bb47b181195ab991c96727999426b4
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
 altsyncram_p4p1
 # storage
 db|CAP.(29).cnf
@@ -10642,23 +10625,6 @@ address_a1
 address_a0
 -1
 3
-}
-# macro_sequence
-
-# end
-# entity
-Instruction_MEM
-# storage
-db|CAP.(8).cnf
-db|CAP.(8).cnf
-# case_insensitive
-# source_file
-Instruction_MEM.bdf
-fbf4a312e3978387885f1c2d3a349a70
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
 }
 # macro_sequence
 
@@ -11008,89 +10974,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-decdr:inst34
-decdr:inst35
-}
-# macro_sequence
-
-# end
-# entity
-lpm_decode
-# storage
-db|CAP.(20).cnf
-db|CAP.(20).cnf
-# case_insensitive
-# source_file
-..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|lpm_decode.tdf
-9b65cc2e5d9973da6375e660fcd83ab1
-7
-# user_parameter {
-LPM_WIDTH
-5
-PARAMETER_SIGNED_DEC
-USR
-LPM_DECODES
-32
-PARAMETER_SIGNED_DEC
-USR
-LPM_PIPELINE
-0
-PARAMETER_UNKNOWN
-DEF
-CASCADE_CHAIN
-MANUAL
-PARAMETER_UNKNOWN
-USR
-DEVICE_FAMILY
-Stratix II
-PARAMETER_UNKNOWN
-USR
-CBXI_PARAMETER
-decode_d9f
-PARAMETER_UNKNOWN
-USR
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-}
-# used_port {
-eq
--1
-3
-data
--1
-3
-}
-# include_file {
-..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|altshift.inc
-70fa13aee7d6d160ef20b2de32813a
-..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|declut.inc
-b1d5939399e5c04dfe1d209af8cc490
-..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|aglobal90.inc
-99832fdf63412df51d7531202d74e75
-..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|lpm_compare.inc
-aec4ea1b78f4cda1c3effe18f1abbf63
-..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|lpm_constant.inc
-dcde44eee59335c1e2fe75d574f9646
-}
-# hierarchies {
-decdr:inst34|lpm_decode:lpm_decode_component
-decdr:inst35|lpm_decode:lpm_decode_component
-}
 # macro_sequence
 
 # end
@@ -11217,10 +11100,6 @@ data0
 -1
 3
 }
-# hierarchies {
-decdr:inst34|lpm_decode:lpm_decode_component|decode_d9f:auto_generated
-decdr:inst35|lpm_decode:lpm_decode_component|decode_d9f:auto_generated
-}
 # macro_sequence
 
 # end
@@ -11238,8 +11117,260 @@ cc8b754993bb14d455dcfe673492825
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+clk_gen
+# storage
+db|CAP.(4).cnf
+db|CAP.(4).cnf
+# case_insensitive
+# source_file
+clk_gen.bdf
+88a95a4ca84237d1e619ed8340afb654
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+counter32
+# storage
+db|CAP.(8).cnf
+db|CAP.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+counter32.v
+28dd37d1157bcd0d477548ad1493147
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+counter32:inst
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter
+# storage
+db|CAP.(20).cnf
+db|CAP.(20).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|lpm_counter.tdf
+775da77f476c58b7ddeb65edee82b5
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+6
+PARAMETER_SIGNED_DEC
+USR
+LPM_DIRECTION
+UP
+PARAMETER_UNKNOWN
+USR
+LPM_MODULUS
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_PORT_UPDOWN
+PORT_UNUSED
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+NOT_GATE_PUSH_BACK
+ON
+NOT_GATE_PUSH_BACK
+USR
+CARRY_CNT_EN
+SMART
+PARAMETER_UNKNOWN
+DEF
+LABWIDE_SCLR
+ON
+PARAMETER_UNKNOWN
+DEF
+USE_NEW_VERSION
+TRUE
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+cntr_u3i
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+q
+-1
+3
+clock
+-1
+3
+aclr
+-1
+3
+sset
+-1
+1
+sload
+-1
+1
+sclr
+-1
+1
+data
+-1
+1
+aset
+-1
+1
+aload
+-1
+1
+updown
+-1
+2
+cnt_en
+-1
+2
+clk_en
+-1
+2
+cin
+-1
+2
+}
+# include_file {
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|lpm_decode.inc
+bd0e2f5e01c1bd360461dceb53d48
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|lpm_counter.inc
+7f888b135ddf66f0653c44cb18ac5
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|alt_counter_stratix.inc
+2251b94d26afaa53635df1aff6b6e7be
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|alt_synch_counter.inc
+09966d10c3e95c888bf8e443df34d8
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|lpm_add_sub.inc
+7d9a33dd39f13aa690c3d0edd88351
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|alt_synch_counter_f.inc
+93a5aae1d8bd19c9e8e8eef93ab2177d
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|dffeea.inc
+55d29d20f7e852c37746bec4e2495ec
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|cmpconst.inc
+e61874547688138e6fc0b49ff8760
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|lpm_constant.inc
+dcde44eee59335c1e2fe75d574f9646
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|alt_counter_f10ke.inc
+536f8da8218b4a93689416f9baea1880
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|lpm_compare.inc
+aec4ea1b78f4cda1c3effe18f1abbf63
+}
+# hierarchies {
+counter32:inst|lpm_counter:lpm_counter_component
+}
+# macro_sequence
+
+# end
+# entity
+cntr_u3i
+# storage
+db|CAP.(33).cnf
+db|CAP.(33).cnf
+# case_insensitive
+# source_file
+db|cntr_u3i.tdf
+618fde78e83b9bb68621e8e510a0211
+7
+# used_port {
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+clock
+-1
+3
+aclr
+-1
+3
+}
+# hierarchies {
+counter32:inst|lpm_counter:lpm_counter_component|cntr_u3i:auto_generated
 }
 # macro_sequence
 
