@@ -40,17 +40,20 @@ module ff (
 	aclr,
 	clock,
 	data,
+	enable,
 	q);
 
 	input	  aclr;
 	input	  clock;
 	input	[31:0]  data;
+	input	  enable;
 	output	[31:0]  q;
 
 	wire [31:0] sub_wire0;
 	wire [31:0] q = sub_wire0[31:0];
 
 	lpm_ff	lpm_ff_component (
+				.enable (enable),
 				.aclr (aclr),
 				.clock (clock),
 				.data (data),
@@ -59,7 +62,6 @@ module ff (
 				,
 				.aload (),
 				.aset (),
-				.enable (),
 				.sclr (),
 				.sload (),
 				.sset ()
@@ -80,7 +82,7 @@ endmodule
 // Retrieval info: PRIVATE: ALOAD NUMERIC "0"
 // Retrieval info: PRIVATE: ASET NUMERIC "0"
 // Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "1"
-// Retrieval info: PRIVATE: CLK_EN NUMERIC "0"
+// Retrieval info: PRIVATE: CLK_EN NUMERIC "1"
 // Retrieval info: PRIVATE: DFF NUMERIC "1"
 // Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 // Retrieval info: PRIVATE: SCLR NUMERIC "0"
@@ -96,9 +98,11 @@ endmodule
 // Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT NODEFVAL aclr
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
 // Retrieval info: USED_PORT: data 0 0 32 0 INPUT NODEFVAL data[31..0]
+// Retrieval info: USED_PORT: enable 0 0 0 0 INPUT NODEFVAL enable
 // Retrieval info: USED_PORT: q 0 0 32 0 OUTPUT NODEFVAL q[31..0]
 // Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
 // Retrieval info: CONNECT: q 0 0 32 0 @q 0 0 32 0
+// Retrieval info: CONNECT: @enable 0 0 0 0 enable 0 0 0 0
 // Retrieval info: CONNECT: @aclr 0 0 0 0 aclr 0 0 0 0
 // Retrieval info: CONNECT: @data 0 0 32 0 data 0 0 32 0
 // Retrieval info: LIBRARY: lpm lpm.lpm_components.all

@@ -33,7 +33,7 @@
 //applicable agreement for further details.
 
 
-//lpm_ff LPM_FFTYPE="DFF" LPM_WIDTH=32 aclr clock data q
+//lpm_ff LPM_FFTYPE="DFF" LPM_WIDTH=32 aclr clock data enable q
 //VERSION_BEGIN 9.0 cbx_lpm_ff 2008:05:19:10:34:46:SJ cbx_mgl 2009:01:29:16:12:07:SJ  VERSION_END
 // synthesis VERILOG_INPUT_VERSION VERILOG_2001
 // altera message_off 10463
@@ -48,22 +48,24 @@ module  ff_ff
 	aclr,
 	clock,
 	data,
+	enable,
 	q) /* synthesis synthesis_clearbox=1 */;
 	input   aclr;
 	input   clock;
 	input   [31:0]  data;
+	input   enable;
 	output   [31:0]  q;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
 	tri0   aclr;
 	tri0   [31:0]  data;
+	tri1   enable;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_on
 `endif
 
 	reg	[31:0]	ff_dffe;
-	wire enable;
 
 	// synopsys translate_off
 	initial
@@ -73,7 +75,6 @@ module  ff_ff
 		if (aclr == 1'b1) ff_dffe <= 32'b0;
 		else if  (enable == 1'b1)   ff_dffe <= data;
 	assign
-		enable = 1'b1,
 		q = ff_dffe;
 endmodule //ff_ff
 //VALID FILE
@@ -86,17 +87,20 @@ module ff (
 	aclr,
 	clock,
 	data,
+	enable,
 	q)/* synthesis synthesis_clearbox = 1 */;
 
 	input	  aclr;
 	input	  clock;
 	input	[31:0]  data;
+	input	  enable;
 	output	[31:0]  q;
 
 	wire [31:0] sub_wire0;
 	wire [31:0] q = sub_wire0[31:0];
 
 	ff_ff	ff_ff_component (
+				.enable (enable),
 				.aclr (aclr),
 				.clock (clock),
 				.data (data),
@@ -111,7 +115,7 @@ endmodule
 // Retrieval info: PRIVATE: ALOAD NUMERIC "0"
 // Retrieval info: PRIVATE: ASET NUMERIC "0"
 // Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "1"
-// Retrieval info: PRIVATE: CLK_EN NUMERIC "0"
+// Retrieval info: PRIVATE: CLK_EN NUMERIC "1"
 // Retrieval info: PRIVATE: DFF NUMERIC "1"
 // Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 // Retrieval info: PRIVATE: SCLR NUMERIC "0"
@@ -127,9 +131,11 @@ endmodule
 // Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT NODEFVAL aclr
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
 // Retrieval info: USED_PORT: data 0 0 32 0 INPUT NODEFVAL data[31..0]
+// Retrieval info: USED_PORT: enable 0 0 0 0 INPUT NODEFVAL enable
 // Retrieval info: USED_PORT: q 0 0 32 0 OUTPUT NODEFVAL q[31..0]
 // Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
 // Retrieval info: CONNECT: q 0 0 32 0 @q 0 0 32 0
+// Retrieval info: CONNECT: @enable 0 0 0 0 enable 0 0 0 0
 // Retrieval info: CONNECT: @aclr 0 0 0 0 aclr 0 0 0 0
 // Retrieval info: CONNECT: @data 0 0 32 0 data 0 0 32 0
 // Retrieval info: LIBRARY: lpm lpm.lpm_components.all
