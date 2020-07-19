@@ -47,7 +47,6 @@ set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
 set_global_assignment -name MISC_FILE "C:/Users/Masih/Desktop/CAP/FF_E_Hajabdolla/CAP/CAP.dpf"
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE Instruction_MEM.vwf
-set_global_assignment -name BDF_FILE Stall_Array.bdf
 set_global_assignment -name BDF_FILE PC_selector.bdf
 set_global_assignment -name QIP_FILE ram.qip
 set_global_assignment -name BDF_FILE CAP.bdf
