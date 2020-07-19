@@ -2,44 +2,24 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
-Type           : Worst-case tsu
-Slack          : N/A
-Required Time  : None
-Actual Time    : 5.429 ns
-From           : reset_addr[2]
-To             : inst21
-From Clock     : --
-To Clock       : clock
-Failed Paths   : 0
-
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 6.789 ns
-From           : inst27
-To             : out[11]
-From Clock     : clock
+Actual Time    : 6.831 ns
+From           : counter32:inst|lpm_counter:lpm_counter_component|cntr_u3i:auto_generated|safe_q[3]
+To             : clk8
+From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
 
-Type           : Worst-case th
-Slack          : N/A
-Required Time  : None
-Actual Time    : -2.582 ns
-From           : set_addr[2]
-To             : inst115
-From Clock     : --
-To Clock       : clock
-Failed Paths   : 0
-
-Type           : Clock Setup: 'clock'
+Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
 Actual Time    : Restricted to 500.00 MHz ( period = 2.000 ns )
-From           : inst
-To             : inst
-From Clock     : clock
-To Clock       : clock
+From           : counter32:inst|lpm_counter:lpm_counter_component|cntr_u3i:auto_generated|safe_q[0]
+To             : counter32:inst|lpm_counter:lpm_counter_component|cntr_u3i:auto_generated|safe_q[5]
+From Clock     : clk
+To Clock       : clk
 Failed Paths   : 0
 
 Type           : Total number of failed paths

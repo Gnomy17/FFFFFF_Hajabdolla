@@ -1,7 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="CAP">
-		<CBX_INST_ENTRY INSTANCE_NAME="|Stall_Array|decdr:inst34|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_d9f.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Stall_Array|decdr:inst35|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_d9f.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|clk_gen|counter32:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_u3i.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
