@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for CAP
-Mon Jul 20 18:44:37 2020
+Mon Jul 20 18:57:44 2020
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -9,9 +9,13 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
   1. Legal Notice
   2. Timing Analyzer Summary
   3. Timing Analyzer Settings
-  4. Parallel Compilation
-  5. tpd
-  6. Timing Analyzer Messages
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. Clock Setup: 'clock'
+  7. tsu
+  8. tco
+  9. th
+ 10. Timing Analyzer Messages
 
 
 
@@ -34,14 +38,17 @@ applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                                                                           ;
-+------------------------------+-------+---------------+-------------+-----------+-----------+------------+----------+--------------+
-; Type                         ; Slack ; Required Time ; Actual Time ; From      ; To        ; From Clock ; To Clock ; Failed Paths ;
-+------------------------------+-------+---------------+-------------+-----------+-----------+------------+----------+--------------+
-; Worst-case tpd               ; N/A   ; None          ; 9.604 ns    ; opcode[5] ; read_reg2 ; --         ; --       ; 0            ;
-; Total number of failed paths ;       ;               ;             ;           ;           ;            ;          ; 0            ;
-+------------------------------+-------+---------------+-------------+-----------+-----------+------------+----------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                ;
++------------------------------+-------+---------------+------------------------------------------------+---------------+---------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time                                    ; From          ; To      ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+------------------------------------------------+---------------+---------+------------+----------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 5.478 ns                                       ; reset_addr[4] ; inst115 ; --         ; clock    ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 6.597 ns                                       ; inst19        ; out[3]  ; clock      ; --       ; 0            ;
+; Worst-case th                ; N/A   ; None          ; -2.596 ns                                      ; set_addr[0]   ; inst115 ; --         ; clock    ; 0            ;
+; Clock Setup: 'clock'         ; N/A   ; None          ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst87        ; inst87  ; clock      ; clock    ; 0            ;
+; Total number of failed paths ;       ;               ;                                                ;               ;         ;            ;          ; 0            ;
++------------------------------+-------+---------------+------------------------------------------------+---------------+---------+------------+----------+--------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -74,6 +81,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------+--------------------+------+----+-------------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; clock           ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
 Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
 +-------------------------------------+
 ; Parallel Compilation                ;
@@ -85,33 +101,502 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------+
-; tpd                                                                   ;
-+-------+-------------------+-----------------+-----------+-------------+
-; Slack ; Required P2P Time ; Actual P2P Time ; From      ; To          ;
-+-------+-------------------+-----------------+-----------+-------------+
-; N/A   ; None              ; 9.604 ns        ; opcode[5] ; read_reg2   ;
-; N/A   ; None              ; 9.549 ns        ; opcode[0] ; read_reg2   ;
-; N/A   ; None              ; 9.508 ns        ; opcode[2] ; read_reg2   ;
-; N/A   ; None              ; 9.444 ns        ; opcode[1] ; read_reg2   ;
-; N/A   ; None              ; 9.319 ns        ; opcode[2] ; sign_extend ;
-; N/A   ; None              ; 9.297 ns        ; opcode[3] ; read_reg2   ;
-; N/A   ; None              ; 9.238 ns        ; opcode[4] ; read_reg2   ;
-; N/A   ; None              ; 9.136 ns        ; opcode[5] ; sign_extend ;
-; N/A   ; None              ; 9.075 ns        ; opcode[2] ; read_mem    ;
-; N/A   ; None              ; 8.916 ns        ; opcode[1] ; sign_extend ;
-; N/A   ; None              ; 8.892 ns        ; opcode[5] ; read_mem    ;
-; N/A   ; None              ; 8.873 ns        ; opcode[5] ; write_mem   ;
-; N/A   ; None              ; 8.800 ns        ; opcode[3] ; sign_extend ;
-; N/A   ; None              ; 8.792 ns        ; opcode[4] ; sign_extend ;
-; N/A   ; None              ; 8.779 ns        ; opcode[2] ; write_mem   ;
-; N/A   ; None              ; 8.698 ns        ; opcode[0] ; write_mem   ;
-; N/A   ; None              ; 8.687 ns        ; opcode[0] ; read_mem    ;
-; N/A   ; None              ; 8.679 ns        ; opcode[3] ; read_mem    ;
-; N/A   ; None              ; 8.569 ns        ; opcode[3] ; write_mem   ;
-; N/A   ; None              ; 8.549 ns        ; opcode[4] ; read_mem    ;
-; N/A   ; None              ; 8.515 ns        ; opcode[4] ; write_mem   ;
-+-------+-------------------+-----------------+-----------+-------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'clock'                                                                                                                                                                   ;
++-------+------------------------------------------------+---------+---------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)                           ; From    ; To      ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+------------------------------------------------+---------+---------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst87  ; inst87  ; clock      ; clock    ; None                        ; None                      ; 0.867 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst3   ; inst3   ; clock      ; clock    ; None                        ; None                      ; 0.863 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst19  ; inst19  ; clock      ; clock    ; None                        ; None                      ; 0.848 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst33  ; inst33  ; clock      ; clock    ; None                        ; None                      ; 0.842 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst95  ; inst95  ; clock      ; clock    ; None                        ; None                      ; 0.837 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst83  ; inst83  ; clock      ; clock    ; None                        ; None                      ; 0.794 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst15  ; inst15  ; clock      ; clock    ; None                        ; None                      ; 0.778 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst10  ; inst10  ; clock      ; clock    ; None                        ; None                      ; 0.766 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst    ; inst    ; clock      ; clock    ; None                        ; None                      ; 0.705 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst5   ; inst5   ; clock      ; clock    ; None                        ; None                      ; 0.695 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst91  ; inst91  ; clock      ; clock    ; None                        ; None                      ; 0.694 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst71  ; inst71  ; clock      ; clock    ; None                        ; None                      ; 0.691 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst13  ; inst13  ; clock      ; clock    ; None                        ; None                      ; 0.690 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst7   ; inst7   ; clock      ; clock    ; None                        ; None                      ; 0.688 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst75  ; inst75  ; clock      ; clock    ; None                        ; None                      ; 0.687 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst103 ; inst103 ; clock      ; clock    ; None                        ; None                      ; 0.681 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst27  ; inst27  ; clock      ; clock    ; None                        ; None                      ; 0.679 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst11  ; inst11  ; clock      ; clock    ; None                        ; None                      ; 0.678 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst79  ; inst79  ; clock      ; clock    ; None                        ; None                      ; 0.675 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst119 ; inst119 ; clock      ; clock    ; None                        ; None                      ; 0.673 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst127 ; inst127 ; clock      ; clock    ; None                        ; None                      ; 0.488 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst123 ; inst123 ; clock      ; clock    ; None                        ; None                      ; 0.488 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst115 ; inst115 ; clock      ; clock    ; None                        ; None                      ; 0.488 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst111 ; inst111 ; clock      ; clock    ; None                        ; None                      ; 0.488 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst107 ; inst107 ; clock      ; clock    ; None                        ; None                      ; 0.488 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst99  ; inst99  ; clock      ; clock    ; None                        ; None                      ; 0.488 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst31  ; inst31  ; clock      ; clock    ; None                        ; None                      ; 0.488 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst29  ; inst29  ; clock      ; clock    ; None                        ; None                      ; 0.488 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst25  ; inst25  ; clock      ; clock    ; None                        ; None                      ; 0.488 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst23  ; inst23  ; clock      ; clock    ; None                        ; None                      ; 0.488 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst21  ; inst21  ; clock      ; clock    ; None                        ; None                      ; 0.488 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst17  ; inst17  ; clock      ; clock    ; None                        ; None                      ; 0.488 ns                ;
++-------+------------------------------------------------+---------+---------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; tsu                                                                                                                                              ;
++-----------------------------------------+-----------------------------------------------------+------------+----------------+---------+----------+
+; Slack                                   ; Required tsu                                        ; Actual tsu ; From           ; To      ; To Clock ;
++-----------------------------------------+-----------------------------------------------------+------------+----------------+---------+----------+
+; N/A                                     ; None                                                ; 5.478 ns   ; reset_addr[4]  ; inst115 ; clock    ;
+; N/A                                     ; None                                                ; 5.413 ns   ; reset_addr[2]  ; inst25  ; clock    ;
+; N/A                                     ; None                                                ; 5.374 ns   ; reset_addr2[0] ; inst115 ; clock    ;
+; N/A                                     ; None                                                ; 5.359 ns   ; reset_addr[2]  ; inst115 ; clock    ;
+; N/A                                     ; None                                                ; 5.303 ns   ; reset_addr[3]  ; inst115 ; clock    ;
+; N/A                                     ; None                                                ; 5.290 ns   ; reg2           ; inst115 ; clock    ;
+; N/A                                     ; None                                                ; 5.253 ns   ; reset_addr2[0] ; inst99  ; clock    ;
+; N/A                                     ; None                                                ; 5.244 ns   ; reset_addr2[3] ; inst115 ; clock    ;
+; N/A                                     ; None                                                ; 5.238 ns   ; reset_addr[2]  ; inst99  ; clock    ;
+; N/A                                     ; None                                                ; 5.221 ns   ; reset_addr[2]  ; inst119 ; clock    ;
+; N/A                                     ; None                                                ; 5.221 ns   ; reset_addr[2]  ; inst19  ; clock    ;
+; N/A                                     ; None                                                ; 5.194 ns   ; reset_addr[2]  ; inst111 ; clock    ;
+; N/A                                     ; None                                                ; 5.169 ns   ; reg2           ; inst99  ; clock    ;
+; N/A                                     ; None                                                ; 5.163 ns   ; reset_addr2[0] ; inst107 ; clock    ;
+; N/A                                     ; None                                                ; 5.126 ns   ; reset_addr2[0] ; inst111 ; clock    ;
+; N/A                                     ; None                                                ; 5.116 ns   ; reset_addr[2]  ; inst107 ; clock    ;
+; N/A                                     ; None                                                ; 5.092 ns   ; set_addr[4]    ; inst3   ; clock    ;
+; N/A                                     ; None                                                ; 5.086 ns   ; reset_addr2[3] ; inst99  ; clock    ;
+; N/A                                     ; None                                                ; 5.079 ns   ; reg2           ; inst107 ; clock    ;
+; N/A                                     ; None                                                ; 5.075 ns   ; reset_addr2[4] ; inst115 ; clock    ;
+; N/A                                     ; None                                                ; 5.053 ns   ; reset_addr[0]  ; inst107 ; clock    ;
+; N/A                                     ; None                                                ; 5.006 ns   ; reset_addr2[2] ; inst115 ; clock    ;
+; N/A                                     ; None                                                ; 4.986 ns   ; reset_addr2[0] ; inst17  ; clock    ;
+; N/A                                     ; None                                                ; 4.972 ns   ; reset_addr[2]  ; inst17  ; clock    ;
+; N/A                                     ; None                                                ; 4.934 ns   ; set_addr[1]    ; inst3   ; clock    ;
+; N/A                                     ; None                                                ; 4.927 ns   ; reset_addr2[4] ; inst99  ; clock    ;
+; N/A                                     ; None                                                ; 4.916 ns   ; reset_addr2[3] ; inst25  ; clock    ;
+; N/A                                     ; None                                                ; 4.903 ns   ; reset_addr[4]  ; inst99  ; clock    ;
+; N/A                                     ; None                                                ; 4.902 ns   ; reg2           ; inst17  ; clock    ;
+; N/A                                     ; None                                                ; 4.885 ns   ; reset_addr2[2] ; inst99  ; clock    ;
+; N/A                                     ; None                                                ; 4.885 ns   ; reg2           ; inst111 ; clock    ;
+; N/A                                     ; None                                                ; 4.880 ns   ; reset_addr2[1] ; inst115 ; clock    ;
+; N/A                                     ; None                                                ; 4.879 ns   ; reset_addr[2]  ; inst31  ; clock    ;
+; N/A                                     ; None                                                ; 4.878 ns   ; reset_addr[2]  ; inst127 ; clock    ;
+; N/A                                     ; None                                                ; 4.877 ns   ; reset_addr[2]  ; inst23  ; clock    ;
+; N/A                                     ; None                                                ; 4.869 ns   ; reset_addr[0]  ; inst111 ; clock    ;
+; N/A                                     ; None                                                ; 4.868 ns   ; reset_addr2[0] ; inst25  ; clock    ;
+; N/A                                     ; None                                                ; 4.856 ns   ; reset_addr2[0] ; inst21  ; clock    ;
+; N/A                                     ; None                                                ; 4.852 ns   ; reset_addr2[3] ; inst17  ; clock    ;
+; N/A                                     ; None                                                ; 4.848 ns   ; set_addr[1]    ; inst71  ; clock    ;
+; N/A                                     ; None                                                ; 4.846 ns   ; set_addr[1]    ; inst15  ; clock    ;
+; N/A                                     ; None                                                ; 4.844 ns   ; reset_addr[2]  ; inst29  ; clock    ;
+; N/A                                     ; None                                                ; 4.837 ns   ; reset_addr[4]  ; inst111 ; clock    ;
+; N/A                                     ; None                                                ; 4.836 ns   ; reset_addr2[0] ; inst123 ; clock    ;
+; N/A                                     ; None                                                ; 4.836 ns   ; set_addr[1]    ; inst33  ; clock    ;
+; N/A                                     ; None                                                ; 4.818 ns   ; reset_addr2[0] ; inst29  ; clock    ;
+; N/A                                     ; None                                                ; 4.813 ns   ; reset_addr2[0] ; inst31  ; clock    ;
+; N/A                                     ; None                                                ; 4.812 ns   ; reset_addr[2]  ; inst27  ; clock    ;
+; N/A                                     ; None                                                ; 4.811 ns   ; reset_addr2[0] ; inst23  ; clock    ;
+; N/A                                     ; None                                                ; 4.811 ns   ; reset_addr[2]  ; inst103 ; clock    ;
+; N/A                                     ; None                                                ; 4.811 ns   ; set_addr[4]    ; inst7   ; clock    ;
+; N/A                                     ; None                                                ; 4.810 ns   ; reset_addr2[0] ; inst127 ; clock    ;
+; N/A                                     ; None                                                ; 4.809 ns   ; set_addr[2]    ; inst3   ; clock    ;
+; N/A                                     ; None                                                ; 4.796 ns   ; reset_addr2[2] ; inst107 ; clock    ;
+; N/A                                     ; None                                                ; 4.792 ns   ; set_addr[4]    ; inst33  ; clock    ;
+; N/A                                     ; None                                                ; 4.789 ns   ; reset_addr[2]  ; inst123 ; clock    ;
+; N/A                                     ; None                                                ; 4.784 ns   ; reg2           ; inst25  ; clock    ;
+; N/A                                     ; None                                                ; 4.781 ns   ; reset_addr[0]  ; inst29  ; clock    ;
+; N/A                                     ; None                                                ; 4.772 ns   ; reg2           ; inst21  ; clock    ;
+; N/A                                     ; None                                                ; 4.766 ns   ; set_addr[4]    ; inst19  ; clock    ;
+; N/A                                     ; None                                                ; 4.764 ns   ; reset_addr[0]  ; inst7   ; clock    ;
+; N/A                                     ; None                                                ; 4.759 ns   ; reset_addr2[2] ; inst111 ; clock    ;
+; N/A                                     ; None                                                ; 4.759 ns   ; reset_addr2[1] ; inst99  ; clock    ;
+; N/A                                     ; None                                                ; 4.752 ns   ; reg2           ; inst123 ; clock    ;
+; N/A                                     ; None                                                ; 4.747 ns   ; reset_addr2[4] ; inst25  ; clock    ;
+; N/A                                     ; None                                                ; 4.743 ns   ; set_addr[3]    ; inst3   ; clock    ;
+; N/A                                     ; None                                                ; 4.734 ns   ; reset_addr[4]  ; inst7   ; clock    ;
+; N/A                                     ; None                                                ; 4.734 ns   ; reg2           ; inst29  ; clock    ;
+; N/A                                     ; None                                                ; 4.728 ns   ; reset_addr[4]  ; inst25  ; clock    ;
+; N/A                                     ; None                                                ; 4.726 ns   ; reset_addr[0]  ; inst123 ; clock    ;
+; N/A                                     ; None                                                ; 4.723 ns   ; set_addr[2]    ; inst71  ; clock    ;
+; N/A                                     ; None                                                ; 4.721 ns   ; set_addr[2]    ; inst15  ; clock    ;
+; N/A                                     ; None                                                ; 4.715 ns   ; reset_addr[1]  ; inst111 ; clock    ;
+; N/A                                     ; None                                                ; 4.711 ns   ; set_addr[2]    ; inst33  ; clock    ;
+; N/A                                     ; None                                                ; 4.709 ns   ; set_addr[1]    ; inst11  ; clock    ;
+; N/A                                     ; None                                                ; 4.707 ns   ; set_addr[1]    ; inst10  ; clock    ;
+; N/A                                     ; None                                                ; 4.703 ns   ; set_addr[1]    ; inst7   ; clock    ;
+; N/A                                     ; None                                                ; 4.693 ns   ; reset_addr2[4] ; inst17  ; clock    ;
+; N/A                                     ; None                                                ; 4.689 ns   ; reset_addr[2]  ; inst21  ; clock    ;
+; N/A                                     ; None                                                ; 4.682 ns   ; set_addr[4]    ; inst15  ; clock    ;
+; N/A                                     ; None                                                ; 4.662 ns   ; reset_addr[3]  ; inst111 ; clock    ;
+; N/A                                     ; None                                                ; 4.662 ns   ; reset_addr[3]  ; inst99  ; clock    ;
+; N/A                                     ; None                                                ; 4.644 ns   ; reset_addr[1]  ; inst25  ; clock    ;
+; N/A                                     ; None                                                ; 4.641 ns   ; set_addr[4]    ; inst71  ; clock    ;
+; N/A                                     ; None                                                ; 4.625 ns   ; set_addr[4]    ; inst5   ; clock    ;
+; N/A                                     ; None                                                ; 4.620 ns   ; reset_addr[0]  ; inst79  ; clock    ;
+; N/A                                     ; None                                                ; 4.618 ns   ; reset_addr2[2] ; inst17  ; clock    ;
+; N/A                                     ; None                                                ; 4.610 ns   ; reset_addr[0]  ; inst19  ; clock    ;
+; N/A                                     ; None                                                ; 4.596 ns   ; reset_addr2[1] ; inst    ; clock    ;
+; N/A                                     ; None                                                ; 4.590 ns   ; reset_addr[1]  ; inst115 ; clock    ;
+; N/A                                     ; None                                                ; 4.588 ns   ; reset_addr[4]  ; inst79  ; clock    ;
+; N/A                                     ; None                                                ; 4.584 ns   ; set_addr[2]    ; inst11  ; clock    ;
+; N/A                                     ; None                                                ; 4.582 ns   ; set_addr[2]    ; inst10  ; clock    ;
+; N/A                                     ; None                                                ; 4.581 ns   ; reset_addr[0]  ; inst23  ; clock    ;
+; N/A                                     ; None                                                ; 4.580 ns   ; reset_addr[4]  ; inst19  ; clock    ;
+; N/A                                     ; None                                                ; 4.578 ns   ; set_addr[2]    ; inst7   ; clock    ;
+; N/A                                     ; None                                                ; 4.572 ns   ; reg2           ; inst31  ; clock    ;
+; N/A                                     ; None                                                ; 4.570 ns   ; reg2           ; inst23  ; clock    ;
+; N/A                                     ; None                                                ; 4.569 ns   ; reg2           ; inst127 ; clock    ;
+; N/A                                     ; None                                                ; 4.563 ns   ; reset_addr[0]  ; inst31  ; clock    ;
+; N/A                                     ; None                                                ; 4.562 ns   ; reset_addr[0]  ; inst21  ; clock    ;
+; N/A                                     ; None                                                ; 4.559 ns   ; reset_addr[3]  ; inst7   ; clock    ;
+; N/A                                     ; None                                                ; 4.556 ns   ; reset_addr[4]  ; inst91  ; clock    ;
+; N/A                                     ; None                                                ; 4.556 ns   ; reset_addr[4]  ; inst107 ; clock    ;
+; N/A                                     ; None                                                ; 4.556 ns   ; set_addr[3]    ; inst15  ; clock    ;
+; N/A                                     ; None                                                ; 4.551 ns   ; reset_addr[4]  ; inst23  ; clock    ;
+; N/A                                     ; None                                                ; 4.532 ns   ; reset_addr[4]  ; inst31  ; clock    ;
+; N/A                                     ; None                                                ; 4.527 ns   ; reset_addr[4]  ; inst21  ; clock    ;
+; N/A                                     ; None                                                ; 4.515 ns   ; reset_addr2[3] ; inst21  ; clock    ;
+; N/A                                     ; None                                                ; 4.514 ns   ; set_addr[3]    ; inst33  ; clock    ;
+; N/A                                     ; None                                                ; 4.502 ns   ; set_addr[4]    ; inst17  ; clock    ;
+; N/A                                     ; None                                                ; 4.500 ns   ; reset_addr2[2] ; inst25  ; clock    ;
+; N/A                                     ; None                                                ; 4.492 ns   ; set_addr[2]    ; inst115 ; clock    ;
+; N/A                                     ; None                                                ; 4.492 ns   ; set_addr[2]    ; inst99  ; clock    ;
+; N/A                                     ; None                                                ; 4.492 ns   ; reset_addr2[1] ; inst17  ; clock    ;
+; N/A                                     ; None                                                ; 4.491 ns   ; reset_addr2[3] ; inst111 ; clock    ;
+; N/A                                     ; None                                                ; 4.489 ns   ; reset_addr2[2] ; inst21  ; clock    ;
+; N/A                                     ; None                                                ; 4.476 ns   ; reg2           ; inst    ; clock    ;
+; N/A                                     ; None                                                ; 4.469 ns   ; reset_addr2[2] ; inst123 ; clock    ;
+; N/A                                     ; None                                                ; 4.469 ns   ; reset_addr[1]  ; inst99  ; clock    ;
+; N/A                                     ; None                                                ; 4.464 ns   ; set_addr[4]    ; inst10  ; clock    ;
+; N/A                                     ; None                                                ; 4.462 ns   ; set_addr[3]    ; inst7   ; clock    ;
+; N/A                                     ; None                                                ; 4.459 ns   ; reset_addr2[3] ; inst29  ; clock    ;
+; N/A                                     ; None                                                ; 4.456 ns   ; reset_addr[0]  ; inst15  ; clock    ;
+; N/A                                     ; None                                                ; 4.454 ns   ; reset_addr[0]  ; inst27  ; clock    ;
+; N/A                                     ; None                                                ; 4.453 ns   ; reset_addr[0]  ; inst10  ; clock    ;
+; N/A                                     ; None                                                ; 4.452 ns   ; reset_addr[1]  ; inst119 ; clock    ;
+; N/A                                     ; None                                                ; 4.452 ns   ; reset_addr[1]  ; inst19  ; clock    ;
+; N/A                                     ; None                                                ; 4.451 ns   ; reset_addr2[2] ; inst29  ; clock    ;
+; N/A                                     ; None                                                ; 4.446 ns   ; reset_addr2[2] ; inst31  ; clock    ;
+; N/A                                     ; None                                                ; 4.444 ns   ; reset_addr[0]  ; inst71  ; clock    ;
+; N/A                                     ; None                                                ; 4.444 ns   ; reset_addr2[2] ; inst23  ; clock    ;
+; N/A                                     ; None                                                ; 4.443 ns   ; reset_addr2[2] ; inst127 ; clock    ;
+; N/A                                     ; None                                                ; 4.440 ns   ; reset_addr[4]  ; inst83  ; clock    ;
+; N/A                                     ; None                                                ; 4.425 ns   ; reset_addr[4]  ; inst15  ; clock    ;
+; N/A                                     ; None                                                ; 4.423 ns   ; reset_addr[4]  ; inst27  ; clock    ;
+; N/A                                     ; None                                                ; 4.422 ns   ; reset_addr[3]  ; inst25  ; clock    ;
+; N/A                                     ; None                                                ; 4.422 ns   ; reset_addr[4]  ; inst10  ; clock    ;
+; N/A                                     ; None                                                ; 4.417 ns   ; set_addr[3]    ; inst19  ; clock    ;
+; N/A                                     ; None                                                ; 4.416 ns   ; reg2           ; inst87  ; clock    ;
+; N/A                                     ; None                                                ; 4.416 ns   ; reg2           ; inst3   ; clock    ;
+; N/A                                     ; None                                                ; 4.414 ns   ; reset_addr[4]  ; inst11  ; clock    ;
+; N/A                                     ; None                                                ; 4.413 ns   ; reset_addr[3]  ; inst79  ; clock    ;
+; N/A                                     ; None                                                ; 4.412 ns   ; reset_addr[4]  ; inst71  ; clock    ;
+; N/A                                     ; None                                                ; 4.408 ns   ; reset_addr[0]  ; inst103 ; clock    ;
+; N/A                                     ; None                                                ; 4.405 ns   ; reset_addr[3]  ; inst19  ; clock    ;
+; N/A                                     ; None                                                ; 4.404 ns   ; set_addr[4]    ; inst    ; clock    ;
+; N/A                                     ; None                                                ; 4.402 ns   ; reset_addr[0]  ; inst95  ; clock    ;
+; N/A                                     ; None                                                ; 4.401 ns   ; reset_addr[0]  ; inst87  ; clock    ;
+; N/A                                     ; None                                                ; 4.400 ns   ; reset_addr[1]  ; inst31  ; clock    ;
+; N/A                                     ; None                                                ; 4.399 ns   ; reset_addr[1]  ; inst127 ; clock    ;
+; N/A                                     ; None                                                ; 4.398 ns   ; reset_addr[1]  ; inst23  ; clock    ;
+; N/A                                     ; None                                                ; 4.381 ns   ; reset_addr[3]  ; inst91  ; clock    ;
+; N/A                                     ; None                                                ; 4.377 ns   ; reset_addr[4]  ; inst29  ; clock    ;
+; N/A                                     ; None                                                ; 4.376 ns   ; reset_addr[3]  ; inst23  ; clock    ;
+; N/A                                     ; None                                                ; 4.376 ns   ; reset_addr[4]  ; inst103 ; clock    ;
+; N/A                                     ; None                                                ; 4.375 ns   ; reset_addr[0]  ; inst119 ; clock    ;
+; N/A                                     ; None                                                ; 4.374 ns   ; reset_addr2[1] ; inst25  ; clock    ;
+; N/A                                     ; None                                                ; 4.366 ns   ; reset_addr[4]  ; inst95  ; clock    ;
+; N/A                                     ; None                                                ; 4.365 ns   ; reset_addr[4]  ; inst87  ; clock    ;
+; N/A                                     ; None                                                ; 4.363 ns   ; set_addr[3]    ; inst71  ; clock    ;
+; N/A                                     ; None                                                ; 4.359 ns   ; reset_addr[0]  ; inst127 ; clock    ;
+; N/A                                     ; None                                                ; 4.357 ns   ; reset_addr[3]  ; inst31  ; clock    ;
+; N/A                                     ; None                                                ; 4.356 ns   ; reset_addr2[4] ; inst21  ; clock    ;
+; N/A                                     ; None                                                ; 4.354 ns   ; reset_addr[3]  ; inst21  ; clock    ;
+; N/A                                     ; None                                                ; 4.353 ns   ; reset_addr2[3] ; inst119 ; clock    ;
+; N/A                                     ; None                                                ; 4.349 ns   ; reset_addr[0]  ; inst3   ; clock    ;
+; N/A                                     ; None                                                ; 4.344 ns   ; reset_addr2[3] ; inst13  ; clock    ;
+; N/A                                     ; None                                                ; 4.343 ns   ; set_addr[2]    ; inst17  ; clock    ;
+; N/A                                     ; None                                                ; 4.341 ns   ; reset_addr[4]  ; inst33  ; clock    ;
+; N/A                                     ; None                                                ; 4.339 ns   ; reset_addr[4]  ; inst119 ; clock    ;
+; N/A                                     ; None                                                ; 4.338 ns   ; set_addr[3]    ; inst10  ; clock    ;
+; N/A                                     ; None                                                ; 4.337 ns   ; set_addr[4]    ; inst29  ; clock    ;
+; N/A                                     ; None                                                ; 4.332 ns   ; reset_addr2[4] ; inst111 ; clock    ;
+; N/A                                     ; None                                                ; 4.332 ns   ; reset_addr[4]  ; inst123 ; clock    ;
+; N/A                                     ; None                                                ; 4.328 ns   ; set_addr[4]    ; inst23  ; clock    ;
+; N/A                                     ; None                                                ; 4.328 ns   ; set_addr[4]    ; inst21  ; clock    ;
+; N/A                                     ; None                                                ; 4.323 ns   ; reset_addr[4]  ; inst127 ; clock    ;
+; N/A                                     ; None                                                ; 4.322 ns   ; reset_addr2[3] ; inst91  ; clock    ;
+; N/A                                     ; None                                                ; 4.319 ns   ; reset_addr2[3] ; inst5   ; clock    ;
+; N/A                                     ; None                                                ; 4.319 ns   ; reset_addr[4]  ; inst3   ; clock    ;
+; N/A                                     ; None                                                ; 4.315 ns   ; reset_addr2[3] ; inst27  ; clock    ;
+; N/A                                     ; None                                                ; 4.315 ns   ; reset_addr[3]  ; inst107 ; clock    ;
+; N/A                                     ; None                                                ; 4.304 ns   ; set_addr[4]    ; inst127 ; clock    ;
+; N/A                                     ; None                                                ; 4.300 ns   ; set_addr[1]    ; inst115 ; clock    ;
+; N/A                                     ; None                                                ; 4.300 ns   ; set_addr[1]    ; inst99  ; clock    ;
+; N/A                                     ; None                                                ; 4.293 ns   ; reset_addr[1]  ; inst107 ; clock    ;
+; N/A                                     ; None                                                ; 4.291 ns   ; reset_addr2[3] ; inst107 ; clock    ;
+; N/A                                     ; None                                                ; 4.291 ns   ; reset_addr2[3] ; inst103 ; clock    ;
+; N/A                                     ; None                                                ; 4.290 ns   ; reset_addr2[4] ; inst29  ; clock    ;
+; N/A                                     ; None                                                ; 4.285 ns   ; reset_addr2[3] ; inst75  ; clock    ;
+; N/A                                     ; None                                                ; 4.285 ns   ; reg2           ; inst71  ; clock    ;
+; N/A                                     ; None                                                ; 4.285 ns   ; reg2           ; inst10  ; clock    ;
+; N/A                                     ; None                                                ; 4.276 ns   ; set_addr[3]    ; inst5   ; clock    ;
+; N/A                                     ; None                                                ; 4.274 ns   ; set_addr[1]    ; inst5   ; clock    ;
+; N/A                                     ; None                                                ; 4.272 ns   ; set_addr[4]    ; inst11  ; clock    ;
+; N/A                                     ; None                                                ; 4.269 ns   ; set_addr[1]    ; inst13  ; clock    ;
+; N/A                                     ; None                                                ; 4.265 ns   ; reset_addr[3]  ; inst83  ; clock    ;
+; N/A                                     ; None                                                ; 4.255 ns   ; reg2           ; inst79  ; clock    ;
+; N/A                                     ; None                                                ; 4.255 ns   ; reg2           ; inst15  ; clock    ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;            ;                ;         ;          ;
++-----------------------------------------+-----------------------------------------------------+------------+----------------+---------+----------+
+
+
++--------------------------------------------------------------------+
+; tco                                                                ;
++-------+--------------+------------+---------+---------+------------+
+; Slack ; Required tco ; Actual tco ; From    ; To      ; From Clock ;
++-------+--------------+------------+---------+---------+------------+
+; N/A   ; None         ; 6.597 ns   ; inst19  ; out[3]  ; clock      ;
+; N/A   ; None         ; 6.353 ns   ; inst103 ; out[19] ; clock      ;
+; N/A   ; None         ; 6.350 ns   ; inst17  ; out[2]  ; clock      ;
+; N/A   ; None         ; 6.347 ns   ; inst11  ; out[8]  ; clock      ;
+; N/A   ; None         ; 6.329 ns   ; inst5   ; out[4]  ; clock      ;
+; N/A   ; None         ; 6.327 ns   ; inst71  ; out[17] ; clock      ;
+; N/A   ; None         ; 6.321 ns   ; inst29  ; out[14] ; clock      ;
+; N/A   ; None         ; 6.237 ns   ; inst21  ; out[6]  ; clock      ;
+; N/A   ; None         ; 6.229 ns   ; inst31  ; out[15] ; clock      ;
+; N/A   ; None         ; 6.204 ns   ; inst25  ; out[10] ; clock      ;
+; N/A   ; None         ; 6.195 ns   ; inst115 ; out[26] ; clock      ;
+; N/A   ; None         ; 6.195 ns   ; inst95  ; out[29] ; clock      ;
+; N/A   ; None         ; 6.188 ns   ; inst79  ; out[21] ; clock      ;
+; N/A   ; None         ; 6.179 ns   ; inst    ; out[0]  ; clock      ;
+; N/A   ; None         ; 6.168 ns   ; inst87  ; out[25] ; clock      ;
+; N/A   ; None         ; 6.080 ns   ; inst15  ; out[13] ; clock      ;
+; N/A   ; None         ; 6.019 ns   ; inst13  ; out[12] ; clock      ;
+; N/A   ; None         ; 5.992 ns   ; inst7   ; out[5]  ; clock      ;
+; N/A   ; None         ; 5.979 ns   ; inst83  ; out[24] ; clock      ;
+; N/A   ; None         ; 5.960 ns   ; inst91  ; out[28] ; clock      ;
+; N/A   ; None         ; 5.952 ns   ; inst33  ; out[16] ; clock      ;
+; N/A   ; None         ; 5.896 ns   ; inst107 ; out[22] ; clock      ;
+; N/A   ; None         ; 5.880 ns   ; inst3   ; out[1]  ; clock      ;
+; N/A   ; None         ; 5.824 ns   ; inst23  ; out[7]  ; clock      ;
+; N/A   ; None         ; 5.673 ns   ; inst27  ; out[11] ; clock      ;
+; N/A   ; None         ; 5.627 ns   ; inst123 ; out[30] ; clock      ;
+; N/A   ; None         ; 5.618 ns   ; inst119 ; out[27] ; clock      ;
+; N/A   ; None         ; 5.615 ns   ; inst111 ; out[23] ; clock      ;
+; N/A   ; None         ; 5.599 ns   ; inst75  ; out[20] ; clock      ;
+; N/A   ; None         ; 5.513 ns   ; inst10  ; out[9]  ; clock      ;
+; N/A   ; None         ; 5.499 ns   ; inst127 ; out[31] ; clock      ;
+; N/A   ; None         ; 5.393 ns   ; inst99  ; out[18] ; clock      ;
++-------+--------------+------------+---------+---------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; th                                                                                                                                              ;
++-----------------------------------------+-----------------------------------------------------+-----------+----------------+---------+----------+
+; Minimum Slack                           ; Required th                                         ; Actual th ; From           ; To      ; To Clock ;
++-----------------------------------------+-----------------------------------------------------+-----------+----------------+---------+----------+
+; N/A                                     ; None                                                ; -2.596 ns ; set_addr[0]    ; inst115 ; clock    ;
+; N/A                                     ; None                                                ; -2.675 ns ; set_addr[0]    ; inst83  ; clock    ;
+; N/A                                     ; None                                                ; -2.777 ns ; set_addr[0]    ; inst23  ; clock    ;
+; N/A                                     ; None                                                ; -2.778 ns ; set_addr[0]    ; inst21  ; clock    ;
+; N/A                                     ; None                                                ; -2.919 ns ; reset_addr2[1] ; inst123 ; clock    ;
+; N/A                                     ; None                                                ; -2.921 ns ; set_addr[4]    ; inst79  ; clock    ;
+; N/A                                     ; None                                                ; -2.925 ns ; set_addr[2]    ; inst75  ; clock    ;
+; N/A                                     ; None                                                ; -2.929 ns ; set_addr[2]    ; inst91  ; clock    ;
+; N/A                                     ; None                                                ; -2.932 ns ; set_addr[4]    ; inst95  ; clock    ;
+; N/A                                     ; None                                                ; -2.939 ns ; set_addr[0]    ; inst99  ; clock    ;
+; N/A                                     ; None                                                ; -2.943 ns ; set_addr[1]    ; inst83  ; clock    ;
+; N/A                                     ; None                                                ; -2.955 ns ; set_addr[0]    ; inst19  ; clock    ;
+; N/A                                     ; None                                                ; -3.011 ns ; set_addr[3]    ; inst79  ; clock    ;
+; N/A                                     ; None                                                ; -3.018 ns ; set_addr[4]    ; inst87  ; clock    ;
+; N/A                                     ; None                                                ; -3.026 ns ; set_addr[3]    ; inst95  ; clock    ;
+; N/A                                     ; None                                                ; -3.029 ns ; set_addr[3]    ; inst99  ; clock    ;
+; N/A                                     ; None                                                ; -3.033 ns ; set_addr[1]    ; inst29  ; clock    ;
+; N/A                                     ; None                                                ; -3.055 ns ; reset_addr2[2] ; inst83  ; clock    ;
+; N/A                                     ; None                                                ; -3.055 ns ; reset_addr2[2] ; inst33  ; clock    ;
+; N/A                                     ; None                                                ; -3.056 ns ; reset_addr2[2] ; inst11  ; clock    ;
+; N/A                                     ; None                                                ; -3.060 ns ; set_addr[1]    ; inst127 ; clock    ;
+; N/A                                     ; None                                                ; -3.064 ns ; set_addr[4]    ; inst83  ; clock    ;
+; N/A                                     ; None                                                ; -3.093 ns ; reset_addr[2]  ; inst11  ; clock    ;
+; N/A                                     ; None                                                ; -3.096 ns ; set_addr[0]    ; inst7   ; clock    ;
+; N/A                                     ; None                                                ; -3.102 ns ; set_addr[0]    ; inst15  ; clock    ;
+; N/A                                     ; None                                                ; -3.111 ns ; set_addr[0]    ; inst29  ; clock    ;
+; N/A                                     ; None                                                ; -3.115 ns ; set_addr[3]    ; inst87  ; clock    ;
+; N/A                                     ; None                                                ; -3.120 ns ; set_addr[0]    ; inst123 ; clock    ;
+; N/A                                     ; None                                                ; -3.120 ns ; set_addr[0]    ; inst107 ; clock    ;
+; N/A                                     ; None                                                ; -3.121 ns ; set_addr[0]    ; inst127 ; clock    ;
+; N/A                                     ; None                                                ; -3.122 ns ; set_addr[0]    ; inst111 ; clock    ;
+; N/A                                     ; None                                                ; -3.122 ns ; set_addr[0]    ; inst31  ; clock    ;
+; N/A                                     ; None                                                ; -3.126 ns ; reset_addr[1]  ; inst5   ; clock    ;
+; N/A                                     ; None                                                ; -3.126 ns ; reset_addr2[1] ; inst23  ; clock    ;
+; N/A                                     ; None                                                ; -3.127 ns ; reset_addr2[2] ; inst103 ; clock    ;
+; N/A                                     ; None                                                ; -3.127 ns ; reset_addr2[2] ; inst27  ; clock    ;
+; N/A                                     ; None                                                ; -3.129 ns ; reset_addr2[1] ; inst31  ; clock    ;
+; N/A                                     ; None                                                ; -3.148 ns ; set_addr[1]    ; inst79  ; clock    ;
+; N/A                                     ; None                                                ; -3.153 ns ; set_addr[0]    ; inst25  ; clock    ;
+; N/A                                     ; None                                                ; -3.153 ns ; set_addr[0]    ; inst17  ; clock    ;
+; N/A                                     ; None                                                ; -3.155 ns ; reset_addr[1]  ; inst11  ; clock    ;
+; N/A                                     ; None                                                ; -3.162 ns ; set_addr[1]    ; inst95  ; clock    ;
+; N/A                                     ; None                                                ; -3.165 ns ; reset_addr2[1] ; inst127 ; clock    ;
+; N/A                                     ; None                                                ; -3.205 ns ; reset_addr2[2] ; inst71  ; clock    ;
+; N/A                                     ; None                                                ; -3.205 ns ; reset_addr2[2] ; inst10  ; clock    ;
+; N/A                                     ; None                                                ; -3.237 ns ; set_addr[2]    ; inst29  ; clock    ;
+; N/A                                     ; None                                                ; -3.243 ns ; set_addr[0]    ; inst75  ; clock    ;
+; N/A                                     ; None                                                ; -3.245 ns ; reset_addr2[1] ; inst107 ; clock    ;
+; N/A                                     ; None                                                ; -3.245 ns ; set_addr[0]    ; inst91  ; clock    ;
+; N/A                                     ; None                                                ; -3.247 ns ; reset_addr[0]  ; inst17  ; clock    ;
+; N/A                                     ; None                                                ; -3.249 ns ; set_addr[1]    ; inst87  ; clock    ;
+; N/A                                     ; None                                                ; -3.256 ns ; reset_addr[1]  ; inst13  ; clock    ;
+; N/A                                     ; None                                                ; -3.264 ns ; set_addr[2]    ; inst127 ; clock    ;
+; N/A                                     ; None                                                ; -3.277 ns ; reset_addr2[1] ; inst29  ; clock    ;
+; N/A                                     ; None                                                ; -3.282 ns ; set_addr[3]    ; inst115 ; clock    ;
+; N/A                                     ; None                                                ; -3.287 ns ; reset_addr[3]  ; inst5   ; clock    ;
+; N/A                                     ; None                                                ; -3.293 ns ; set_addr[0]    ; inst79  ; clock    ;
+; N/A                                     ; None                                                ; -3.299 ns ; set_addr[0]    ; inst95  ; clock    ;
+; N/A                                     ; None                                                ; -3.300 ns ; set_addr[4]    ; inst119 ; clock    ;
+; N/A                                     ; None                                                ; -3.302 ns ; set_addr[4]    ; inst103 ; clock    ;
+; N/A                                     ; None                                                ; -3.303 ns ; reset_addr[4]  ; inst5   ; clock    ;
+; N/A                                     ; None                                                ; -3.306 ns ; set_addr[0]    ; inst119 ; clock    ;
+; N/A                                     ; None                                                ; -3.307 ns ; set_addr[4]    ; inst99  ; clock    ;
+; N/A                                     ; None                                                ; -3.309 ns ; set_addr[0]    ; inst103 ; clock    ;
+; N/A                                     ; None                                                ; -3.316 ns ; reset_addr2[2] ; inst119 ; clock    ;
+; N/A                                     ; None                                                ; -3.316 ns ; reset_addr2[2] ; inst19  ; clock    ;
+; N/A                                     ; None                                                ; -3.325 ns ; reset_addr2[1] ; inst5   ; clock    ;
+; N/A                                     ; None                                                ; -3.327 ns ; reset_addr2[1] ; inst13  ; clock    ;
+; N/A                                     ; None                                                ; -3.328 ns ; reset_addr2[1] ; inst75  ; clock    ;
+; N/A                                     ; None                                                ; -3.329 ns ; reset_addr2[1] ; inst91  ; clock    ;
+; N/A                                     ; None                                                ; -3.330 ns ; reset_addr2[2] ; inst5   ; clock    ;
+; N/A                                     ; None                                                ; -3.332 ns ; reset_addr2[2] ; inst13  ; clock    ;
+; N/A                                     ; None                                                ; -3.333 ns ; reset_addr2[2] ; inst75  ; clock    ;
+; N/A                                     ; None                                                ; -3.334 ns ; reset_addr2[2] ; inst91  ; clock    ;
+; N/A                                     ; None                                                ; -3.334 ns ; set_addr[0]    ; inst13  ; clock    ;
+; N/A                                     ; None                                                ; -3.336 ns ; reset_addr2[2] ; inst87  ; clock    ;
+; N/A                                     ; None                                                ; -3.336 ns ; reset_addr2[2] ; inst3   ; clock    ;
+; N/A                                     ; None                                                ; -3.341 ns ; set_addr[0]    ; inst5   ; clock    ;
+; N/A                                     ; None                                                ; -3.345 ns ; reset_addr[2]  ; inst83  ; clock    ;
+; N/A                                     ; None                                                ; -3.345 ns ; reset_addr[2]  ; inst33  ; clock    ;
+; N/A                                     ; None                                                ; -3.350 ns ; set_addr[3]    ; inst75  ; clock    ;
+; N/A                                     ; None                                                ; -3.353 ns ; set_addr[3]    ; inst91  ; clock    ;
+; N/A                                     ; None                                                ; -3.356 ns ; set_addr[1]    ; inst23  ; clock    ;
+; N/A                                     ; None                                                ; -3.356 ns ; set_addr[1]    ; inst21  ; clock    ;
+; N/A                                     ; None                                                ; -3.358 ns ; reset_addr[0]  ; inst5   ; clock    ;
+; N/A                                     ; None                                                ; -3.358 ns ; reset_addr2[0] ; inst103 ; clock    ;
+; N/A                                     ; None                                                ; -3.358 ns ; reset_addr2[0] ; inst27  ; clock    ;
+; N/A                                     ; None                                                ; -3.358 ns ; reset_addr[2]  ; inst87  ; clock    ;
+; N/A                                     ; None                                                ; -3.358 ns ; reset_addr[2]  ; inst3   ; clock    ;
+; N/A                                     ; None                                                ; -3.383 ns ; reset_addr[2]  ; inst5   ; clock    ;
+; N/A                                     ; None                                                ; -3.387 ns ; set_addr[0]    ; inst    ; clock    ;
+; N/A                                     ; None                                                ; -3.395 ns ; set_addr[0]    ; inst87  ; clock    ;
+; N/A                                     ; None                                                ; -3.400 ns ; set_addr[2]    ; inst119 ; clock    ;
+; N/A                                     ; None                                                ; -3.405 ns ; reset_addr[1]  ; inst87  ; clock    ;
+; N/A                                     ; None                                                ; -3.405 ns ; reset_addr[1]  ; inst3   ; clock    ;
+; N/A                                     ; None                                                ; -3.406 ns ; set_addr[1]    ; inst119 ; clock    ;
+; N/A                                     ; None                                                ; -3.407 ns ; reset_addr[1]  ; inst83  ; clock    ;
+; N/A                                     ; None                                                ; -3.407 ns ; reset_addr[1]  ; inst33  ; clock    ;
+; N/A                                     ; None                                                ; -3.408 ns ; set_addr[0]    ; inst27  ; clock    ;
+; N/A                                     ; None                                                ; -3.411 ns ; set_addr[2]    ; inst79  ; clock    ;
+; N/A                                     ; None                                                ; -3.411 ns ; set_addr[2]    ; inst103 ; clock    ;
+; N/A                                     ; None                                                ; -3.412 ns ; set_addr[1]    ; inst103 ; clock    ;
+; N/A                                     ; None                                                ; -3.415 ns ; set_addr[2]    ; inst95  ; clock    ;
+; N/A                                     ; None                                                ; -3.423 ns ; set_addr[4]    ; inst75  ; clock    ;
+; N/A                                     ; None                                                ; -3.424 ns ; set_addr[4]    ; inst91  ; clock    ;
+; N/A                                     ; None                                                ; -3.429 ns ; set_addr[1]    ; inst123 ; clock    ;
+; N/A                                     ; None                                                ; -3.429 ns ; set_addr[1]    ; inst107 ; clock    ;
+; N/A                                     ; None                                                ; -3.430 ns ; reset_addr2[2] ; inst95  ; clock    ;
+; N/A                                     ; None                                                ; -3.430 ns ; reset_addr2[2] ; inst7   ; clock    ;
+; N/A                                     ; None                                                ; -3.432 ns ; set_addr[1]    ; inst111 ; clock    ;
+; N/A                                     ; None                                                ; -3.432 ns ; set_addr[1]    ; inst31  ; clock    ;
+; N/A                                     ; None                                                ; -3.440 ns ; set_addr[2]    ; inst83  ; clock    ;
+; N/A                                     ; None                                                ; -3.446 ns ; reset_addr2[1] ; inst111 ; clock    ;
+; N/A                                     ; None                                                ; -3.448 ns ; set_addr[3]    ; inst107 ; clock    ;
+; N/A                                     ; None                                                ; -3.449 ns ; set_addr[3]    ; inst119 ; clock    ;
+; N/A                                     ; None                                                ; -3.449 ns ; set_addr[3]    ; inst111 ; clock    ;
+; N/A                                     ; None                                                ; -3.449 ns ; set_addr[3]    ; inst103 ; clock    ;
+; N/A                                     ; None                                                ; -3.452 ns ; reset_addr[1]  ; inst91  ; clock    ;
+; N/A                                     ; None                                                ; -3.452 ns ; reset_addr[1]  ; inst75  ; clock    ;
+; N/A                                     ; None                                                ; -3.457 ns ; reset_addr2[0] ; inst83  ; clock    ;
+; N/A                                     ; None                                                ; -3.457 ns ; reset_addr2[0] ; inst33  ; clock    ;
+; N/A                                     ; None                                                ; -3.458 ns ; reset_addr2[0] ; inst11  ; clock    ;
+; N/A                                     ; None                                                ; -3.461 ns ; reset_addr2[4] ; inst79  ; clock    ;
+; N/A                                     ; None                                                ; -3.470 ns ; set_addr[1]    ; inst19  ; clock    ;
+; N/A                                     ; None                                                ; -3.484 ns ; reset_addr2[4] ; inst87  ; clock    ;
+; N/A                                     ; None                                                ; -3.484 ns ; reset_addr2[0] ; inst95  ; clock    ;
+; N/A                                     ; None                                                ; -3.484 ns ; reset_addr2[0] ; inst7   ; clock    ;
+; N/A                                     ; None                                                ; -3.485 ns ; reset_addr2[4] ; inst95  ; clock    ;
+; N/A                                     ; None                                                ; -3.488 ns ; reset_addr2[4] ; inst7   ; clock    ;
+; N/A                                     ; None                                                ; -3.488 ns ; reset_addr[0]  ; inst13  ; clock    ;
+; N/A                                     ; None                                                ; -3.488 ns ; reset_addr2[1] ; inst103 ; clock    ;
+; N/A                                     ; None                                                ; -3.488 ns ; reset_addr2[1] ; inst27  ; clock    ;
+; N/A                                     ; None                                                ; -3.494 ns ; set_addr[3]    ; inst25  ; clock    ;
+; N/A                                     ; None                                                ; -3.500 ns ; reset_addr[2]  ; inst79  ; clock    ;
+; N/A                                     ; None                                                ; -3.500 ns ; reset_addr[2]  ; inst15  ; clock    ;
+; N/A                                     ; None                                                ; -3.513 ns ; reset_addr[2]  ; inst13  ; clock    ;
+; N/A                                     ; None                                                ; -3.513 ns ; set_addr[3]    ; inst31  ; clock    ;
+; N/A                                     ; None                                                ; -3.515 ns ; set_addr[2]    ; inst87  ; clock    ;
+; N/A                                     ; None                                                ; -3.522 ns ; reset_addr[1]  ; inst79  ; clock    ;
+; N/A                                     ; None                                                ; -3.522 ns ; reset_addr[1]  ; inst15  ; clock    ;
+; N/A                                     ; None                                                ; -3.525 ns ; reset_addr2[4] ; inst3   ; clock    ;
+; N/A                                     ; None                                                ; -3.527 ns ; set_addr[4]    ; inst115 ; clock    ;
+; N/A                                     ; None                                                ; -3.534 ns ; reset_addr2[2] ; inst    ; clock    ;
+; N/A                                     ; None                                                ; -3.538 ns ; reset_addr[0]  ; inst25  ; clock    ;
+; N/A                                     ; None                                                ; -3.543 ns ; set_addr[1]    ; inst75  ; clock    ;
+; N/A                                     ; None                                                ; -3.544 ns ; set_addr[1]    ; inst25  ; clock    ;
+; N/A                                     ; None                                                ; -3.545 ns ; reset_addr2[1] ; inst95  ; clock    ;
+; N/A                                     ; None                                                ; -3.545 ns ; reset_addr2[1] ; inst7   ; clock    ;
+; N/A                                     ; None                                                ; -3.547 ns ; reset_addr2[0] ; inst119 ; clock    ;
+; N/A                                     ; None                                                ; -3.547 ns ; reset_addr2[0] ; inst19  ; clock    ;
+; N/A                                     ; None                                                ; -3.547 ns ; set_addr[1]    ; inst91  ; clock    ;
+; N/A                                     ; None                                                ; -3.556 ns ; reset_addr2[2] ; inst79  ; clock    ;
+; N/A                                     ; None                                                ; -3.556 ns ; reset_addr2[2] ; inst15  ; clock    ;
+; N/A                                     ; None                                                ; -3.556 ns ; set_addr[3]    ; inst27  ; clock    ;
+; N/A                                     ; None                                                ; -3.557 ns ; reset_addr[2]  ; inst71  ; clock    ;
+; N/A                                     ; None                                                ; -3.557 ns ; reset_addr[2]  ; inst10  ; clock    ;
+; N/A                                     ; None                                                ; -3.560 ns ; set_addr[2]    ; inst23  ; clock    ;
+; N/A                                     ; None                                                ; -3.560 ns ; set_addr[2]    ; inst21  ; clock    ;
+; N/A                                     ; None                                                ; -3.568 ns ; reset_addr2[4] ; inst123 ; clock    ;
+; N/A                                     ; None                                                ; -3.570 ns ; set_addr[0]    ; inst10  ; clock    ;
+; N/A                                     ; None                                                ; -3.574 ns ; reset_addr[0]  ; inst11  ; clock    ;
+; N/A                                     ; None                                                ; -3.578 ns ; reset_addr2[0] ; inst5   ; clock    ;
+; N/A                                     ; None                                                ; -3.578 ns ; reset_addr2[1] ; inst21  ; clock    ;
+; N/A                                     ; None                                                ; -3.579 ns ; set_addr[0]    ; inst71  ; clock    ;
+; N/A                                     ; None                                                ; -3.580 ns ; reset_addr2[0] ; inst13  ; clock    ;
+; N/A                                     ; None                                                ; -3.581 ns ; reset_addr2[0] ; inst75  ; clock    ;
+; N/A                                     ; None                                                ; -3.582 ns ; reset_addr2[0] ; inst91  ; clock    ;
+; N/A                                     ; None                                                ; -3.604 ns ; reset_addr[1]  ; inst71  ; clock    ;
+; N/A                                     ; None                                                ; -3.604 ns ; reset_addr[1]  ; inst10  ; clock    ;
+; N/A                                     ; None                                                ; -3.606 ns ; reset_addr2[0] ; inst71  ; clock    ;
+; N/A                                     ; None                                                ; -3.606 ns ; reset_addr2[0] ; inst10  ; clock    ;
+; N/A                                     ; None                                                ; -3.610 ns ; reset_addr2[0] ; inst79  ; clock    ;
+; N/A                                     ; None                                                ; -3.610 ns ; reset_addr2[0] ; inst15  ; clock    ;
+; N/A                                     ; None                                                ; -3.620 ns ; reset_addr2[3] ; inst79  ; clock    ;
+; N/A                                     ; None                                                ; -3.620 ns ; set_addr[4]    ; inst25  ; clock    ;
+; N/A                                     ; None                                                ; -3.622 ns ; reset_addr[3]  ; inst75  ; clock    ;
+; N/A                                     ; None                                                ; -3.628 ns ; reg2           ; inst5   ; clock    ;
+; N/A                                     ; None                                                ; -3.628 ns ; set_addr[1]    ; inst27  ; clock    ;
+; N/A                                     ; None                                                ; -3.630 ns ; reg2           ; inst13  ; clock    ;
+; N/A                                     ; None                                                ; -3.631 ns ; reg2           ; inst75  ; clock    ;
+; N/A                                     ; None                                                ; -3.632 ns ; reg2           ; inst91  ; clock    ;
+; N/A                                     ; None                                                ; -3.633 ns ; set_addr[2]    ; inst123 ; clock    ;
+; N/A                                     ; None                                                ; -3.633 ns ; set_addr[2]    ; inst107 ; clock    ;
+; N/A                                     ; None                                                ; -3.636 ns ; reg2           ; inst103 ; clock    ;
+; N/A                                     ; None                                                ; -3.636 ns ; reg2           ; inst27  ; clock    ;
+; N/A                                     ; None                                                ; -3.636 ns ; set_addr[2]    ; inst111 ; clock    ;
+; N/A                                     ; None                                                ; -3.636 ns ; set_addr[2]    ; inst31  ; clock    ;
+; N/A                                     ; None                                                ; -3.639 ns ; set_addr[4]    ; inst31  ; clock    ;
+; N/A                                     ; None                                                ; -3.639 ns ; set_addr[3]    ; inst83  ; clock    ;
+; N/A                                     ; None                                                ; -3.642 ns ; reset_addr[3]  ; inst    ; clock    ;
+; N/A                                     ; None                                                ; -3.644 ns ; reset_addr2[4] ; inst    ; clock    ;
+; N/A                                     ; None                                                ; -3.647 ns ; reset_addr2[3] ; inst7   ; clock    ;
+; N/A                                     ; None                                                ; -3.649 ns ; reset_addr2[4] ; inst71  ; clock    ;
+; N/A                                     ; None                                                ; -3.651 ns ; reset_addr2[4] ; inst83  ; clock    ;
+; N/A                                     ; None                                                ; -3.651 ns ; reset_addr[3]  ; inst13  ; clock    ;
+; N/A                                     ; None                                                ; -3.653 ns ; reset_addr2[3] ; inst87  ; clock    ;
+; N/A                                     ; None                                                ; -3.654 ns ; reset_addr2[3] ; inst95  ; clock    ;
+; N/A                                     ; None                                                ; -3.660 ns ; reset_addr2[4] ; inst33  ; clock    ;
+; N/A                                     ; None                                                ; -3.661 ns ; set_addr[3]    ; inst123 ; clock    ;
+; N/A                                     ; None                                                ; -3.662 ns ; set_addr[2]    ; inst19  ; clock    ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;           ;                ;         ;          ;
++-----------------------------------------+-----------------------------------------------------+-----------+----------------+---------+----------+
 
 
 +--------------------------+
@@ -120,18 +605,81 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
-    Info: Processing started: Mon Jul 20 18:44:36 2020
+    Info: Processing started: Mon Jul 20 18:57:44 2020
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off CAP -c CAP --timing_analysis_only
-Info: Longest tpd from source pin "opcode[5]" to destination pin "read_reg2" is 9.604 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.857 ns) = 0.857 ns; Loc. = PIN_AB7; Fanout = 4; PIN Node = 'opcode[5]'
-    Info: 2: + IC(4.431 ns) + CELL(0.357 ns) = 5.645 ns; Loc. = LCCOMB_X26_Y15_N0; Fanout = 1; COMB Node = 'inst7~0'
-    Info: 3: + IC(1.961 ns) + CELL(1.998 ns) = 9.604 ns; Loc. = PIN_AB13; Fanout = 0; PIN Node = 'read_reg2'
-    Info: Total cell delay = 3.212 ns ( 33.44 % )
-    Info: Total interconnect delay = 6.392 ns ( 66.56 % )
-Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 199 megabytes
-    Info: Processing ended: Mon Jul 20 18:44:37 2020
-    Info: Elapsed time: 00:00:01
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "clock" is an undefined clock
+Info: Clock "clock" Internal fmax is restricted to 500.0 MHz between source register "inst87" and destination register "inst87"
+    Info: fmax restricted to clock pin edge rate 2.0 ns. Expand message to see actual delay path.
+        Info: + Longest register to register delay is 0.867 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X21_Y19_N23; Fanout = 2; REG Node = 'inst87'
+            Info: 2: + IC(0.306 ns) + CELL(0.053 ns) = 0.359 ns; Loc. = LCCOMB_X21_Y19_N24; Fanout = 1; COMB Node = 'inst87~4'
+            Info: 3: + IC(0.300 ns) + CELL(0.053 ns) = 0.712 ns; Loc. = LCCOMB_X21_Y19_N22; Fanout = 1; COMB Node = 'inst87~5'
+            Info: 4: + IC(0.000 ns) + CELL(0.155 ns) = 0.867 ns; Loc. = LCFF_X21_Y19_N23; Fanout = 2; REG Node = 'inst87'
+            Info: Total cell delay = 0.261 ns ( 30.10 % )
+            Info: Total interconnect delay = 0.606 ns ( 69.90 % )
+        Info: - Smallest clock skew is 0.000 ns
+            Info: + Shortest clock path from clock "clock" to destination register is 2.471 ns
+                Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clock'
+                Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 32; COMB Node = 'clock~clkctrl'
+                Info: 3: + IC(0.656 ns) + CELL(0.618 ns) = 2.471 ns; Loc. = LCFF_X21_Y19_N23; Fanout = 2; REG Node = 'inst87'
+                Info: Total cell delay = 1.472 ns ( 59.57 % )
+                Info: Total interconnect delay = 0.999 ns ( 40.43 % )
+            Info: - Longest clock path from clock "clock" to source register is 2.471 ns
+                Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clock'
+                Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 32; COMB Node = 'clock~clkctrl'
+                Info: 3: + IC(0.656 ns) + CELL(0.618 ns) = 2.471 ns; Loc. = LCFF_X21_Y19_N23; Fanout = 2; REG Node = 'inst87'
+                Info: Total cell delay = 1.472 ns ( 59.57 % )
+                Info: Total interconnect delay = 0.999 ns ( 40.43 % )
+        Info: + Micro clock to output delay of source is 0.094 ns
+        Info: + Micro setup delay of destination is 0.090 ns
+Info: tsu for register "inst115" (data pin = "reset_addr[4]", clock pin = "clock") is 5.478 ns
+    Info: + Longest pin to register delay is 7.846 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.799 ns) = 0.799 ns; Loc. = PIN_C13; Fanout = 9; PIN Node = 'reset_addr[4]'
+        Info: 2: + IC(4.355 ns) + CELL(0.366 ns) = 5.520 ns; Loc. = LCCOMB_X19_Y18_N12; Fanout = 4; COMB Node = 'decdr:inst34|lpm_decode:lpm_decode_component|decode_d9f:auto_generated|w_anode198w[2]~1'
+        Info: 3: + IC(0.903 ns) + CELL(0.346 ns) = 6.769 ns; Loc. = LCCOMB_X18_Y19_N2; Fanout = 1; COMB Node = 'inst115~3'
+        Info: 4: + IC(0.576 ns) + CELL(0.346 ns) = 7.691 ns; Loc. = LCCOMB_X18_Y20_N0; Fanout = 1; COMB Node = 'inst115~4'
+        Info: 5: + IC(0.000 ns) + CELL(0.155 ns) = 7.846 ns; Loc. = LCFF_X18_Y20_N1; Fanout = 2; REG Node = 'inst115'
+        Info: Total cell delay = 2.012 ns ( 25.64 % )
+        Info: Total interconnect delay = 5.834 ns ( 74.36 % )
+    Info: + Micro setup delay of destination is 0.090 ns
+    Info: - Shortest clock path from clock "clock" to destination register is 2.458 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clock'
+        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 32; COMB Node = 'clock~clkctrl'
+        Info: 3: + IC(0.643 ns) + CELL(0.618 ns) = 2.458 ns; Loc. = LCFF_X18_Y20_N1; Fanout = 2; REG Node = 'inst115'
+        Info: Total cell delay = 1.472 ns ( 59.89 % )
+        Info: Total interconnect delay = 0.986 ns ( 40.11 % )
+Info: tco from clock "clock" to destination pin "out[3]" through register "inst19" is 6.597 ns
+    Info: + Longest clock path from clock "clock" to source register is 2.458 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clock'
+        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 32; COMB Node = 'clock~clkctrl'
+        Info: 3: + IC(0.643 ns) + CELL(0.618 ns) = 2.458 ns; Loc. = LCFF_X19_Y19_N3; Fanout = 2; REG Node = 'inst19'
+        Info: Total cell delay = 1.472 ns ( 59.89 % )
+        Info: Total interconnect delay = 0.986 ns ( 40.11 % )
+    Info: + Micro clock to output delay of source is 0.094 ns
+    Info: + Longest register to pin delay is 4.045 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X19_Y19_N3; Fanout = 2; REG Node = 'inst19'
+        Info: 2: + IC(2.047 ns) + CELL(1.998 ns) = 4.045 ns; Loc. = PIN_Y12; Fanout = 0; PIN Node = 'out[3]'
+        Info: Total cell delay = 1.998 ns ( 49.39 % )
+        Info: Total interconnect delay = 2.047 ns ( 50.61 % )
+Info: th for register "inst115" (data pin = "set_addr[0]", clock pin = "clock") is -2.596 ns
+    Info: + Longest clock path from clock "clock" to destination register is 2.458 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clock'
+        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 32; COMB Node = 'clock~clkctrl'
+        Info: 3: + IC(0.643 ns) + CELL(0.618 ns) = 2.458 ns; Loc. = LCFF_X18_Y20_N1; Fanout = 2; REG Node = 'inst115'
+        Info: Total cell delay = 1.472 ns ( 59.89 % )
+        Info: Total interconnect delay = 0.986 ns ( 40.11 % )
+    Info: + Micro hold delay of destination is 0.149 ns
+    Info: - Shortest pin to register delay is 5.203 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.809 ns) = 0.809 ns; Loc. = PIN_B11; Fanout = 32; PIN Node = 'set_addr[0]'
+        Info: 2: + IC(4.186 ns) + CELL(0.053 ns) = 5.048 ns; Loc. = LCCOMB_X18_Y20_N0; Fanout = 1; COMB Node = 'inst115~4'
+        Info: 3: + IC(0.000 ns) + CELL(0.155 ns) = 5.203 ns; Loc. = LCFF_X18_Y20_N1; Fanout = 2; REG Node = 'inst115'
+        Info: Total cell delay = 1.017 ns ( 19.55 % )
+        Info: Total interconnect delay = 4.186 ns ( 80.45 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 200 megabytes
+    Info: Processing ended: Mon Jul 20 18:57:44 2020
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 

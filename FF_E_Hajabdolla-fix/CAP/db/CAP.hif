@@ -2899,6 +2899,9 @@ data0
 -1
 3
 }
+# hierarchies {
+mux32x2x1:inst134|lpm_mux:lpm_mux_component|mux_bpc:auto_generated
+}
 # macro_sequence
 
 # end
@@ -3756,6 +3759,9 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
+}
+# hierarchies {
+mux32x2x1:inst134
 }
 # macro_sequence
 
@@ -10957,6 +10963,11 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
+# hierarchies {
+decdr:inst34
+decdr:inst131
+decdr:inst35
+}
 # macro_sequence
 
 # end
@@ -11082,6 +11093,11 @@ data1
 data0
 -1
 3
+}
+# hierarchies {
+decdr:inst34|lpm_decode:lpm_decode_component|decode_d9f:auto_generated
+decdr:inst131|lpm_decode:lpm_decode_component|decode_d9f:auto_generated
+decdr:inst35|lpm_decode:lpm_decode_component|decode_d9f:auto_generated
 }
 # macro_sequence
 
@@ -11986,9 +12002,6 @@ memWRsg.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-memWRsg:inst
-}
 # macro_sequence
 
 # end
@@ -12365,10 +12378,6 @@ da21447b8e66c26bd34c85b6cdda8169
 ..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|aglobal90.inc
 99832fdf63412df51d7531202d74e75
 }
-# hierarchies {
-comp:inst6|lpm_compare:lpm_compare_component
-comp2:inst11|lpm_compare:lpm_compare_component
-}
 # macro_sequence
 
 # end
@@ -12423,10 +12432,6 @@ alb
 -1
 3
 }
-# hierarchies {
-comp:inst6|lpm_compare:lpm_compare_component|cmpr_r8j:auto_generated
-comp2:inst11|lpm_compare:lpm_compare_component|cmpr_r8j:auto_generated
-}
 # macro_sequence
 
 # end
@@ -12459,9 +12464,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-comp:inst6
 }
 # macro_sequence
 
@@ -12496,9 +12498,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-comp2:inst11
-}
 # macro_sequence
 
 # end
@@ -12531,9 +12530,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-comp3:inst12
 }
 # macro_sequence
 
@@ -12638,9 +12634,6 @@ da21447b8e66c26bd34c85b6cdda8169
 ..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|aglobal90.inc
 99832fdf63412df51d7531202d74e75
 }
-# hierarchies {
-comp3:inst12|lpm_compare:lpm_compare_component
-}
 # macro_sequence
 
 # end
@@ -12695,9 +12688,6 @@ agb
 -1
 3
 }
-# hierarchies {
-comp3:inst12|lpm_compare:lpm_compare_component|cmpr_m8j:auto_generated
-}
 # macro_sequence
 
 # end
@@ -12730,9 +12720,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-comp4:inst14
 }
 # macro_sequence
 
@@ -12837,9 +12824,6 @@ da21447b8e66c26bd34c85b6cdda8169
 ..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|aglobal90.inc
 99832fdf63412df51d7531202d74e75
 }
-# hierarchies {
-comp4:inst14|lpm_compare:lpm_compare_component
-}
 # macro_sequence
 
 # end
@@ -12888,9 +12872,6 @@ aneb
 -1
 3
 }
-# hierarchies {
-comp4:inst14|lpm_compare:lpm_compare_component|cmpr_1cj:auto_generated
-}
 # macro_sequence
 
 # end
@@ -12908,8 +12889,290 @@ ctrl_sg.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+Stall_Array
+# storage
+db|CAP.(78).cnf
+db|CAP.(78).cnf
+# case_insensitive
+# source_file
+Stall_Array.bdf
+b022e750ad54969ac9c55394c093a3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+lpm_mux
+# storage
+db|CAP.(79).cnf
+db|CAP.(79).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|lpm_mux.tdf
+5fa3ca616f64a75f3772b4506ca8e87
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+32
+PARAMETER_SIGNED_DEC
+USR
+LPM_SIZE
+2
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHS
+1
+PARAMETER_SIGNED_DEC
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+mux_bpc
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sel
+-1
+3
+result
+-1
+3
+data
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|altshift.inc
+70fa13aee7d6d160ef20b2de32813a
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|bypassff.inc
+8e8df160d449a63ec15dc86ecf2b373f
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|muxlut.inc
+f172666ca13e5e31e17e3f6cb35af52
+}
+# hierarchies {
+mux32x2x1:inst134|lpm_mux:lpm_mux_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode
+# storage
+db|CAP.(80).cnf
+db|CAP.(80).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|lpm_decode.tdf
+9b65cc2e5d9973da6375e660fcd83ab1
+7
+# user_parameter {
+LPM_WIDTH
+5
+PARAMETER_SIGNED_DEC
+USR
+LPM_DECODES
+32
+PARAMETER_SIGNED_DEC
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+decode_d9f
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+eq
+-1
+3
+data
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|altshift.inc
+70fa13aee7d6d160ef20b2de32813a
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|lpm_constant.inc
+dcde44eee59335c1e2fe75d574f9646
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|lpm_compare.inc
+aec4ea1b78f4cda1c3effe18f1abbf63
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|declut.inc
+b1d5939399e5c04dfe1d209af8cc490
+}
+# hierarchies {
+decdr:inst34|lpm_decode:lpm_decode_component
+decdr:inst131|lpm_decode:lpm_decode_component
+decdr:inst35|lpm_decode:lpm_decode_component
+}
+# macro_sequence
+
+# end
+# entity
+or32
+# storage
+db|CAP.(81).cnf
+db|CAP.(81).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+or32.v
+e2184fb279d3ca136cde77ea4d89ae1
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+or32:inst133
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or
+# storage
+db|CAP.(82).cnf
+db|CAP.(82).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|lpm_or.tdf
+c339576f73ca91f7288d534c9958c370
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+32
+PARAMETER_SIGNED_DEC
+USR
+LPM_SIZE
+2
+PARAMETER_SIGNED_DEC
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result
+-1
+3
+data
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+}
+# hierarchies {
+or32:inst133|lpm_or:lpm_or_component
 }
 # macro_sequence
 

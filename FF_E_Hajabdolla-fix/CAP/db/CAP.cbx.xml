@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="CAP">
-		<CBX_INST_ENTRY INSTANCE_NAME="|ctrl_sg|comp2:inst11|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_r8j.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ctrl_sg|comp3:inst12|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_m8j.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ctrl_sg|comp4:inst14|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_1cj.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ctrl_sg|comp:inst6|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_r8j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Stall_Array|decdr:inst131|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_d9f.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Stall_Array|decdr:inst34|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_d9f.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Stall_Array|decdr:inst35|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_d9f.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Stall_Array|mux32x2x1:inst134|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
