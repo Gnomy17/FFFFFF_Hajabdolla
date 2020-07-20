@@ -70,22 +70,6 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 616 824 792 840)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "write_back_en" (rect 90 0 159 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8)(line_width 1))
-		(line (pt 52 4)(pt 78 4)(line_width 1))
-		(line (pt 52 12)(pt 78 12)(line_width 1))
-		(line (pt 52 12)(pt 52 4)(line_width 1))
-		(line (pt 78 4)(pt 82 8)(line_width 1))
-		(line (pt 82 8)(pt 78 12)(line_width 1))
-		(line (pt 78 12)(pt 82 8)(line_width 1))
-	)
-)
-(pin
-	(output)
 	(rect 608 144 784 160)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "read_mem" (rect 90 0 141 12)(font "Arial" ))
@@ -506,11 +490,6 @@ applicable agreement for further details.
 	(pt 176 392)
 )
 (connector
-	(text "opcdoe[1]" (rect 184 392 232 404)(font "Arial" ))
-	(pt 320 408)
-	(pt 176 408)
-)
-(connector
 	(text "opcode[0]" (rect 184 408 232 420)(font "Arial" ))
 	(pt 320 424)
 	(pt 176 424)
@@ -538,12 +517,6 @@ applicable agreement for further details.
 (connector
 	(pt 168 512)
 	(pt 200 512)
-	(bus)
-)
-(connector
-	(text "opcde[5..0]" (rect 91 496 146 508)(font "Arial" ))
-	(pt 80 512)
-	(pt 168 512)
 	(bus)
 )
 (connector
@@ -579,20 +552,21 @@ applicable agreement for further details.
 	(pt 496 536)
 )
 (connector
-	(text "opcde[5..1]" (rect 157 696 212 708)(font "Arial" ))
+	(text "opcode[5..0]" (rect 91 496 152 508)(font "Arial" ))
+	(pt 80 512)
+	(pt 168 512)
+	(bus)
+)
+(connector
+	(text "opcode[5..1]" (rect 125 696 186 708)(font "Arial" ))
 	(pt 80 712)
 	(pt 216 712)
 	(bus)
 )
 (connector
-	(text "opcode[5..0]" (rect 97 800 158 812)(font "Arial" ))
-	(pt 80 816)
-	(pt 144 816)
-	(bus)
-)
-(connector
-	(pt 592 832)
-	(pt 616 832)
+	(text "opcode[1]" (rect 184 392 232 404)(font "Arial" ))
+	(pt 320 408)
+	(pt 176 408)
 )
 (junction (pt 312 136))
 (junction (pt 168 512))

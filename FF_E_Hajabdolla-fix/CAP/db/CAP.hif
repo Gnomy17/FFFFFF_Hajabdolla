@@ -11986,6 +11986,9 @@ memWRsg.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# hierarchies {
+memWRsg:inst
+}
 # macro_sequence
 
 # end
@@ -12002,9 +12005,6 @@ bc99c35ff6f835acdc35f588322d083
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 
@@ -12038,9 +12038,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-comp8:inst
 }
 # macro_sequence
 
@@ -12145,10 +12142,6 @@ da21447b8e66c26bd34c85b6cdda8169
 ..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|aglobal90.inc
 99832fdf63412df51d7531202d74e75
 }
-# hierarchies {
-comp8:inst|lpm_compare:lpm_compare_component
-comp7:inst17|lpm_compare:lpm_compare_component
-}
 # macro_sequence
 
 # end
@@ -12203,10 +12196,6 @@ aeb
 -1
 3
 }
-# hierarchies {
-comp8:inst|lpm_compare:lpm_compare_component|cmpr_k8j:auto_generated
-comp7:inst17|lpm_compare:lpm_compare_component|cmpr_k8j:auto_generated
-}
 # macro_sequence
 
 # end
@@ -12240,9 +12229,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-comp7:inst17
-}
 # macro_sequence
 
 # end
@@ -12275,9 +12261,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-compare5:inst16
 }
 # macro_sequence
 
@@ -12383,7 +12366,8 @@ da21447b8e66c26bd34c85b6cdda8169
 99832fdf63412df51d7531202d74e75
 }
 # hierarchies {
-compare5:inst16|lpm_compare:lpm_compare_component
+comp:inst6|lpm_compare:lpm_compare_component
+comp2:inst11|lpm_compare:lpm_compare_component
 }
 # macro_sequence
 
@@ -12440,7 +12424,492 @@ alb
 3
 }
 # hierarchies {
-compare5:inst16|lpm_compare:lpm_compare_component|cmpr_r8j:auto_generated
+comp:inst6|lpm_compare:lpm_compare_component|cmpr_r8j:auto_generated
+comp2:inst11|lpm_compare:lpm_compare_component|cmpr_r8j:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+comp
+# storage
+db|CAP.(70).cnf
+db|CAP.(70).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+comp.v
+c74d3b5e5c7192426f66351d62e0db
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+comp:inst6
+}
+# macro_sequence
+
+# end
+# entity
+comp2
+# storage
+db|CAP.(71).cnf
+db|CAP.(71).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+comp2.v
+b7da7e4933cd15ae81bc6b13ec4050
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+comp2:inst11
+}
+# macro_sequence
+
+# end
+# entity
+comp3
+# storage
+db|CAP.(72).cnf
+db|CAP.(72).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+comp3.v
+85d7bbd4d57bdfbf9031de28fee2e91
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+comp3:inst12
+}
+# macro_sequence
+
+# end
+# entity
+lpm_compare
+# storage
+db|CAP.(73).cnf
+db|CAP.(73).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|lpm_compare.tdf
+b75e1ab4e80cfe8d84b84ec6964614
+7
+# user_parameter {
+lpm_width
+6
+PARAMETER_SIGNED_DEC
+USR
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CHAIN_SIZE
+8
+PARAMETER_UNKNOWN
+DEF
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CASCADE_CHAIN_LENGTH
+2
+CASCADE_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+cmpr_m8j
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+datab
+-1
+3
+dataa
+-1
+3
+agb
+-1
+3
+clock
+-1
+1
+aclr
+-1
+1
+clken
+-1
+2
+}
+# include_file {
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|altshift.inc
+70fa13aee7d6d160ef20b2de32813a
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|comptree.inc
+da21447b8e66c26bd34c85b6cdda8169
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+}
+# hierarchies {
+comp3:inst12|lpm_compare:lpm_compare_component
+}
+# macro_sequence
+
+# end
+# entity
+cmpr_m8j
+# storage
+db|CAP.(74).cnf
+db|CAP.(74).cnf
+# case_insensitive
+# source_file
+db|cmpr_m8j.tdf
+a592bac1279f2551c9363951b0b15d
+7
+# used_port {
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+agb
+-1
+3
+}
+# hierarchies {
+comp3:inst12|lpm_compare:lpm_compare_component|cmpr_m8j:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+comp4
+# storage
+db|CAP.(75).cnf
+db|CAP.(75).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+comp4.v
+d3c5ef74cce6bb28bb1736cc73e88
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+comp4:inst14
+}
+# macro_sequence
+
+# end
+# entity
+lpm_compare
+# storage
+db|CAP.(76).cnf
+db|CAP.(76).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|lpm_compare.tdf
+b75e1ab4e80cfe8d84b84ec6964614
+7
+# user_parameter {
+lpm_width
+5
+PARAMETER_SIGNED_DEC
+USR
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CHAIN_SIZE
+8
+PARAMETER_UNKNOWN
+DEF
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CASCADE_CHAIN_LENGTH
+2
+CASCADE_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+cmpr_1cj
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+datab
+-1
+3
+dataa
+-1
+3
+aneb
+-1
+3
+clock
+-1
+1
+aclr
+-1
+1
+clken
+-1
+2
+}
+# include_file {
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|altshift.inc
+70fa13aee7d6d160ef20b2de32813a
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|comptree.inc
+da21447b8e66c26bd34c85b6cdda8169
+..|..|..|..|..|..|..|program files|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+}
+# hierarchies {
+comp4:inst14|lpm_compare:lpm_compare_component
+}
+# macro_sequence
+
+# end
+# entity
+cmpr_1cj
+# storage
+db|CAP.(77).cnf
+db|CAP.(77).cnf
+# case_insensitive
+# source_file
+db|cmpr_1cj.tdf
+6e3964f1eada74129719a953346ab835
+7
+# used_port {
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+aneb
+-1
+3
+}
+# hierarchies {
+comp4:inst14|lpm_compare:lpm_compare_component|cmpr_1cj:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+ctrl_sg
+# storage
+db|CAP.(69).cnf
+db|CAP.(69).cnf
+# case_insensitive
+# source_file
+ctrl_sg.bdf
+7abc4686295c99a59cc250dd9e48f4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 

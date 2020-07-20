@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CAP
-Mon Jul 20 18:40:07 2020
+Mon Jul 20 18:44:30 2020
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -13,10 +13,11 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
   5. Analysis & Synthesis Resource Usage Summary
   6. Analysis & Synthesis Resource Utilization by Entity
   7. General Register Statistics
-  8. Parameter Settings for User Entity Instance: comp8:inst|lpm_compare:lpm_compare_component
-  9. Parameter Settings for User Entity Instance: comp7:inst17|lpm_compare:lpm_compare_component
- 10. Parameter Settings for User Entity Instance: compare5:inst16|lpm_compare:lpm_compare_component
- 11. Analysis & Synthesis Messages
+  8. Parameter Settings for User Entity Instance: comp:inst6|lpm_compare:lpm_compare_component
+  9. Parameter Settings for User Entity Instance: comp2:inst11|lpm_compare:lpm_compare_component
+ 10. Parameter Settings for User Entity Instance: comp3:inst12|lpm_compare:lpm_compare_component
+ 11. Parameter Settings for User Entity Instance: comp4:inst14|lpm_compare:lpm_compare_component
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +43,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                            ;
 +-------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Mon Jul 20 18:40:07 2020   ;
+; Analysis & Synthesis Status   ; Successful - Mon Jul 20 18:44:30 2020   ;
 ; Quartus II Version            ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
 ; Revision Name                 ; CAP                                     ;
-; Top-level Entity Name         ; WBE_decode                              ;
+; Top-level Entity Name         ; ctrl_sg                                 ;
 ; Family                        ; Stratix II                              ;
 ; Logic utilization             ; N/A                                     ;
-;     Combinational ALUTs       ; 2                                       ;
+;     Combinational ALUTs       ; 4                                       ;
 ;     Dedicated logic registers ; 0                                       ;
 ; Total registers               ; 0                                       ;
-; Total pins                    ; 8                                       ;
+; Total pins                    ; 10                                      ;
 ; Total virtual pins            ; 0                                       ;
 ; Total block memory bits       ; 0                                       ;
 ; DSP block 9-bit elements      ; 0                                       ;
@@ -65,7 +66,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                         ; Setting            ; Default Value      ;
 +----------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                          ; WBE_decode         ; CAP                ;
+; Top-level entity name                                          ; ctrl_sg            ; CAP                ;
 ; Family name                                                    ; Stratix II         ; Stratix II         ;
 ; Use Generated Physical Constraints File                        ; Off                ;                    ;
 ; Use smart compilation                                          ; Off                ; Off                ;
@@ -141,66 +142,70 @@ applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                          ;
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+
-; WBE_decode.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/WBE_decode.bdf  ;
-; compare5.v                       ; yes             ; User Wizard-Generated File         ; C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/compare5.v      ;
-; comp7.v                          ; yes             ; User Wizard-Generated File         ; C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/comp7.v         ;
-; comp8.v                          ; yes             ; User Wizard-Generated File         ; C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/comp8.v         ;
+; memWRsg.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/memWRsg.bdf     ;
+; ctrl_sg.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/ctrl_sg.bdf     ;
+; comp.v                           ; yes             ; User Wizard-Generated File         ; C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/comp.v          ;
+; comp2.v                          ; yes             ; User Wizard-Generated File         ; C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/comp2.v         ;
+; comp3.v                          ; yes             ; User Wizard-Generated File         ; C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/comp3.v         ;
+; comp4.v                          ; yes             ; User Wizard-Generated File         ; C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/comp4.v         ;
 ; lpm_compare.tdf                  ; yes             ; Megafunction                       ; c:/program files/quartus/libraries/megafunctions/lpm_compare.tdf                      ;
 ; comptree.inc                     ; yes             ; Megafunction                       ; c:/program files/quartus/libraries/megafunctions/comptree.inc                         ;
 ; altshift.inc                     ; yes             ; Megafunction                       ; c:/program files/quartus/libraries/megafunctions/altshift.inc                         ;
 ; aglobal90.inc                    ; yes             ; Megafunction                       ; c:/program files/quartus/libraries/megafunctions/aglobal90.inc                        ;
-; db/cmpr_k8j.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db/cmpr_k8j.tdf ;
 ; db/cmpr_r8j.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db/cmpr_r8j.tdf ;
+; db/cmpr_m8j.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db/cmpr_m8j.tdf ;
+; db/cmpr_1cj.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db/cmpr_1cj.tdf ;
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+-----------------------------------------------+---------+
-; Resource                                      ; Usage   ;
-+-----------------------------------------------+---------+
-; Estimated ALUTs Used                          ; 2       ;
-; Dedicated logic registers                     ; 0       ;
-;                                               ;         ;
-; Estimated ALUTs Unavailable                   ; 0       ;
-;                                               ;         ;
-; Total combinational functions                 ; 2       ;
-; Combinational ALUT usage by number of inputs  ;         ;
-;     -- 7 input functions                      ; 0       ;
-;     -- 6 input functions                      ; 0       ;
-;     -- 5 input functions                      ; 1       ;
-;     -- 4 input functions                      ; 0       ;
-;     -- <=3 input functions                    ; 1       ;
-;                                               ;         ;
-; Combinational ALUTs by mode                   ;         ;
-;     -- normal mode                            ; 2       ;
-;     -- extended LUT mode                      ; 0       ;
-;     -- arithmetic mode                        ; 0       ;
-;     -- shared arithmetic mode                 ; 0       ;
-;                                               ;         ;
-; Estimated ALUT/register pairs used            ; 2       ;
-;                                               ;         ;
-; Total registers                               ; 0       ;
-;     -- Dedicated logic registers              ; 0       ;
-;     -- I/O registers                          ; 0       ;
-;                                               ;         ;
-; Estimated ALMs:  partially or completely used ; 1       ;
-;                                               ;         ;
-; I/O pins                                      ; 8       ;
-; Maximum fan-out node                          ; inst7~0 ;
-; Maximum fan-out                               ; 1       ;
-; Total fan-out                                 ; 9       ;
-; Average fan-out                               ; 0.90    ;
-+-----------------------------------------------+---------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++-----------------------------------------------+-----------+
+; Resource                                      ; Usage     ;
++-----------------------------------------------+-----------+
+; Estimated ALUTs Used                          ; 4         ;
+; Dedicated logic registers                     ; 0         ;
+;                                               ;           ;
+; Estimated ALUTs Unavailable                   ; 0         ;
+;                                               ;           ;
+; Total combinational functions                 ; 4         ;
+; Combinational ALUT usage by number of inputs  ;           ;
+;     -- 7 input functions                      ; 0         ;
+;     -- 6 input functions                      ; 1         ;
+;     -- 5 input functions                      ; 3         ;
+;     -- 4 input functions                      ; 0         ;
+;     -- <=3 input functions                    ; 0         ;
+;                                               ;           ;
+; Combinational ALUTs by mode                   ;           ;
+;     -- normal mode                            ; 4         ;
+;     -- extended LUT mode                      ; 0         ;
+;     -- arithmetic mode                        ; 0         ;
+;     -- shared arithmetic mode                 ; 0         ;
+;                                               ;           ;
+; Estimated ALUT/register pairs used            ; 4         ;
+;                                               ;           ;
+; Total registers                               ; 0         ;
+;     -- Dedicated logic registers              ; 0         ;
+;     -- I/O registers                          ; 0         ;
+;                                               ;           ;
+; Estimated ALMs:  partially or completely used ; 2         ;
+;                                               ;           ;
+; I/O pins                                      ; 10        ;
+; Maximum fan-out node                          ; opcode[5] ;
+; Maximum fan-out                               ; 4         ;
+; Total fan-out                                 ; 25        ;
+; Average fan-out                               ; 1.79      ;
++-----------------------------------------------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                           ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |WBE_decode                ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 8    ; 0            ; |WBE_decode         ; work         ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                             ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------+--------------+
+; |ctrl_sg                   ; 4 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 10   ; 0            ; |ctrl_sg              ; work         ;
+;    |memWRsg:inst|          ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ctrl_sg|memWRsg:inst ; work         ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -220,7 +225,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +-------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: comp8:inst|lpm_compare:lpm_compare_component ;
+; Parameter Settings for User Entity Instance: comp:inst6|lpm_compare:lpm_compare_component ;
 +------------------------+------------+-----------------------------------------------------+
 ; Parameter Name         ; Value      ; Type                                                ;
 +------------------------+------------+-----------------------------------------------------+
@@ -234,7 +239,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CARRY_CHAIN_LENGTH     ; 48         ; CARRY_CHAIN_LENGTH                                  ;
 ; CASCADE_CHAIN_LENGTH   ; 2          ; CASCADE_CHAIN_LENGTH                                ;
 ; DEVICE_FAMILY          ; Stratix II ; Untyped                                             ;
-; CBXI_PARAMETER         ; cmpr_k8j   ; Untyped                                             ;
+; CBXI_PARAMETER         ; cmpr_r8j   ; Untyped                                             ;
 ; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                          ;
 ; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                        ;
 ; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                        ;
@@ -244,7 +249,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: comp7:inst17|lpm_compare:lpm_compare_component ;
+; Parameter Settings for User Entity Instance: comp2:inst11|lpm_compare:lpm_compare_component ;
 +------------------------+------------+-------------------------------------------------------+
 ; Parameter Name         ; Value      ; Type                                                  ;
 +------------------------+------------+-------------------------------------------------------+
@@ -258,7 +263,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CARRY_CHAIN_LENGTH     ; 48         ; CARRY_CHAIN_LENGTH                                    ;
 ; CASCADE_CHAIN_LENGTH   ; 2          ; CASCADE_CHAIN_LENGTH                                  ;
 ; DEVICE_FAMILY          ; Stratix II ; Untyped                                               ;
-; CBXI_PARAMETER         ; cmpr_k8j   ; Untyped                                               ;
+; CBXI_PARAMETER         ; cmpr_r8j   ; Untyped                                               ;
 ; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                            ;
 ; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                          ;
 ; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                          ;
@@ -267,27 +272,51 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: compare5:inst16|lpm_compare:lpm_compare_component ;
-+------------------------+------------+----------------------------------------------------------+
-; Parameter Name         ; Value      ; Type                                                     ;
-+------------------------+------------+----------------------------------------------------------+
-; lpm_width              ; 6          ; Signed Integer                                           ;
-; LPM_REPRESENTATION     ; UNSIGNED   ; Untyped                                                  ;
-; LPM_PIPELINE           ; 0          ; Untyped                                                  ;
-; CHAIN_SIZE             ; 8          ; Untyped                                                  ;
-; ONE_INPUT_IS_CONSTANT  ; YES        ; Untyped                                                  ;
-; CARRY_CHAIN            ; MANUAL     ; Untyped                                                  ;
-; CASCADE_CHAIN          ; MANUAL     ; Untyped                                                  ;
-; CARRY_CHAIN_LENGTH     ; 48         ; CARRY_CHAIN_LENGTH                                       ;
-; CASCADE_CHAIN_LENGTH   ; 2          ; CASCADE_CHAIN_LENGTH                                     ;
-; DEVICE_FAMILY          ; Stratix II ; Untyped                                                  ;
-; CBXI_PARAMETER         ; cmpr_r8j   ; Untyped                                                  ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                               ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                             ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                             ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                           ;
-+------------------------+------------+----------------------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comp3:inst12|lpm_compare:lpm_compare_component ;
++------------------------+------------+-------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                  ;
++------------------------+------------+-------------------------------------------------------+
+; lpm_width              ; 6          ; Signed Integer                                        ;
+; LPM_REPRESENTATION     ; UNSIGNED   ; Untyped                                               ;
+; LPM_PIPELINE           ; 0          ; Untyped                                               ;
+; CHAIN_SIZE             ; 8          ; Untyped                                               ;
+; ONE_INPUT_IS_CONSTANT  ; YES        ; Untyped                                               ;
+; CARRY_CHAIN            ; MANUAL     ; Untyped                                               ;
+; CASCADE_CHAIN          ; MANUAL     ; Untyped                                               ;
+; CARRY_CHAIN_LENGTH     ; 48         ; CARRY_CHAIN_LENGTH                                    ;
+; CASCADE_CHAIN_LENGTH   ; 2          ; CASCADE_CHAIN_LENGTH                                  ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                               ;
+; CBXI_PARAMETER         ; cmpr_m8j   ; Untyped                                               ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                            ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                          ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                          ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                        ;
++------------------------+------------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comp4:inst14|lpm_compare:lpm_compare_component ;
++------------------------+------------+-------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                  ;
++------------------------+------------+-------------------------------------------------------+
+; lpm_width              ; 5          ; Signed Integer                                        ;
+; LPM_REPRESENTATION     ; UNSIGNED   ; Untyped                                               ;
+; LPM_PIPELINE           ; 0          ; Untyped                                               ;
+; CHAIN_SIZE             ; 8          ; Untyped                                               ;
+; ONE_INPUT_IS_CONSTANT  ; YES        ; Untyped                                               ;
+; CARRY_CHAIN            ; MANUAL     ; Untyped                                               ;
+; CASCADE_CHAIN          ; MANUAL     ; Untyped                                               ;
+; CARRY_CHAIN_LENGTH     ; 48         ; CARRY_CHAIN_LENGTH                                    ;
+; CASCADE_CHAIN_LENGTH   ; 2          ; CASCADE_CHAIN_LENGTH                                  ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                               ;
+; CBXI_PARAMETER         ; cmpr_1cj   ; Untyped                                               ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                            ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                          ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                          ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                        ;
++------------------------+------------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -297,7 +326,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
-    Info: Processing started: Mon Jul 20 18:40:05 2020
+    Info: Processing started: Mon Jul 20 18:44:28 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CAP -c CAP
 Info: Found 1 design units, including 1 entities, in source file PC_selector.bdf
     Info: Found entity 1: PC_selector
@@ -406,37 +435,49 @@ Info: Found 1 design units, including 1 entities, in source file comp7.v
     Info: Found entity 1: comp7
 Info: Found 1 design units, including 1 entities, in source file comp8.v
     Info: Found entity 1: comp8
-Info: Elaborating entity "WBE_decode" for the top level hierarchy
-Info: Elaborating entity "comp8" for hierarchy "comp8:inst"
-Info: Elaborating entity "lpm_compare" for hierarchy "comp8:inst|lpm_compare:lpm_compare_component"
-Info: Elaborated megafunction instantiation "comp8:inst|lpm_compare:lpm_compare_component"
-Info: Instantiated megafunction "comp8:inst|lpm_compare:lpm_compare_component" with the following parameter:
-    Info: Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=YES"
-    Info: Parameter "lpm_representation" = "UNSIGNED"
-    Info: Parameter "lpm_type" = "LPM_COMPARE"
-    Info: Parameter "lpm_width" = "6"
-Info: Found 1 design units, including 1 entities, in source file db/cmpr_k8j.tdf
-    Info: Found entity 1: cmpr_k8j
-Info: Elaborating entity "cmpr_k8j" for hierarchy "comp8:inst|lpm_compare:lpm_compare_component|cmpr_k8j:auto_generated"
-Info: Elaborating entity "comp7" for hierarchy "comp7:inst17"
-Info: Elaborating entity "compare5" for hierarchy "compare5:inst16"
-Info: Elaborating entity "lpm_compare" for hierarchy "compare5:inst16|lpm_compare:lpm_compare_component"
-Info: Elaborated megafunction instantiation "compare5:inst16|lpm_compare:lpm_compare_component"
-Info: Instantiated megafunction "compare5:inst16|lpm_compare:lpm_compare_component" with the following parameter:
+Info: Elaborating entity "ctrl_sg" for the top level hierarchy
+Info: Elaborating entity "comp" for hierarchy "comp:inst6"
+Info: Elaborating entity "lpm_compare" for hierarchy "comp:inst6|lpm_compare:lpm_compare_component"
+Info: Elaborated megafunction instantiation "comp:inst6|lpm_compare:lpm_compare_component"
+Info: Instantiated megafunction "comp:inst6|lpm_compare:lpm_compare_component" with the following parameter:
     Info: Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=YES"
     Info: Parameter "lpm_representation" = "UNSIGNED"
     Info: Parameter "lpm_type" = "LPM_COMPARE"
     Info: Parameter "lpm_width" = "6"
 Info: Found 1 design units, including 1 entities, in source file db/cmpr_r8j.tdf
     Info: Found entity 1: cmpr_r8j
-Info: Elaborating entity "cmpr_r8j" for hierarchy "compare5:inst16|lpm_compare:lpm_compare_component|cmpr_r8j:auto_generated"
-Info: Implemented 10 device resources after synthesis - the final resource count might be different
-    Info: Implemented 7 input pins
-    Info: Implemented 1 output pins
-    Info: Implemented 2 logic cells
+Info: Elaborating entity "cmpr_r8j" for hierarchy "comp:inst6|lpm_compare:lpm_compare_component|cmpr_r8j:auto_generated"
+Info: Elaborating entity "comp2" for hierarchy "comp2:inst11"
+Info: Elaborating entity "comp3" for hierarchy "comp3:inst12"
+Info: Elaborating entity "lpm_compare" for hierarchy "comp3:inst12|lpm_compare:lpm_compare_component"
+Info: Elaborated megafunction instantiation "comp3:inst12|lpm_compare:lpm_compare_component"
+Info: Instantiated megafunction "comp3:inst12|lpm_compare:lpm_compare_component" with the following parameter:
+    Info: Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=YES"
+    Info: Parameter "lpm_representation" = "UNSIGNED"
+    Info: Parameter "lpm_type" = "LPM_COMPARE"
+    Info: Parameter "lpm_width" = "6"
+Info: Found 1 design units, including 1 entities, in source file db/cmpr_m8j.tdf
+    Info: Found entity 1: cmpr_m8j
+Info: Elaborating entity "cmpr_m8j" for hierarchy "comp3:inst12|lpm_compare:lpm_compare_component|cmpr_m8j:auto_generated"
+Info: Elaborating entity "comp4" for hierarchy "comp4:inst14"
+Info: Elaborating entity "lpm_compare" for hierarchy "comp4:inst14|lpm_compare:lpm_compare_component"
+Info: Elaborated megafunction instantiation "comp4:inst14|lpm_compare:lpm_compare_component"
+Info: Instantiated megafunction "comp4:inst14|lpm_compare:lpm_compare_component" with the following parameter:
+    Info: Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=YES"
+    Info: Parameter "lpm_representation" = "UNSIGNED"
+    Info: Parameter "lpm_type" = "LPM_COMPARE"
+    Info: Parameter "lpm_width" = "5"
+Info: Found 1 design units, including 1 entities, in source file db/cmpr_1cj.tdf
+    Info: Found entity 1: cmpr_1cj
+Info: Elaborating entity "cmpr_1cj" for hierarchy "comp4:inst14|lpm_compare:lpm_compare_component|cmpr_1cj:auto_generated"
+Info: Elaborating entity "memWRsg" for hierarchy "memWRsg:inst"
+Info: Implemented 14 device resources after synthesis - the final resource count might be different
+    Info: Implemented 6 input pins
+    Info: Implemented 4 output pins
+    Info: Implemented 4 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 234 megabytes
-    Info: Processing ended: Mon Jul 20 18:40:07 2020
+    Info: Processing ended: Mon Jul 20 18:44:30 2020
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

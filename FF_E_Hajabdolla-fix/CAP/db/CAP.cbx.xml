@@ -1,8 +1,9 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="CAP">
-		<CBX_INST_ENTRY INSTANCE_NAME="|WBE_decode|comp7:inst17|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_k8j.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|WBE_decode|comp8:inst|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_k8j.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|WBE_decode|compare5:inst16|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_r8j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ctrl_sg|comp2:inst11|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_r8j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ctrl_sg|comp3:inst12|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_m8j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ctrl_sg|comp4:inst14|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_1cj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ctrl_sg|comp:inst6|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_r8j.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
