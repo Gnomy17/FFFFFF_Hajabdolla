@@ -463,7 +463,7 @@ applicable agreement for further details.
 	(pt 528 464)
 )
 (connector
-	(text "Opcode[1]" (rect 400 448 450 460)(font "Arial" ))
+	(text "Opcode[1]" (rect 376 448 426 460)(font "Arial" ))
 	(pt 432 464)
 	(pt 392 464)
 )

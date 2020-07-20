@@ -1,0 +1,4 @@
+comp	comp_inst (
+	.dataa ( dataa_sig ),
+	.alb ( alb_sig )
+	);

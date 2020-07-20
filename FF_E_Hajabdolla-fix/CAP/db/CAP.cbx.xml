@@ -1,13 +1,8 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="CAP">
-		<CBX_INST_ENTRY INSTANCE_NAME="|data_MEM|lpm_mux0:inst8|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_1oc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|data_MEM|lpm_mux1:inst9|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_unc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|data_MEM|lpm_mux2:inst19|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_cpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|data_MEM|lpm_ram_dp2:inst3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_v1p1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|data_MEM|lpm_decode0:inst7|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_p7f.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|data_MEM|lpm_ram_dp2:inst2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_v1p1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|data_MEM|lpm_ram_dp2:inst4|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_v1p1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|data_MEM|lpm_ram_dp2:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_v1p1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|WBE_decode|comp7:inst17|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_k8j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|WBE_decode|comp8:inst|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_k8j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|WBE_decode|compare5:inst16|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_r8j.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
