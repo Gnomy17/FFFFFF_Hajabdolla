@@ -20,5 +20,6 @@ FUNCTION comparator32
 )
 
 RETURNS (
+	AeB,
 	AlB
 );

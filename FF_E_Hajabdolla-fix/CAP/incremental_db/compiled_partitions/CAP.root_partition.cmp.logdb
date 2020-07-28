@@ -1,2 +1,4 @@
 v1
-REGISTER_PACKING,REG_PACK_TYPE_FINISHED,ADATA,0,aclr,aclr,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,mult32:inst3|lpm_mult:lpm_mult_component|mult_65n:auto_generated|mac_out5,
+REGISTER_PACKING,REG_PACK_TYPE_FINISHED,ADATA,0,S[31],S[31],
+PORT_SWAPPING,PORT_SWAPPING_FINISHED,mult32:inst3|lpm_mult:lpm_mult_component|mult_65n:auto_generated|mac_mult1,

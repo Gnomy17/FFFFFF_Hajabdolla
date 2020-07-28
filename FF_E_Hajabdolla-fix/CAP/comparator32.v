@@ -39,21 +39,25 @@
 module comparator32 (
 	dataa,
 	datab,
+	aeb,
 	alb);
 
 	input	[31:0]  dataa;
 	input	[31:0]  datab;
+	output	  aeb;
 	output	  alb;
 
 	wire  sub_wire0;
+	wire  sub_wire1;
 	wire  alb = sub_wire0;
+	wire  aeb = sub_wire1;
 
 	lpm_compare	lpm_compare_component (
 				.dataa (dataa),
 				.datab (datab),
 				.alb (sub_wire0),
+				.aeb (sub_wire1),
 				.aclr (1'b0),
-				.aeb (),
 				.agb (),
 				.ageb (),
 				.aleb (),
@@ -71,7 +75,7 @@ endmodule
 // ============================================================
 // CNX file retrieval info
 // ============================================================
-// Retrieval info: PRIVATE: AeqB NUMERIC "0"
+// Retrieval info: PRIVATE: AeqB NUMERIC "1"
 // Retrieval info: PRIVATE: AgeB NUMERIC "0"
 // Retrieval info: PRIVATE: AgtB NUMERIC "0"
 // Retrieval info: PRIVATE: AleB NUMERIC "0"
@@ -91,9 +95,11 @@ endmodule
 // Retrieval info: CONSTANT: LPM_REPRESENTATION STRING "SIGNED"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COMPARE"
 // Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "32"
+// Retrieval info: USED_PORT: AeB 0 0 0 0 OUTPUT NODEFVAL AeB
 // Retrieval info: USED_PORT: AlB 0 0 0 0 OUTPUT NODEFVAL AlB
 // Retrieval info: USED_PORT: dataa 0 0 32 0 INPUT NODEFVAL dataa[31..0]
 // Retrieval info: USED_PORT: datab 0 0 32 0 INPUT NODEFVAL datab[31..0]
+// Retrieval info: CONNECT: AeB 0 0 0 0 @AeB 0 0 0 0
 // Retrieval info: CONNECT: AlB 0 0 0 0 @AlB 0 0 0 0
 // Retrieval info: CONNECT: @dataa 0 0 32 0 dataa 0 0 32 0
 // Retrieval info: CONNECT: @datab 0 0 32 0 datab 0 0 32 0
