@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 168 112)
+	(rect 16 16 184 112)
 	(text "WBE_decode" (rect 5 0 81 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
@@ -33,18 +33,18 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "pin_name" (rect 0 0 54 14)(font "Arial" (font_size 8)))
-		(text "pin_name" (rect 21 43 75 57)(font "Arial" (font_size 8)))
+		(text "comp_satisfied" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "comp_satisfied" (rect 21 43 107 57)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
-		(pt 152 32)
+		(pt 168 32)
 		(output)
 		(text "WBE" (rect 0 0 27 14)(font "Arial" (font_size 8)))
-		(text "WBE" (rect 104 27 131 41)(font "Arial" (font_size 8)))
-		(line (pt 152 32)(pt 136 32)(line_width 1))
+		(text "WBE" (rect 120 27 147 41)(font "Arial" (font_size 8)))
+		(line (pt 168 32)(pt 152 32)(line_width 1))
 	)
 	(drawing
-		(rectangle (rect 16 16 136 80)(line_width 1))
+		(rectangle (rect 16 16 152 80)(line_width 1))
 	)
 )

@@ -1,5 +1,5 @@
 Flow report for CAP
-Wed Jul 29 00:53:55 2020
+Thu Jul 30 16:40:41 2020
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -38,20 +38,20 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +-------------------------------+-----------------------------------------+
-; Flow Status                   ; Successful - Wed Jul 29 00:53:55 2020   ;
+; Flow Status                   ; Successful - Thu Jul 30 16:40:41 2020   ;
 ; Quartus II Version            ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
 ; Revision Name                 ; CAP                                     ;
-; Top-level Entity Name         ; ALU                                     ;
+; Top-level Entity Name         ; RS_decode                               ;
 ; Family                        ; Stratix II                              ;
 ; Met timing requirements       ; Yes                                     ;
-; Logic utilization             ; 15 %                                    ;
-;     Combinational ALUTs       ; 1,783 / 12,480 ( 14 % )                 ;
+; Logic utilization             ; < 1 %                                   ;
+;     Combinational ALUTs       ; 16 / 12,480 ( < 1 % )                   ;
 ;     Dedicated logic registers ; 0 / 12,480 ( 0 % )                      ;
 ; Total registers               ; 0                                       ;
-; Total pins                    ; 103 / 343 ( 30 % )                      ;
+; Total pins                    ; 68 / 343 ( 20 % )                       ;
 ; Total virtual pins            ; 0                                       ;
 ; Total block memory bits       ; 0 / 419,328 ( 0 % )                     ;
-; DSP block 9-bit elements      ; 8 / 96 ( 8 % )                          ;
+; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                          ;
 ; Total PLLs                    ; 0 / 6 ( 0 % )                           ;
 ; Total DLLs                    ; 0 / 2 ( 0 % )                           ;
 ; Device                        ; EP2S15F484C3                            ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/29/2020 00:53:32 ;
+; Start date & time ; 07/30/2020 16:40:32 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CAP                 ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                                                  ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 93328258312094.159596781213968                         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 93328258312094.159611103207384                         ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; RAM: 2-PORT                                            ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_FF                                                 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_MUX                                                ; --            ; --          ; --             ;
@@ -114,6 +114,14 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                       ; LPM_COMPARE                                            ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                                             ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_BUSTRI                                             ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_BUSTRI                                             ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_BUSTRI                                             ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_COMPARE                                            ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_FF                                                 ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
@@ -322,9 +330,29 @@ applicable agreement for further details.
 ; MISC_FILE                          ; buf32_bb.v                                             ; --            ; --          ; --             ;
 ; MISC_FILE                          ; buf32.inc                                              ; --            ; --          ; --             ;
 ; MISC_FILE                          ; buf32.cmp                                              ; --            ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                                               ; --            ; ALU         ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                                                 ; --            ; ALU         ; Top            ;
-; TOP_LEVEL_ENTITY                   ; ALU                                                    ; CAP           ; --          ; --             ;
+; MISC_FILE                          ; buff14.bsf                                             ; --            ; --          ; --             ;
+; MISC_FILE                          ; buff14_inst.v                                          ; --            ; --          ; --             ;
+; MISC_FILE                          ; buff14_bb.v                                            ; --            ; --          ; --             ;
+; MISC_FILE                          ; buff14.inc                                             ; --            ; --          ; --             ;
+; MISC_FILE                          ; buff14.cmp                                             ; --            ; --          ; --             ;
+; MISC_FILE                          ; buff18.bsf                                             ; --            ; --          ; --             ;
+; MISC_FILE                          ; buff18_inst.v                                          ; --            ; --          ; --             ;
+; MISC_FILE                          ; buff18_bb.v                                            ; --            ; --          ; --             ;
+; MISC_FILE                          ; buff18.inc                                             ; --            ; --          ; --             ;
+; MISC_FILE                          ; buff18.cmp                                             ; --            ; --          ; --             ;
+; MISC_FILE                          ; Comp0.bsf                                              ; --            ; --          ; --             ;
+; MISC_FILE                          ; Comp0_inst.v                                           ; --            ; --          ; --             ;
+; MISC_FILE                          ; Comp0_bb.v                                             ; --            ; --          ; --             ;
+; MISC_FILE                          ; Comp0.inc                                              ; --            ; --          ; --             ;
+; MISC_FILE                          ; Comp0.cmp                                              ; --            ; --          ; --             ;
+; MISC_FILE                          ; ff1.bsf                                                ; --            ; --          ; --             ;
+; MISC_FILE                          ; ff1_inst.v                                             ; --            ; --          ; --             ;
+; MISC_FILE                          ; ff1_bb.v                                               ; --            ; --          ; --             ;
+; MISC_FILE                          ; ff1.inc                                                ; --            ; --          ; --             ;
+; MISC_FILE                          ; ff1.cmp                                                ; --            ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                                               ; --            ; RS_decode   ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                                                 ; --            ; RS_decode   ; Top            ;
+; TOP_LEVEL_ENTITY                   ; RS_decode                                              ; CAP           ; --          ; --             ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                                    ; --            ; --          ; eda_blast_fpga ;
 +------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
 
@@ -334,11 +362,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:11     ; 1.0                     ; 262 MB              ; 00:00:11                           ;
-; Fitter                  ; 00:00:06     ; 1.0                     ; 303 MB              ; 00:00:05                           ;
-; Assembler               ; 00:00:02     ; 1.0                     ; 256 MB              ; 00:00:02                           ;
-; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 201 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:20     ; --                      ; --                  ; 00:00:18                           ;
+; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 234 MB              ; 00:00:02                           ;
+; Fitter                  ; 00:00:02     ; 1.0                     ; 295 MB              ; 00:00:02                           ;
+; Assembler               ; 00:00:02     ; 1.0                     ; 252 MB              ; 00:00:02                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 185 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:06     ; --                      ; --                  ; 00:00:06                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
