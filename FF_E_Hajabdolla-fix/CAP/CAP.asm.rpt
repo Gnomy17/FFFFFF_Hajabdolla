@@ -1,5 +1,5 @@
 Assembler report for CAP
-Wed Jul 29 00:53:53 2020
+Thu Jul 30 13:20:51 2020
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/CAP.sof
-  6. Assembler Device Options: C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/CAP.pof
+  5. Assembler Device Options: D:/Semester 4/ComputerArchitecture/Project/NEWWW/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/CAP.sof
+  6. Assembler Device Options: D:/Semester 4/ComputerArchitecture/Project/NEWWW/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/CAP.pof
   7. Assembler Messages
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Jul 29 00:53:53 2020 ;
+; Assembler Status      ; Successful - Thu Jul 30 13:20:51 2020 ;
 ; Revision Name         ; CAP                                   ;
-; Top-level Entity Name ; ALU                                   ;
+; Top-level Entity Name ; FALU                                  ;
 ; Family                ; Stratix II                            ;
 ; Device                ; EP2S15F484C3                          ;
 +-----------------------+---------------------------------------+
@@ -77,37 +77,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+-------------------------------------------------------------------------------+
-; Assembler Generated Files                                                     ;
-+-------------------------------------------------------------------------------+
-; File Name                                                                     ;
-+-------------------------------------------------------------------------------+
-; C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/CAP.sof ;
-; C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/CAP.pof ;
-+-------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                          ;
++----------------------------------------------------------------------------------------------------+
+; File Name                                                                                          ;
++----------------------------------------------------------------------------------------------------+
+; D:/Semester 4/ComputerArchitecture/Project/NEWWW/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/CAP.sof ;
+; D:/Semester 4/ComputerArchitecture/Project/NEWWW/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/CAP.pof ;
++----------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/CAP.sof ;
-+----------------+----------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                ;
-+----------------+----------------------------------------------------------------------------------------+
-; Device         ; EP2S15F484C3                                                                           ;
-; JTAG usercode  ; 0xFFFFFFFF                                                                             ;
-; Checksum       ; 0x0045EEFB                                                                             ;
-+----------------+----------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: D:/Semester 4/ComputerArchitecture/Project/NEWWW/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/CAP.sof ;
++----------------+-------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                     ;
++----------------+-------------------------------------------------------------------------------------------------------------+
+; Device         ; EP2S15F484C3                                                                                                ;
+; JTAG usercode  ; 0xFFFFFFFF                                                                                                  ;
+; Checksum       ; 0x004412CA                                                                                                  ;
++----------------+-------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/CAP.pof ;
-+--------------------+------------------------------------------------------------------------------------+
-; Option             ; Setting                                                                            ;
-+--------------------+------------------------------------------------------------------------------------+
-; Device             ; EPC16                                                                              ;
-; JTAG usercode      ; 0xFFFFFFFF                                                                         ;
-; Checksum           ; 0x1E90A133                                                                         ;
-; Compression Ratio  ; 2                                                                                  ;
-+--------------------+------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: D:/Semester 4/ComputerArchitecture/Project/NEWWW/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/CAP.pof ;
++--------------------+---------------------------------------------------------------------------------------------------------+
+; Option             ; Setting                                                                                                 ;
++--------------------+---------------------------------------------------------------------------------------------------------+
+; Device             ; EPC16                                                                                                   ;
+; JTAG usercode      ; 0xFFFFFFFF                                                                                              ;
+; Checksum           ; 0x1E91D5A4                                                                                              ;
+; Compression Ratio  ; 2                                                                                                       ;
++--------------------+---------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -116,14 +116,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
-    Info: Processing started: Wed Jul 29 00:53:51 2020
+    Info: Processing started: Thu Jul 30 13:20:47 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off CAP -c CAP
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 256 megabytes
-    Info: Processing ended: Wed Jul 29 00:53:53 2020
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 295 megabytes
+    Info: Processing ended: Thu Jul 30 13:20:51 2020
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
 
 

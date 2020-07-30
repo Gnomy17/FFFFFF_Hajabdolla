@@ -2,14 +2,54 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 12.252 ns
+From           : A[11]
+To             : FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|datab_man_dffe1[3]
+From Clock     : --
+To Clock       : clock
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.742 ns
+From           : FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|man_out_dffe5[22]
+To             : output[22]
+From Clock     : clock
+To Clock       : --
+Failed Paths   : 0
+
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 133.856 ns
-From           : B[12]
-To             : S[14]
+Actual Time    : 9.375 ns
+From           : opcode[0]
+To             : output[5]
 From Clock     : --
 To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -2.379 ns
+From           : B[18]
+To             : FDIV:inst3|FDIV_altfp_div_f1l:FDIV_altfp_div_f1l_component|FDIV_altfp_div_pst_k3g:altfp_div_pst1|man_b_dffe1_dffe1[18]
+From Clock     : --
+To Clock       : clock
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clock'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 121.79 MHz ( period = 8.211 ns )
+From           : FDIV:inst3|FDIV_altfp_div_f1l:FDIV_altfp_div_f1l_component|FDIV_altfp_div_pst_k3g:altfp_div_pst1|lpm_mult:remainder_mult_0|mult_n9s:auto_generated|mac_mult4~OBSERVABLEDATAA_REGOUT3
+To             : FDIV:inst3|FDIV_altfp_div_f1l:FDIV_altfp_div_f1l_component|FDIV_altfp_div_pst_k3g:altfp_div_pst1|lpm_mult:q_partial_1|mult_p9s:auto_generated|mac_mult2~OBSERVABLEDATAA_REGOUT16
+From Clock     : clock
+To Clock       : clock
 Failed Paths   : 0
 
 Type           : Total number of failed paths

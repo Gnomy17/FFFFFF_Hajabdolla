@@ -37,7 +37,6 @@ module FDIV (
 	clock,
 	dataa,
 	datab,
-	division_by_zero,
 	nan,
 	overflow,
 	result,
@@ -49,7 +48,6 @@ module FDIV (
 	input	  clock;
 	input	[31:0]  dataa;
 	input	[31:0]  datab;
-	output	  division_by_zero;
 	output	  nan;
 	output	  overflow;
 	output	[31:0]  result;
@@ -76,7 +74,6 @@ endmodule
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL "clock"
 // Retrieval info: USED_PORT: dataa 0 0 32 0 INPUT NODEFVAL "dataa[31..0]"
 // Retrieval info: USED_PORT: datab 0 0 32 0 INPUT NODEFVAL "datab[31..0]"
-// Retrieval info: USED_PORT: division_by_zero 0 0 0 0 OUTPUT NODEFVAL "division_by_zero"
 // Retrieval info: USED_PORT: nan 0 0 0 0 OUTPUT NODEFVAL "nan"
 // Retrieval info: USED_PORT: overflow 0 0 0 0 OUTPUT NODEFVAL "overflow"
 // Retrieval info: USED_PORT: result 0 0 32 0 OUTPUT NODEFVAL "result[31..0]"
@@ -91,7 +88,6 @@ endmodule
 // Retrieval info: CONNECT: result 0 0 32 0 @result 0 0 32 0
 // Retrieval info: CONNECT: overflow 0 0 0 0 @overflow 0 0 0 0
 // Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
-// Retrieval info: CONNECT: division_by_zero 0 0 0 0 @division_by_zero 0 0 0 0
 // Retrieval info: CONNECT: @datab 0 0 32 0 datab 0 0 32 0
 // Retrieval info: GEN_FILE: TYPE_NORMAL FDIV.v TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL FDIV.inc FALSE
