@@ -1,5 +1,5 @@
 Flow report for CAP
-Thu Jul 30 13:20:53 2020
+Thu Jul 30 16:37:15 2020
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -38,19 +38,19 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +-------------------------------+-----------------------------------------+
-; Flow Status                   ; Successful - Thu Jul 30 13:20:53 2020   ;
+; Flow Status                   ; Successful - Thu Jul 30 16:37:15 2020   ;
 ; Quartus II Version            ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
 ; Revision Name                 ; CAP                                     ;
 ; Top-level Entity Name         ; FALU                                    ;
 ; Family                        ; Stratix II                              ;
 ; Met timing requirements       ; Yes                                     ;
-; Logic utilization             ; 13 %                                    ;
-;     Combinational ALUTs       ; 1,236 / 12,480 ( 10 % )                 ;
-;     Dedicated logic registers ; 1,150 / 12,480 ( 9 % )                  ;
-; Total registers               ; 1150                                    ;
-; Total pins                    ; 111 / 343 ( 32 % )                      ;
+; Logic utilization             ; 16 %                                    ;
+;     Combinational ALUTs       ; 1,628 / 12,480 ( 13 % )                 ;
+;     Dedicated logic registers ; 1,354 / 12,480 ( 11 % )                 ;
+; Total registers               ; 1354                                    ;
+; Total pins                    ; 112 / 343 ( 33 % )                      ;
 ; Total virtual pins            ; 0                                       ;
-; Total block memory bits       ; 5,012 / 419,328 ( 1 % )                 ;
+; Total block memory bits       ; 5,125 / 419,328 ( 1 % )                 ;
 ; DSP block 9-bit elements      ; 68 / 96 ( 71 % )                        ;
 ; Total PLLs                    ; 0 / 6 ( 0 % )                           ;
 ; Total DLLs                    ; 0 / 2 ( 0 % )                           ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/30/2020 13:20:23 ;
+; Start date & time ; 07/30/2020 16:36:32 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CAP                 ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                                                  ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 26601938974391.159609902316724                         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 26601938974391.159611079101588                         ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; RAM: 2-PORT                                            ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_FF                                                 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_MUX                                                ; --            ; --          ; --             ;
@@ -121,6 +121,16 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                       ; ALTFP_INV                                              ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; ALTFP_COMPARE                                          ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_MUX                                                ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; ALTFP_CONVERT                                          ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_CONSTANT                                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                                                ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_DECODE                                             ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_COMPARE                                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
@@ -350,6 +360,16 @@ applicable agreement for further details.
 ; MISC_FILE                          ; FCMP_bb.v                                              ; --            ; --          ; --             ;
 ; MISC_FILE                          ; MUX6_1bit.bsf                                          ; --            ; --          ; --             ;
 ; MISC_FILE                          ; MUX6_1bit_bb.v                                         ; --            ; --          ; --             ;
+; MISC_FILE                          ; FRND.bsf                                               ; --            ; --          ; --             ;
+; MISC_FILE                          ; FRND_bb.v                                              ; --            ; --          ; --             ;
+; MISC_FILE                          ; const_zero_one_bit.bsf                                 ; --            ; --          ; --             ;
+; MISC_FILE                          ; const_zero_one_bit_bb.v                                ; --            ; --          ; --             ;
+; MISC_FILE                          ; mux2x1x1.bsf                                           ; --            ; --          ; --             ;
+; MISC_FILE                          ; mux2x1x1_bb.v                                          ; --            ; --          ; --             ;
+; MISC_FILE                          ; decoder1x2x1.bsf                                       ; --            ; --          ; --             ;
+; MISC_FILE                          ; decoder1x2x1_bb.v                                      ; --            ; --          ; --             ;
+; MISC_FILE                          ; is_zero.bsf                                            ; --            ; --          ; --             ;
+; MISC_FILE                          ; is_zero_bb.v                                           ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                                               ; --            ; FALU        ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                                                 ; --            ; FALU        ; Top            ;
 ; TOP_LEVEL_ENTITY                   ; FALU                                                   ; CAP           ; --          ; --             ;
@@ -362,11 +382,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:11     ; 1.0                     ; 296 MB              ; 00:00:11                           ;
-; Fitter                  ; 00:00:11     ; 1.0                     ; 347 MB              ; 00:00:11                           ;
-; Assembler               ; 00:00:04     ; 1.0                     ; 295 MB              ; 00:00:03                           ;
-; Classic Timing Analyzer ; 00:00:02     ; 1.0                     ; 243 MB              ; 00:00:02                           ;
-; Total                   ; 00:00:28     ; --                      ; --                  ; 00:00:27                           ;
+; Analysis & Synthesis    ; 00:00:19     ; 1.0                     ; 301 MB              ; 00:00:18                           ;
+; Fitter                  ; 00:00:14     ; 1.0                     ; 349 MB              ; 00:00:14                           ;
+; Assembler               ; 00:00:04     ; 1.0                     ; 292 MB              ; 00:00:04                           ;
+; Classic Timing Analyzer ; 00:00:02     ; 1.0                     ; 246 MB              ; 00:00:03                           ;
+; Total                   ; 00:00:39     ; --                      ; --                  ; 00:00:39                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

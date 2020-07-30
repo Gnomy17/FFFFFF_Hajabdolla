@@ -1,15 +1,15 @@
-Analysis & Synthesis Status : Successful - Thu Jul 30 13:20:33 2020
+Analysis & Synthesis Status : Successful - Thu Jul 30 16:36:50 2020
 Quartus II Version : 9.0 Build 132 02/25/2009 SJ Web Edition
 Revision Name : CAP
 Top-level Entity Name : FALU
 Family : Stratix II
 Logic utilization : N/A
-    Combinational ALUTs : 1,236
-    Dedicated logic registers : 1,150
-Total registers : 1150
-Total pins : 111
+    Combinational ALUTs : 1,628
+    Dedicated logic registers : 1,354
+Total registers : 1354
+Total pins : 112
 Total virtual pins : 0
-Total block memory bits : 5,012
+Total block memory bits : 5,125
 DSP block 9-bit elements : 68
 Total PLLs : 0
 Total DLLs : 0

@@ -38,6 +38,7 @@ module MUX6_1bit (
 	data3,
 	data4,
 	data5,
+	data6,
 	sel,
 	result);
 
@@ -47,6 +48,7 @@ module MUX6_1bit (
 	input	  data3;
 	input	  data4;
 	input	  data5;
+	input	  data6;
 	input	[2:0]  sel;
 	output	  result;
 
@@ -57,7 +59,7 @@ endmodule
 // ============================================================
 // Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 // Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
-// Retrieval info: CONSTANT: LPM_SIZE NUMERIC "6"
+// Retrieval info: CONSTANT: LPM_SIZE NUMERIC "7"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_MUX"
 // Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "1"
 // Retrieval info: CONSTANT: LPM_WIDTHS NUMERIC "3"
@@ -67,9 +69,11 @@ endmodule
 // Retrieval info: USED_PORT: data3 0 0 0 0 INPUT NODEFVAL data3
 // Retrieval info: USED_PORT: data4 0 0 0 0 INPUT NODEFVAL data4
 // Retrieval info: USED_PORT: data5 0 0 0 0 INPUT NODEFVAL data5
+// Retrieval info: USED_PORT: data6 0 0 0 0 INPUT NODEFVAL data6
 // Retrieval info: USED_PORT: result 0 0 0 0 OUTPUT NODEFVAL result
 // Retrieval info: USED_PORT: sel 0 0 3 0 INPUT NODEFVAL sel[2..0]
 // Retrieval info: CONNECT: result 0 0 0 0 @result 0 0 1 0
+// Retrieval info: CONNECT: @data 0 0 1 6 data6 0 0 0 0
 // Retrieval info: CONNECT: @data 0 0 1 5 data5 0 0 0 0
 // Retrieval info: CONNECT: @data 0 0 1 4 data4 0 0 0 0
 // Retrieval info: CONNECT: @data 0 0 1 3 data3 0 0 0 0

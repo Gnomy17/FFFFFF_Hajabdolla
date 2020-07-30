@@ -1,36 +1,29 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="CAP">
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FDIV:inst3|FDIV_altfp_div_f1l:FDIV_altfp_div_f1l_component|FDIV_altfp_div_pst_k3g:altfp_div_pst1|lpm_mult:q_partial_1" CBX_FILE_NAME="mult_p9s.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|lpm_mult:inner_mult1" CBX_FILE_NAME="mult_6ds.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|lpm_add_sub:add_sub4" CBX_FILE_NAME="add_sub_pre.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|lpm_compare:trailing_zeros_limit_comparator" CBX_FILE_NAME="cmpr_cbg.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FMULT:inst5|FMULT_altfp_mult_m7n:FMULT_altfp_mult_m7n_component|lpm_add_sub:exp_add_adder" CBX_FILE_NAME="add_sub_hkd.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|lpm_add_sub:add_sub5" CBX_FILE_NAME="add_sub_0ph.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FRND:inst1|FRND_altfp_convert_q7q:FRND_altfp_convert_q7q_component|lpm_add_sub:add_sub4" CBX_FILE_NAME="add_sub_ate.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|lpm_add_sub:man_res_rounding_add_sub_upper1" CBX_FILE_NAME="add_sub_8kf.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FDIV:inst3|FDIV_altfp_div_f1l:FDIV_altfp_div_f1l_component|FDIV_altfp_div_pst_k3g:altfp_div_pst1|lpm_add_sub:remainder_sub_0" CBX_FILE_NAME="add_sub_95f.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|lpm_mult:outer_mult0" CBX_FILE_NAME="mult_2ds.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|lpm_add_sub:add_sub6" CBX_FILE_NAME="add_sub_pre.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|lpm_add_sub:man_add_sub_upper0" CBX_FILE_NAME="add_sub_53h.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FRND:inst1|FRND_altfp_convert_q7q:FRND_altfp_convert_q7q_component|lpm_add_sub:add_sub5" CBX_FILE_NAME="add_sub_7se.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|lpm_mult:outer_mult1" CBX_FILE_NAME="mult_vcs.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FRND:inst1|FRND_altfp_convert_q7q:FRND_altfp_convert_q7q_component|lpm_compare:cmpr1" CBX_FILE_NAME="cmpr_psg.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|lpm_add_sub:man_add_sub_upper1" CBX_FILE_NAME="add_sub_53h.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|MUX6_1bit:inst10|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_tnc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FRND:inst1|FRND_altfp_convert_q7q:FRND_altfp_convert_q7q_component|lpm_compare:cmpr2" CBX_FILE_NAME="cmpr_fig.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|MUX6_1bit:inst10|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_vnc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|lpm_add_sub:approx_sub" CBX_FILE_NAME="add_sub_21i.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|lpm_mux:mux1" CBX_FILE_NAME="mux_bof.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|MUX6_1bit:inst11|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_tnc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FCMP:inst8|FCMP_altfp_compare_ghc:FCMP_altfp_compare_ghc_component|lpm_compare:cmpr4" CBX_FILE_NAME="cmpr_vpj.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FDIV:inst3|FDIV_altfp_div_f1l:FDIV_altfp_div_f1l_component|FDIV_altfp_div_pst_k3g:altfp_div_pst1|lpm_mult:q_partial_0" CBX_FILE_NAME="mult_p9s.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|lpm_add_sub:bias_adjustment" CBX_FILE_NAME="add_sub_bnk.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|lpm_compare:cmpr6" CBX_FILE_NAME="cmpr_uij.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|lpm_mult:inner_mult0" CBX_FILE_NAME="mult_0ds.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FRND:inst1|FRND_altfp_convert_q7q:FRND_altfp_convert_q7q_component|lpm_add_sub:add_sub8" CBX_FILE_NAME="add_sub_gcf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FRND:inst1|FRND_altfp_convert_q7q:FRND_altfp_convert_q7q_component|lpm_compare:cmpr3" CBX_FILE_NAME="cmpr_mig.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|MUX6_1bit:inst11|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_vnc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FRND:inst1|FRND_altfp_convert_q7q:FRND_altfp_convert_q7q_component|lpm_add_sub:add_sub9" CBX_FILE_NAME="add_sub_icf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|MUX6_1bit:inst12|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_vnc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FMULT:inst5|FMULT_altfp_mult_m7n:FMULT_altfp_mult_m7n_component|lpm_add_sub:exp_adj_adder" CBX_FILE_NAME="add_sub_ioa.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FMULT:inst5|FMULT_altfp_mult_m7n:FMULT_altfp_mult_m7n_component|lpm_add_sub:exp_bias_subtr" CBX_FILE_NAME="add_sub_ghg.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FMULT:inst5|FMULT_altfp_mult_m7n:FMULT_altfp_mult_m7n_component|lpm_add_sub:man_round_adder" CBX_FILE_NAME="add_sub_9qb.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|lpm_add_sub:add_sub3" CBX_FILE_NAME="add_sub_nse.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|lpm_add_sub:man_2comp_res_lower" CBX_FILE_NAME="add_sub_0ih.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|lpm_add_sub:man_add_sub_lower" CBX_FILE_NAME="add_sub_0ih.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|decoder1x2x1:inst14|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_trf.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FDIV:inst3|FDIV_altfp_div_f1l:FDIV_altfp_div_f1l_component|FDIV_altfp_div_pst_k3g:altfp_div_pst1|altsyncram:altsyncram3" CBX_FILE_NAME="altsyncram_dmo.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|MUX6:inst4|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_hpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FRND:inst1|FRND_altfp_convert_q7q:FRND_altfp_convert_q7q_component|lpm_compare:cmpr6" CBX_FILE_NAME="cmpr_gig.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|MUX6:inst4|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_ipc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FDIV:inst3|FDIV_altfp_div_f1l:FDIV_altfp_div_f1l_component|FDIV_altfp_div_pst_k3g:altfp_div_pst1|lpm_add_sub:exp_sub" CBX_FILE_NAME="add_sub_1qh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FDIV:inst3|FDIV_altfp_div_f1l:FDIV_altfp_div_f1l_component|FDIV_altfp_div_pst_k3g:altfp_div_pst1|lpm_mult:a1_prod" CBX_FILE_NAME="mult_i9s.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|FINV_altfp_inv_csa_2bi:slope_r1c1_add|lpm_add_sub:add_sub7" CBX_FILE_NAME="add_sub_e1i.tdf"/>
@@ -45,11 +38,12 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|FINV_altfp_inv_csa_2bi:slope_r1c3_add|lpm_add_sub:add_sub7" CBX_FILE_NAME="add_sub_e1i.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|lpm_add_sub:modified_add" CBX_FILE_NAME="add_sub_f2i.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|lpm_add_sub:man_2comp_res_upper1" CBX_FILE_NAME="add_sub_53h.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|const_zero_one_bit:inst2|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_3e6.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FCMP:inst8|FCMP_altfp_compare_ghc:FCMP_altfp_compare_ghc_component|lpm_compare:cmpr1" CBX_FILE_NAME="cmpr_0qj.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FDIV:inst3|FDIV_altfp_div_f1l:FDIV_altfp_div_f1l_component|FDIV_altfp_div_pst_k3g:altfp_div_pst1|lpm_compare:cmpr2" CBX_FILE_NAME="cmpr_3kg.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|FINV_altfp_inv_csa_rfi:diff_adder_0|lpm_add_sub:csa_upper0" CBX_FILE_NAME="add_sub_9di.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FMULT:inst5|FMULT_altfp_mult_m7n:FMULT_altfp_mult_m7n_component|lpm_mult:man_product2_mult" CBX_FILE_NAME="mult_4gt.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|MUX6_1bit:inst9|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_tnc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|MUX6_1bit:inst9|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_vnc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FCMP:inst8|FCMP_altfp_compare_ghc:FCMP_altfp_compare_ghc_component|lpm_compare:cmpr2" CBX_FILE_NAME="cmpr_0qj.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FDIV:inst3|FDIV_altfp_div_f1l:FDIV_altfp_div_f1l_component|FDIV_altfp_div_pst_k3g:altfp_div_pst1|lpm_add_sub:bias_addition" CBX_FILE_NAME="add_sub_kli.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|FINV_altfp_inv_csa_rfi:diff_adder_0|lpm_add_sub:csa_upper1" CBX_FILE_NAME="add_sub_9di.tdf"/>
@@ -60,6 +54,25 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|FINV_altfp_inv_csa_3ci:slope_r2c2_add|lpm_add_sub:add_sub8" CBX_FILE_NAME="add_sub_f2i.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|FINV_altfp_inv_csa_3ci:slope_r3c1_add|lpm_add_sub:add_sub8" CBX_FILE_NAME="add_sub_f2i.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|FINV_altfp_inv_csa_rfi:diff_adder_1|lpm_add_sub:csa_upper1" CBX_FILE_NAME="add_sub_9di.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FRND:inst1|FRND_altfp_convert_q7q:FRND_altfp_convert_q7q_component|lpm_add_sub:add_sub10" CBX_FILE_NAME="add_sub_ote.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|lpm_add_sub:add_sub2" CBX_FILE_NAME="add_sub_qse.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FCMP:inst8|FCMP_altfp_compare_ghc:FCMP_altfp_compare_ghc_component|lpm_compare:cmpr4" CBX_FILE_NAME="cmpr_vpj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FDIV:inst3|FDIV_altfp_div_f1l:FDIV_altfp_div_f1l_component|FDIV_altfp_div_pst_k3g:altfp_div_pst1|lpm_mult:q_partial_0" CBX_FILE_NAME="mult_p9s.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|lpm_add_sub:bias_adjustment" CBX_FILE_NAME="add_sub_bnk.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|lpm_compare:cmpr6" CBX_FILE_NAME="cmpr_uij.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|lpm_mult:inner_mult0" CBX_FILE_NAME="mult_0ds.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FMULT:inst5|FMULT_altfp_mult_m7n:FMULT_altfp_mult_m7n_component|lpm_add_sub:man_round_adder" CBX_FILE_NAME="add_sub_9qb.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|lpm_add_sub:add_sub3" CBX_FILE_NAME="add_sub_nse.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|lpm_add_sub:man_add_sub_lower" CBX_FILE_NAME="add_sub_0ih.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FDIV:inst3|FDIV_altfp_div_f1l:FDIV_altfp_div_f1l_component|FDIV_altfp_div_pst_k3g:altfp_div_pst1|lpm_mult:q_partial_1" CBX_FILE_NAME="mult_p9s.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|lpm_mult:inner_mult1" CBX_FILE_NAME="mult_6ds.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|lpm_add_sub:add_sub4" CBX_FILE_NAME="add_sub_pre.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|lpm_compare:trailing_zeros_limit_comparator" CBX_FILE_NAME="cmpr_cbg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FMULT:inst5|FMULT_altfp_mult_m7n:FMULT_altfp_mult_m7n_component|lpm_add_sub:exp_add_adder" CBX_FILE_NAME="add_sub_hkd.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|lpm_add_sub:add_sub5" CBX_FILE_NAME="add_sub_0ph.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|is_zero:inst17|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_7pi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FINV:inst7|FINV_altfp_inv_s5h:FINV_altfp_inv_s5h_component|lpm_mult:outer_mult0" CBX_FILE_NAME="mult_2ds.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|lpm_add_sub:add_sub6" CBX_FILE_NAME="add_sub_pre.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FALU|FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|lpm_add_sub:man_add_sub_upper0" CBX_FILE_NAME="add_sub_53h.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

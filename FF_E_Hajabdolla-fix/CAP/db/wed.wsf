@@ -12114,7 +12114,7 @@ VECTOR("D:/Semester 4/ComputerArchitecture/Project/NEWWW/FFFFFF_Hajabdolla/FF_E_
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "NaN";
+		SIGNAL = "overflow";
 		INDEX = 108;
 		FORMAT = E;
 		SCALE = 1;
@@ -12122,7 +12122,7 @@ VECTOR("D:/Semester 4/ComputerArchitecture/Project/NEWWW/FFFFFF_Hajabdolla/FF_E_
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "overflow";
+		SIGNAL = "underflow";
 		INDEX = 109;
 		FORMAT = E;
 		SCALE = 1;
@@ -12130,7 +12130,7 @@ VECTOR("D:/Semester 4/ComputerArchitecture/Project/NEWWW/FFFFFF_Hajabdolla/FF_E_
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "underflow";
+		SIGNAL = "QNaN";
 		INDEX = 110;
 		FORMAT = E;
 		SCALE = 1;
@@ -12138,7 +12138,7 @@ VECTOR("D:/Semester 4/ComputerArchitecture/Project/NEWWW/FFFFFF_Hajabdolla/FF_E_
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "QNaN";
+		SIGNAL = "SNaN";
 		INDEX = 111;
 		FORMAT = E;
 		SCALE = 1;
@@ -12146,7 +12146,7 @@ VECTOR("D:/Semester 4/ComputerArchitecture/Project/NEWWW/FFFFFF_Hajabdolla/FF_E_
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SNaN";
+		SIGNAL = "div_by_zero";
 		INDEX = 112;
 		FORMAT = E;
 		SCALE = 1;
@@ -12154,7 +12154,7 @@ VECTOR("D:/Semester 4/ComputerArchitecture/Project/NEWWW/FFFFFF_Hajabdolla/FF_E_
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "div_by_zero";
+		SIGNAL = "inexact";
 		INDEX = 113;
 		FORMAT = E;
 		SCALE = 1;
@@ -12162,8 +12162,16 @@ VECTOR("D:/Semester 4/ComputerArchitecture/Project/NEWWW/FFFFFF_Hajabdolla/FF_E_
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "inexact";
+		SIGNAL = "FLT";
 		INDEX = 114;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "FEQ";
+		INDEX = 115;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

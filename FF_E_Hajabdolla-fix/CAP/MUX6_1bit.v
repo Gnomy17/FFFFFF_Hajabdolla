@@ -43,6 +43,7 @@ module MUX6_1bit (
 	data3,
 	data4,
 	data5,
+	data6,
 	sel,
 	result);
 
@@ -52,19 +53,21 @@ module MUX6_1bit (
 	input	  data3;
 	input	  data4;
 	input	  data5;
+	input	  data6;
 	input	[2:0]  sel;
 	output	  result;
 
 	wire [0:0] sub_wire0;
-	wire  sub_wire8 = data5;
+	wire  sub_wire9 = data6;
+	wire  sub_wire8 = data4;
 	wire  sub_wire7 = data3;
 	wire  sub_wire6 = data2;
 	wire  sub_wire5 = data1;
 	wire  sub_wire4 = data0;
 	wire [0:0] sub_wire1 = sub_wire0[0:0];
 	wire  result = sub_wire1;
-	wire  sub_wire2 = data4;
-	wire [5:0] sub_wire3 = {sub_wire8, sub_wire2, sub_wire7, sub_wire6, sub_wire5, sub_wire4};
+	wire  sub_wire2 = data5;
+	wire [6:0] sub_wire3 = {sub_wire9, sub_wire2, sub_wire8, sub_wire7, sub_wire6, sub_wire5, sub_wire4};
 
 	lpm_mux	lpm_mux_component (
 				.sel (sel),
@@ -78,7 +81,7 @@ module MUX6_1bit (
 				// synopsys translate_on
 				);
 	defparam
-		lpm_mux_component.lpm_size = 6,
+		lpm_mux_component.lpm_size = 7,
 		lpm_mux_component.lpm_type = "LPM_MUX",
 		lpm_mux_component.lpm_width = 1,
 		lpm_mux_component.lpm_widths = 3;
@@ -91,7 +94,7 @@ endmodule
 // ============================================================
 // Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 // Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
-// Retrieval info: CONSTANT: LPM_SIZE NUMERIC "6"
+// Retrieval info: CONSTANT: LPM_SIZE NUMERIC "7"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_MUX"
 // Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "1"
 // Retrieval info: CONSTANT: LPM_WIDTHS NUMERIC "3"
@@ -101,9 +104,11 @@ endmodule
 // Retrieval info: USED_PORT: data3 0 0 0 0 INPUT NODEFVAL data3
 // Retrieval info: USED_PORT: data4 0 0 0 0 INPUT NODEFVAL data4
 // Retrieval info: USED_PORT: data5 0 0 0 0 INPUT NODEFVAL data5
+// Retrieval info: USED_PORT: data6 0 0 0 0 INPUT NODEFVAL data6
 // Retrieval info: USED_PORT: result 0 0 0 0 OUTPUT NODEFVAL result
 // Retrieval info: USED_PORT: sel 0 0 3 0 INPUT NODEFVAL sel[2..0]
 // Retrieval info: CONNECT: result 0 0 0 0 @result 0 0 1 0
+// Retrieval info: CONNECT: @data 0 0 1 6 data6 0 0 0 0
 // Retrieval info: CONNECT: @data 0 0 1 5 data5 0 0 0 0
 // Retrieval info: CONNECT: @data 0 0 1 4 data4 0 0 0 0
 // Retrieval info: CONNECT: @data 0 0 1 3 data3 0 0 0 0
