@@ -1,0 +1,16 @@
+ldi $t0,0
+lui $t0,0
+ldi $t1,1
+lui $t1,0
+ldi $t2,10
+lui $t2,0
+ldi $t3,0
+ldi $t3,0
+L1: subi $t2,$t2,1
+beq $t2,$t3,L2
+add $t4,$t0,$t1
+addi $t0,$t1,0
+addi $t1,$t4,0
+jmp L1
+L2: sw $t1,0($t3)
+hlt
