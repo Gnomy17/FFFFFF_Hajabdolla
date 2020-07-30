@@ -1,5 +1,5 @@
 Flow report for CAP
-Thu Jul 30 16:40:41 2020
+Thu Jul 30 16:37:15 2020
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -38,20 +38,20 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +-------------------------------+-----------------------------------------+
-; Flow Status                   ; Successful - Thu Jul 30 16:40:41 2020   ;
+; Flow Status                   ; Successful - Thu Jul 30 16:37:15 2020   ;
 ; Quartus II Version            ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
 ; Revision Name                 ; CAP                                     ;
-; Top-level Entity Name         ; RS_decode                               ;
+; Top-level Entity Name         ; FALU                                    ;
 ; Family                        ; Stratix II                              ;
 ; Met timing requirements       ; Yes                                     ;
-; Logic utilization             ; < 1 %                                   ;
-;     Combinational ALUTs       ; 16 / 12,480 ( < 1 % )                   ;
-;     Dedicated logic registers ; 0 / 12,480 ( 0 % )                      ;
-; Total registers               ; 0                                       ;
-; Total pins                    ; 68 / 343 ( 20 % )                       ;
+; Logic utilization             ; 16 %                                    ;
+;     Combinational ALUTs       ; 1,628 / 12,480 ( 13 % )                 ;
+;     Dedicated logic registers ; 1,354 / 12,480 ( 11 % )                 ;
+; Total registers               ; 1354                                    ;
+; Total pins                    ; 112 / 343 ( 33 % )                      ;
 ; Total virtual pins            ; 0                                       ;
-; Total block memory bits       ; 0 / 419,328 ( 0 % )                     ;
-; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                          ;
+; Total block memory bits       ; 5,125 / 419,328 ( 1 % )                 ;
+; DSP block 9-bit elements      ; 68 / 96 ( 71 % )                        ;
 ; Total PLLs                    ; 0 / 6 ( 0 % )                           ;
 ; Total DLLs                    ; 0 / 2 ( 0 % )                           ;
 ; Device                        ; EP2S15F484C3                            ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/30/2020 16:40:32 ;
+; Start date & time ; 07/30/2020 16:36:32 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CAP                 ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                                                  ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 93328258312094.159611103207384                         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 26601938974391.159611079101588                         ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; RAM: 2-PORT                                            ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_FF                                                 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_MUX                                                ; --            ; --          ; --             ;
@@ -114,10 +114,26 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                       ; LPM_COMPARE                                            ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                                             ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_BUSTRI                                             ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_BUSTRI                                             ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_BUSTRI                                             ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; ALTFP_ADD_SUB                                          ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                                                ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; ALTFP_MULT                                             ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; ALTFP_DIV                                              ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; ALTFP_INV                                              ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; ALTFP_COMPARE                                          ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                                                ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; ALTFP_CONVERT                                          ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_CONSTANT                                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                                                ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_DECODE                                             ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_COMPARE                                            ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_FF                                                 ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
@@ -330,29 +346,33 @@ applicable agreement for further details.
 ; MISC_FILE                          ; buf32_bb.v                                             ; --            ; --          ; --             ;
 ; MISC_FILE                          ; buf32.inc                                              ; --            ; --          ; --             ;
 ; MISC_FILE                          ; buf32.cmp                                              ; --            ; --          ; --             ;
-; MISC_FILE                          ; buff14.bsf                                             ; --            ; --          ; --             ;
-; MISC_FILE                          ; buff14_inst.v                                          ; --            ; --          ; --             ;
-; MISC_FILE                          ; buff14_bb.v                                            ; --            ; --          ; --             ;
-; MISC_FILE                          ; buff14.inc                                             ; --            ; --          ; --             ;
-; MISC_FILE                          ; buff14.cmp                                             ; --            ; --          ; --             ;
-; MISC_FILE                          ; buff18.bsf                                             ; --            ; --          ; --             ;
-; MISC_FILE                          ; buff18_inst.v                                          ; --            ; --          ; --             ;
-; MISC_FILE                          ; buff18_bb.v                                            ; --            ; --          ; --             ;
-; MISC_FILE                          ; buff18.inc                                             ; --            ; --          ; --             ;
-; MISC_FILE                          ; buff18.cmp                                             ; --            ; --          ; --             ;
-; MISC_FILE                          ; Comp0.bsf                                              ; --            ; --          ; --             ;
-; MISC_FILE                          ; Comp0_inst.v                                           ; --            ; --          ; --             ;
-; MISC_FILE                          ; Comp0_bb.v                                             ; --            ; --          ; --             ;
-; MISC_FILE                          ; Comp0.inc                                              ; --            ; --          ; --             ;
-; MISC_FILE                          ; Comp0.cmp                                              ; --            ; --          ; --             ;
-; MISC_FILE                          ; ff1.bsf                                                ; --            ; --          ; --             ;
-; MISC_FILE                          ; ff1_inst.v                                             ; --            ; --          ; --             ;
-; MISC_FILE                          ; ff1_bb.v                                               ; --            ; --          ; --             ;
-; MISC_FILE                          ; ff1.inc                                                ; --            ; --          ; --             ;
-; MISC_FILE                          ; ff1.cmp                                                ; --            ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                                               ; --            ; RS_decode   ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                                                 ; --            ; RS_decode   ; Top            ;
-; TOP_LEVEL_ENTITY                   ; RS_decode                                              ; CAP           ; --          ; --             ;
+; MISC_FILE                          ; FloatingAdder.bsf                                      ; --            ; --          ; --             ;
+; MISC_FILE                          ; FloatingAdder_bb.v                                     ; --            ; --          ; --             ;
+; MISC_FILE                          ; MUX6.bsf                                               ; --            ; --          ; --             ;
+; MISC_FILE                          ; MUX6_bb.v                                              ; --            ; --          ; --             ;
+; MISC_FILE                          ; FMULT.bsf                                              ; --            ; --          ; --             ;
+; MISC_FILE                          ; FMULT_bb.v                                             ; --            ; --          ; --             ;
+; MISC_FILE                          ; FDIV.bsf                                               ; --            ; --          ; --             ;
+; MISC_FILE                          ; FDIV_bb.v                                              ; --            ; --          ; --             ;
+; MISC_FILE                          ; FINV.bsf                                               ; --            ; --          ; --             ;
+; MISC_FILE                          ; FINV_bb.v                                              ; --            ; --          ; --             ;
+; MISC_FILE                          ; FCMP.bsf                                               ; --            ; --          ; --             ;
+; MISC_FILE                          ; FCMP_bb.v                                              ; --            ; --          ; --             ;
+; MISC_FILE                          ; MUX6_1bit.bsf                                          ; --            ; --          ; --             ;
+; MISC_FILE                          ; MUX6_1bit_bb.v                                         ; --            ; --          ; --             ;
+; MISC_FILE                          ; FRND.bsf                                               ; --            ; --          ; --             ;
+; MISC_FILE                          ; FRND_bb.v                                              ; --            ; --          ; --             ;
+; MISC_FILE                          ; const_zero_one_bit.bsf                                 ; --            ; --          ; --             ;
+; MISC_FILE                          ; const_zero_one_bit_bb.v                                ; --            ; --          ; --             ;
+; MISC_FILE                          ; mux2x1x1.bsf                                           ; --            ; --          ; --             ;
+; MISC_FILE                          ; mux2x1x1_bb.v                                          ; --            ; --          ; --             ;
+; MISC_FILE                          ; decoder1x2x1.bsf                                       ; --            ; --          ; --             ;
+; MISC_FILE                          ; decoder1x2x1_bb.v                                      ; --            ; --          ; --             ;
+; MISC_FILE                          ; is_zero.bsf                                            ; --            ; --          ; --             ;
+; MISC_FILE                          ; is_zero_bb.v                                           ; --            ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                                               ; --            ; FALU        ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                                                 ; --            ; FALU        ; Top            ;
+; TOP_LEVEL_ENTITY                   ; FALU                                                   ; CAP           ; --          ; --             ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                                    ; --            ; --          ; eda_blast_fpga ;
 +------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
 
@@ -362,11 +382,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 234 MB              ; 00:00:02                           ;
-; Fitter                  ; 00:00:02     ; 1.0                     ; 295 MB              ; 00:00:02                           ;
-; Assembler               ; 00:00:02     ; 1.0                     ; 252 MB              ; 00:00:02                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 185 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:06     ; --                      ; --                  ; 00:00:06                           ;
+; Analysis & Synthesis    ; 00:00:19     ; 1.0                     ; 301 MB              ; 00:00:18                           ;
+; Fitter                  ; 00:00:14     ; 1.0                     ; 349 MB              ; 00:00:14                           ;
+; Assembler               ; 00:00:04     ; 1.0                     ; 292 MB              ; 00:00:04                           ;
+; Classic Timing Analyzer ; 00:00:02     ; 1.0                     ; 246 MB              ; 00:00:03                           ;
+; Total                   ; 00:00:39     ; --                      ; --                  ; 00:00:39                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -375,10 +395,10 @@ applicable agreement for further details.
 +-------------------------+------------------+---------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; 13579135792468   ; Windows Vista ; 6.2        ; x86_64         ;
-; Fitter                  ; 13579135792468   ; Windows Vista ; 6.2        ; x86_64         ;
-; Assembler               ; 13579135792468   ; Windows Vista ; 6.2        ; x86_64         ;
-; Classic Timing Analyzer ; 13579135792468   ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; Arian22          ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                  ; Arian22          ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler               ; Arian22          ; Windows Vista ; 6.2        ; x86_64         ;
+; Classic Timing Analyzer ; Arian22          ; Windows Vista ; 6.2        ; x86_64         ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 
