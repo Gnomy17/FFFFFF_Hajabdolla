@@ -2,55 +2,35 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
-Type           : Worst-case tsu
-Slack          : N/A
-Required Time  : None
-Actual Time    : 13.831 ns
-From           : A[30]
-To             : FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|dataa_man_dffe1[4]
-From Clock     : --
-To Clock       : clock
-Failed Paths   : 0
-
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 8.833 ns
-From           : FloatingAdder:inst|FloatingAdder_altfp_add_sub_p2o:FloatingAdder_altfp_add_sub_p2o_component|man_out_dffe5[22]
-To             : QNaN
-From Clock     : clock
+Actual Time    : 97.267 ns
+From           : buffer:inst48|ff:inst1|lpm_ff:lpm_ff_component|dffs[0]
+To             : aluS[16]
+From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
 
-Type           : Worst-case tpd
+Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 12.097 ns
-From           : opcode[2]
-To             : QNaN
-From Clock     : --
-To Clock       : --
+Actual Time    : 10.92 MHz ( period = 91.597 ns )
+From           : buffer:inst48|ff:inst1|lpm_ff:lpm_ff_component|dffs[0]
+To             : buffer:inst6|ff:inst|lpm_ff:lpm_ff_component|dffs[24]
+From Clock     : clk
+To Clock       : clk
 Failed Paths   : 0
 
-Type           : Worst-case th
-Slack          : N/A
+Type           : Clock Hold: 'clk'
+Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
-Actual Time    : 0.574 ns
-From           : B[15]
-To             : FDIV:inst3|FDIV_altfp_div_f1l:FDIV_altfp_div_f1l_component|FDIV_altfp_div_pst_k3g:altfp_div_pst1|altsyncram:altsyncram3|altsyncram_dmo:auto_generated|ram_block1a0~porta_address_reg1
-From Clock     : --
-To Clock       : clock
-Failed Paths   : 0
-
-Type           : Clock Setup: 'clock'
-Slack          : N/A
-Required Time  : None
-Actual Time    : 122.32 MHz ( period = 8.175 ns )
-From           : FDIV:inst3|FDIV_altfp_div_f1l:FDIV_altfp_div_f1l_component|FDIV_altfp_div_pst_k3g:altfp_div_pst1|lpm_mult:remainder_mult_0|mult_n9s:auto_generated|mac_mult4~OBSERVABLEDATAA_REGOUT2
-To             : FDIV:inst3|FDIV_altfp_div_f1l:FDIV_altfp_div_f1l_component|FDIV_altfp_div_pst_k3g:altfp_div_pst1|lpm_mult:q_partial_1|mult_p9s:auto_generated|mac_mult2~OBSERVABLEDATAA_REGOUT14
-From Clock     : clock
-To Clock       : clock
-Failed Paths   : 0
+Actual Time    : N/A
+From           : buffer:inst6|ff:inst|lpm_ff:lpm_ff_component|dffs[6]
+To             : data_MEM:inst35|lpm_ram_dp2:inst|altsyncram:altsyncram_component|altsyncram_v1p1:auto_generated|ram_block1a0~porta_address_reg4
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 460
 
 Type           : Total number of failed paths
 Slack          : 
@@ -60,7 +40,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 0
+Failed Paths   : 460
 
 --------------------------------------------------------------------------------------
 

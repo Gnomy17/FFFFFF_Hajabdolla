@@ -44,6 +44,13 @@ applicable agreement for further details.
 		(text "sign_extend" (rect 102 43 171 57)(font "Arial" (font_size 8)))
 		(line (pt 192 48)(pt 176 48)(line_width 1))
 	)
+	(port
+		(pt 192 64)
+		(output)
+		(text "se_sel" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "se_sel" (rect 134 59 171 73)(font "Arial" (font_size 8)))
+		(line (pt 192 64)(pt 176 64)(line_width 1))
+	)
 	(drawing
 		(rectangle (rect 16 16 176 80)(line_width 1))
 	)

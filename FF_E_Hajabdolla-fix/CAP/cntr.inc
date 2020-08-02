@@ -15,11 +15,10 @@
 
 FUNCTION cntr 
 (
-	aclr,
 	clock,
 	cnt_en
 )
 
 RETURNS (
-	q[1..0]
+	q[2..0]
 );

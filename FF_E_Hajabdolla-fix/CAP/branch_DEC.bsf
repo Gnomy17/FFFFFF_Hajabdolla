@@ -61,16 +61,23 @@ applicable agreement for further details.
 	(port
 		(pt 248 32)
 		(output)
-		(text "branch" (rect 0 0 40 14)(font "Arial" (font_size 8)))
-		(text "branch" (rect 187 27 227 41)(font "Arial" (font_size 8)))
+		(text "branch_notify" (rect 0 0 79 14)(font "Arial" (font_size 8)))
+		(text "branch_notify" (rect 148 27 227 41)(font "Arial" (font_size 8)))
 		(line (pt 248 32)(pt 232 32)(line_width 1))
 	)
 	(port
 		(pt 248 48)
 		(output)
+		(text "branch" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "branch" (rect 187 43 227 57)(font "Arial" (font_size 8)))
+		(line (pt 248 48)(pt 232 48)(line_width 1))
+	)
+	(port
+		(pt 248 64)
+		(output)
 		(text "branch_addr[31..0]" (rect 0 0 108 14)(font "Arial" (font_size 8)))
-		(text "branch_addr[31..0]" (rect 119 43 227 57)(font "Arial" (font_size 8)))
-		(line (pt 248 48)(pt 232 48)(line_width 3))
+		(text "branch_addr[31..0]" (rect 119 59 227 73)(font "Arial" (font_size 8)))
+		(line (pt 248 64)(pt 232 64)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 232 112)(line_width 1))
