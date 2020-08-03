@@ -22110,13 +22110,13 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/RS
 	}
 }
 
-VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db/CAP.sim.cvwf")
+VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/CAP.vwf")
 {
 	ZOOM{
-		ZBEGIN = 972319;
-		ZEND = 977266;
-		NUMERATOR = 851;
-		DENOMINATOR = 4851;
+		ZBEGIN = 0;
+		ZEND = 0;
+		NUMERATOR = 0;
+		DENOMINATOR = 0;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -22673,17 +22673,17 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 }
 
-VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/CAP.vwf")
+VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db/CAP.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 52000;
-		NUMERATOR = 20;
-		DENOMINATOR = 1000;
-		TOP_INDEX = 1;
+		ZBEGIN = 972813;
+		ZEND = 977760;
+		NUMERATOR = 851;
+		DENOMINATOR = 4851;
+		TOP_INDEX = 0;
 	}
 	CLOCK{
-		PERIOD = 2500;
+		PERIOD = 10000;
 		OFFSET = 0;
 		DUTY_CYCLE = 50;
 	}
