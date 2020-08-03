@@ -20,11 +20,8 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|WBE_decode:inst20|compare5:inst16|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_r8j.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|ctrl_sg:inst16|dec16:inst4|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_ltf.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|mux32x2x1:inst11|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|ALU:inst|shift32:inst15|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_vjc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|Register_File:inst12|mux32x2x1:inst26|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|Register_File:inst12|mux32x2x1:inst35|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|Register_File:inst12|mux32x2x1:inst53|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|Register_File:inst12|mux32x2x1:inst8|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|RS_decode:inst10|dec32:inst4|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_d9f.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|RS_decode:inst10|mux5x2x1:inst7|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_rnc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|Register_File:inst12|mux32x2x1:inst18|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
@@ -58,6 +55,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|ctrl_sg:inst16|comp4:inst14|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_1cj.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|data_MEM:inst35|lpm_decode0:inst7|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_p7f.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|data_MEM:inst35|lpm_ram_dp2:inst2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_v1p1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|resCounter:inst5|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_4qi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|data_MEM:inst35|lpm_ram_dp2:inst3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_v1p1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|ALU:inst|ALU_DEC:inst1|dec32:inst|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_d9f.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|ALU:inst|mux32x2x1:inst5|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
@@ -85,5 +83,8 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|Register_File:inst12|mux32x2x1:inst43|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|Register_File:inst12|mux32x2x1:inst61|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|sign_extend:inst13|mux16x2x1:inst|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_dpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|ALU:inst|shift32:inst15|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_vjc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|Register_File:inst12|mux32x2x1:inst26|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CAP|Register_File:inst12|mux32x2x1:inst8|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

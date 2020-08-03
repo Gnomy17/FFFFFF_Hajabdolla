@@ -22110,2790 +22110,11 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/RS
 	}
 }
 
-VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/CAP.vwf")
-{
-	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 52000;
-		NUMERATOR = 20;
-		DENOMINATOR = 1000;
-		TOP_INDEX = 2;
-	}
-	CLOCK{
-		PERIOD = 2500;
-		OFFSET = 0;
-		DUTY_CYCLE = 50;
-	}
-	RANDOM_VALUE{
-		INTERVAL_TYPE = HALF_GRID;
-	}
-	LINE{
-		SIGNAL = "aclr";
-		INDEX = 0;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "clk";
-		INDEX = 1;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS";
-		INDEX = 2;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[31]";
-		INDEX = 3;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[30]";
-		INDEX = 4;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[29]";
-		INDEX = 5;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[28]";
-		INDEX = 6;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[27]";
-		INDEX = 7;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[26]";
-		INDEX = 8;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[25]";
-		INDEX = 9;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[24]";
-		INDEX = 10;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[23]";
-		INDEX = 11;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[22]";
-		INDEX = 12;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[21]";
-		INDEX = 13;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[20]";
-		INDEX = 14;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[19]";
-		INDEX = 15;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[18]";
-		INDEX = 16;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[17]";
-		INDEX = 17;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[16]";
-		INDEX = 18;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[15]";
-		INDEX = 19;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[14]";
-		INDEX = 20;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[13]";
-		INDEX = 21;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[12]";
-		INDEX = 22;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[11]";
-		INDEX = 23;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[10]";
-		INDEX = 24;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[9]";
-		INDEX = 25;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[8]";
-		INDEX = 26;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[7]";
-		INDEX = 27;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[6]";
-		INDEX = 28;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[5]";
-		INDEX = 29;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[4]";
-		INDEX = 30;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[3]";
-		INDEX = 31;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[2]";
-		INDEX = 32;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[1]";
-		INDEX = 33;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "aluS[0]";
-		INDEX = 34;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array";
-		INDEX = 35;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[31]";
-		INDEX = 36;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[30]";
-		INDEX = 37;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[29]";
-		INDEX = 38;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[28]";
-		INDEX = 39;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[27]";
-		INDEX = 40;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[26]";
-		INDEX = 41;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[25]";
-		INDEX = 42;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[24]";
-		INDEX = 43;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[23]";
-		INDEX = 44;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[22]";
-		INDEX = 45;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[21]";
-		INDEX = 46;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[20]";
-		INDEX = 47;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[19]";
-		INDEX = 48;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[18]";
-		INDEX = 49;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[17]";
-		INDEX = 50;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[16]";
-		INDEX = 51;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[15]";
-		INDEX = 52;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[14]";
-		INDEX = 53;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[13]";
-		INDEX = 54;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[12]";
-		INDEX = 55;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[11]";
-		INDEX = 56;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[10]";
-		INDEX = 57;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[9]";
-		INDEX = 58;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[8]";
-		INDEX = 59;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[7]";
-		INDEX = 60;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[6]";
-		INDEX = 61;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[5]";
-		INDEX = 62;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[4]";
-		INDEX = 63;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[3]";
-		INDEX = 64;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[2]";
-		INDEX = 65;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[1]";
-		INDEX = 66;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "array[0]";
-		INDEX = 67;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "stall_sg";
-		INDEX = 68;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "stall_sg[3]";
-		INDEX = 69;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "stall_sg[2]";
-		INDEX = 70;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "stall_sg[1]";
-		INDEX = 71;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "stall_sg[0]";
-		INDEX = 72;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40";
-		INDEX = 73;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[31]";
-		INDEX = 74;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[30]";
-		INDEX = 75;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[29]";
-		INDEX = 76;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[28]";
-		INDEX = 77;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[27]";
-		INDEX = 78;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[26]";
-		INDEX = 79;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[25]";
-		INDEX = 80;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[24]";
-		INDEX = 81;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[23]";
-		INDEX = 82;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[22]";
-		INDEX = 83;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[21]";
-		INDEX = 84;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[20]";
-		INDEX = 85;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[19]";
-		INDEX = 86;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[18]";
-		INDEX = 87;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[17]";
-		INDEX = 88;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[16]";
-		INDEX = 89;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[15]";
-		INDEX = 90;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[14]";
-		INDEX = 91;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[13]";
-		INDEX = 92;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[12]";
-		INDEX = 93;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[11]";
-		INDEX = 94;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[10]";
-		INDEX = 95;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[9]";
-		INDEX = 96;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[8]";
-		INDEX = 97;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[7]";
-		INDEX = 98;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[6]";
-		INDEX = 99;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[5]";
-		INDEX = 100;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[4]";
-		INDEX = 101;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[3]";
-		INDEX = 102;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[2]";
-		INDEX = 103;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[1]";
-		INDEX = 104;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[0]";
-		INDEX = 105;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in";
-		INDEX = 106;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[31]";
-		INDEX = 107;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[30]";
-		INDEX = 108;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[29]";
-		INDEX = 109;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[28]";
-		INDEX = 110;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[27]";
-		INDEX = 111;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[26]";
-		INDEX = 112;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[25]";
-		INDEX = 113;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[24]";
-		INDEX = 114;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[23]";
-		INDEX = 115;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[22]";
-		INDEX = 116;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[21]";
-		INDEX = 117;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[20]";
-		INDEX = 118;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[19]";
-		INDEX = 119;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[18]";
-		INDEX = 120;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[17]";
-		INDEX = 121;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[16]";
-		INDEX = 122;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[15]";
-		INDEX = 123;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[14]";
-		INDEX = 124;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[13]";
-		INDEX = 125;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[12]";
-		INDEX = 126;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[11]";
-		INDEX = 127;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[10]";
-		INDEX = 128;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[9]";
-		INDEX = 129;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[8]";
-		INDEX = 130;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[7]";
-		INDEX = 131;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[6]";
-		INDEX = 132;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[5]";
-		INDEX = 133;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[4]";
-		INDEX = 134;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[3]";
-		INDEX = 135;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[2]";
-		INDEX = 136;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[1]";
-		INDEX = 137;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC_in[0]";
-		INDEX = 138;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0";
-		INDEX = 139;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[31]";
-		INDEX = 140;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[30]";
-		INDEX = 141;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[29]";
-		INDEX = 142;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[28]";
-		INDEX = 143;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[27]";
-		INDEX = 144;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[26]";
-		INDEX = 145;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[25]";
-		INDEX = 146;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[24]";
-		INDEX = 147;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[23]";
-		INDEX = 148;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[22]";
-		INDEX = 149;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[21]";
-		INDEX = 150;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[20]";
-		INDEX = 151;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[19]";
-		INDEX = 152;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[18]";
-		INDEX = 153;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[17]";
-		INDEX = 154;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[16]";
-		INDEX = 155;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[15]";
-		INDEX = 156;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[14]";
-		INDEX = 157;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[13]";
-		INDEX = 158;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[12]";
-		INDEX = 159;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[11]";
-		INDEX = 160;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[10]";
-		INDEX = 161;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[9]";
-		INDEX = 162;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[8]";
-		INDEX = 163;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[7]";
-		INDEX = 164;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[6]";
-		INDEX = 165;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[5]";
-		INDEX = 166;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[4]";
-		INDEX = 167;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[3]";
-		INDEX = 168;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[2]";
-		INDEX = 169;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[1]";
-		INDEX = 170;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC0[0]";
-		INDEX = 171;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2";
-		INDEX = 172;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[31]";
-		INDEX = 173;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[30]";
-		INDEX = 174;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[29]";
-		INDEX = 175;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[28]";
-		INDEX = 176;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[27]";
-		INDEX = 177;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[26]";
-		INDEX = 178;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[25]";
-		INDEX = 179;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[24]";
-		INDEX = 180;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[23]";
-		INDEX = 181;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[22]";
-		INDEX = 182;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[21]";
-		INDEX = 183;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[20]";
-		INDEX = 184;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[19]";
-		INDEX = 185;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[18]";
-		INDEX = 186;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[17]";
-		INDEX = 187;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[16]";
-		INDEX = 188;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[15]";
-		INDEX = 189;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[14]";
-		INDEX = 190;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[13]";
-		INDEX = 191;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[12]";
-		INDEX = 192;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[11]";
-		INDEX = 193;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[10]";
-		INDEX = 194;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[9]";
-		INDEX = 195;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[8]";
-		INDEX = 196;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[7]";
-		INDEX = 197;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[6]";
-		INDEX = 198;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[5]";
-		INDEX = 199;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[4]";
-		INDEX = 200;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[3]";
-		INDEX = 201;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[2]";
-		INDEX = 202;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[1]";
-		INDEX = 203;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[0]";
-		INDEX = 204;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12";
-		INDEX = 205;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[31]";
-		INDEX = 206;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[30]";
-		INDEX = 207;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[29]";
-		INDEX = 208;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[28]";
-		INDEX = 209;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[27]";
-		INDEX = 210;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[26]";
-		INDEX = 211;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[25]";
-		INDEX = 212;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[24]";
-		INDEX = 213;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[23]";
-		INDEX = 214;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[22]";
-		INDEX = 215;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[21]";
-		INDEX = 216;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[20]";
-		INDEX = 217;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[19]";
-		INDEX = 218;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[18]";
-		INDEX = 219;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[17]";
-		INDEX = 220;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[16]";
-		INDEX = 221;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[15]";
-		INDEX = 222;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[14]";
-		INDEX = 223;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[13]";
-		INDEX = 224;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[12]";
-		INDEX = 225;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[11]";
-		INDEX = 226;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[10]";
-		INDEX = 227;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[9]";
-		INDEX = 228;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[8]";
-		INDEX = 229;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[7]";
-		INDEX = 230;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[6]";
-		INDEX = 231;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[5]";
-		INDEX = 232;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[4]";
-		INDEX = 233;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[3]";
-		INDEX = 234;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[2]";
-		INDEX = 235;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[1]";
-		INDEX = 236;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[0]";
-		INDEX = 237;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22";
-		INDEX = 238;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[31]";
-		INDEX = 239;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[30]";
-		INDEX = 240;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[29]";
-		INDEX = 241;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[28]";
-		INDEX = 242;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[27]";
-		INDEX = 243;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[26]";
-		INDEX = 244;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[25]";
-		INDEX = 245;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[24]";
-		INDEX = 246;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[23]";
-		INDEX = 247;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[22]";
-		INDEX = 248;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[21]";
-		INDEX = 249;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[20]";
-		INDEX = 250;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[19]";
-		INDEX = 251;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[18]";
-		INDEX = 252;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[17]";
-		INDEX = 253;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[16]";
-		INDEX = 254;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[15]";
-		INDEX = 255;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[14]";
-		INDEX = 256;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[13]";
-		INDEX = 257;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[12]";
-		INDEX = 258;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[11]";
-		INDEX = 259;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[10]";
-		INDEX = 260;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[9]";
-		INDEX = 261;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[8]";
-		INDEX = 262;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[7]";
-		INDEX = 263;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[6]";
-		INDEX = 264;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[5]";
-		INDEX = 265;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[4]";
-		INDEX = 266;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[3]";
-		INDEX = 267;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[2]";
-		INDEX = 268;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[1]";
-		INDEX = 269;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[0]";
-		INDEX = 270;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_en2";
-		INDEX = 271;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "comp_satisfied";
-		INDEX = 272;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "branch";
-		INDEX = 273;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0";
-		INDEX = 274;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[31]";
-		INDEX = 275;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[30]";
-		INDEX = 276;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[29]";
-		INDEX = 277;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[28]";
-		INDEX = 278;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[27]";
-		INDEX = 279;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[26]";
-		INDEX = 280;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[25]";
-		INDEX = 281;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[24]";
-		INDEX = 282;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[23]";
-		INDEX = 283;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[22]";
-		INDEX = 284;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[21]";
-		INDEX = 285;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[20]";
-		INDEX = 286;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[19]";
-		INDEX = 287;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[18]";
-		INDEX = 288;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[17]";
-		INDEX = 289;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[16]";
-		INDEX = 290;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[15]";
-		INDEX = 291;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[14]";
-		INDEX = 292;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[13]";
-		INDEX = 293;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[12]";
-		INDEX = 294;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[11]";
-		INDEX = 295;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[10]";
-		INDEX = 296;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[9]";
-		INDEX = 297;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[8]";
-		INDEX = 298;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[7]";
-		INDEX = 299;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[6]";
-		INDEX = 300;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[5]";
-		INDEX = 301;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[4]";
-		INDEX = 302;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[3]";
-		INDEX = 303;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[2]";
-		INDEX = 304;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[1]";
-		INDEX = 305;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg0[0]";
-		INDEX = 306;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3";
-		INDEX = 307;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[31]";
-		INDEX = 308;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[30]";
-		INDEX = 309;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[29]";
-		INDEX = 310;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[28]";
-		INDEX = 311;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[27]";
-		INDEX = 312;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[26]";
-		INDEX = 313;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[25]";
-		INDEX = 314;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[24]";
-		INDEX = 315;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[23]";
-		INDEX = 316;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[22]";
-		INDEX = 317;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[21]";
-		INDEX = 318;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[20]";
-		INDEX = 319;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[19]";
-		INDEX = 320;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[18]";
-		INDEX = 321;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[17]";
-		INDEX = 322;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[16]";
-		INDEX = 323;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[15]";
-		INDEX = 324;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[14]";
-		INDEX = 325;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[13]";
-		INDEX = 326;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[12]";
-		INDEX = 327;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[11]";
-		INDEX = 328;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[10]";
-		INDEX = 329;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[9]";
-		INDEX = 330;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[8]";
-		INDEX = 331;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[7]";
-		INDEX = 332;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[6]";
-		INDEX = 333;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[5]";
-		INDEX = 334;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[4]";
-		INDEX = 335;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[3]";
-		INDEX = 336;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[2]";
-		INDEX = 337;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[1]";
-		INDEX = 338;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "reg3[0]";
-		INDEX = 339;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "branch_not";
-		INDEX = 340;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "isBranch";
-		INDEX = 341;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "tt";
-		INDEX = 342;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "pc_en";
-		INDEX = 343;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "WBe";
-		INDEX = 344;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-}
-
 VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db/CAP.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 812494;
-		ZEND = 817345;
+		ZBEGIN = 972319;
+		ZEND = 977266;
 		NUMERATOR = 851;
 		DENOMINATOR = 4851;
 		TOP_INDEX = 0;
@@ -24923,7 +22144,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS";
+		SIGNAL = "reg0";
 		INDEX = 2;
 		FORMAT = T;
 		SCALE = 1;
@@ -24931,7 +22152,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[31]";
+		SIGNAL = "reg0[31]";
 		INDEX = 3;
 		FORMAT = E;
 		SCALE = 1;
@@ -24939,7 +22160,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[30]";
+		SIGNAL = "reg0[30]";
 		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
@@ -24947,7 +22168,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[29]";
+		SIGNAL = "reg0[29]";
 		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
@@ -24955,7 +22176,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[28]";
+		SIGNAL = "reg0[28]";
 		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
@@ -24963,7 +22184,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[27]";
+		SIGNAL = "reg0[27]";
 		INDEX = 7;
 		FORMAT = E;
 		SCALE = 1;
@@ -24971,7 +22192,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[26]";
+		SIGNAL = "reg0[26]";
 		INDEX = 8;
 		FORMAT = E;
 		SCALE = 1;
@@ -24979,7 +22200,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[25]";
+		SIGNAL = "reg0[25]";
 		INDEX = 9;
 		FORMAT = E;
 		SCALE = 1;
@@ -24987,7 +22208,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[24]";
+		SIGNAL = "reg0[24]";
 		INDEX = 10;
 		FORMAT = E;
 		SCALE = 1;
@@ -24995,7 +22216,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[23]";
+		SIGNAL = "reg0[23]";
 		INDEX = 11;
 		FORMAT = E;
 		SCALE = 1;
@@ -25003,7 +22224,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[22]";
+		SIGNAL = "reg0[22]";
 		INDEX = 12;
 		FORMAT = E;
 		SCALE = 1;
@@ -25011,7 +22232,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[21]";
+		SIGNAL = "reg0[21]";
 		INDEX = 13;
 		FORMAT = E;
 		SCALE = 1;
@@ -25019,7 +22240,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[20]";
+		SIGNAL = "reg0[20]";
 		INDEX = 14;
 		FORMAT = E;
 		SCALE = 1;
@@ -25027,7 +22248,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[19]";
+		SIGNAL = "reg0[19]";
 		INDEX = 15;
 		FORMAT = E;
 		SCALE = 1;
@@ -25035,7 +22256,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[18]";
+		SIGNAL = "reg0[18]";
 		INDEX = 16;
 		FORMAT = E;
 		SCALE = 1;
@@ -25043,7 +22264,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[17]";
+		SIGNAL = "reg0[17]";
 		INDEX = 17;
 		FORMAT = E;
 		SCALE = 1;
@@ -25051,7 +22272,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[16]";
+		SIGNAL = "reg0[16]";
 		INDEX = 18;
 		FORMAT = E;
 		SCALE = 1;
@@ -25059,7 +22280,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[15]";
+		SIGNAL = "reg0[15]";
 		INDEX = 19;
 		FORMAT = E;
 		SCALE = 1;
@@ -25067,7 +22288,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[14]";
+		SIGNAL = "reg0[14]";
 		INDEX = 20;
 		FORMAT = E;
 		SCALE = 1;
@@ -25075,7 +22296,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[13]";
+		SIGNAL = "reg0[13]";
 		INDEX = 21;
 		FORMAT = E;
 		SCALE = 1;
@@ -25083,7 +22304,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[12]";
+		SIGNAL = "reg0[12]";
 		INDEX = 22;
 		FORMAT = E;
 		SCALE = 1;
@@ -25091,7 +22312,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[11]";
+		SIGNAL = "reg0[11]";
 		INDEX = 23;
 		FORMAT = E;
 		SCALE = 1;
@@ -25099,7 +22320,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[10]";
+		SIGNAL = "reg0[10]";
 		INDEX = 24;
 		FORMAT = E;
 		SCALE = 1;
@@ -25107,7 +22328,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[9]";
+		SIGNAL = "reg0[9]";
 		INDEX = 25;
 		FORMAT = E;
 		SCALE = 1;
@@ -25115,7 +22336,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[8]";
+		SIGNAL = "reg0[8]";
 		INDEX = 26;
 		FORMAT = E;
 		SCALE = 1;
@@ -25123,7 +22344,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[7]";
+		SIGNAL = "reg0[7]";
 		INDEX = 27;
 		FORMAT = E;
 		SCALE = 1;
@@ -25131,7 +22352,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[6]";
+		SIGNAL = "reg0[6]";
 		INDEX = 28;
 		FORMAT = E;
 		SCALE = 1;
@@ -25139,7 +22360,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[5]";
+		SIGNAL = "reg0[5]";
 		INDEX = 29;
 		FORMAT = E;
 		SCALE = 1;
@@ -25147,7 +22368,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[4]";
+		SIGNAL = "reg0[4]";
 		INDEX = 30;
 		FORMAT = E;
 		SCALE = 1;
@@ -25155,7 +22376,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[3]";
+		SIGNAL = "reg0[3]";
 		INDEX = 31;
 		FORMAT = E;
 		SCALE = 1;
@@ -25163,7 +22384,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[2]";
+		SIGNAL = "reg0[2]";
 		INDEX = 32;
 		FORMAT = E;
 		SCALE = 1;
@@ -25171,7 +22392,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[1]";
+		SIGNAL = "reg0[1]";
 		INDEX = 33;
 		FORMAT = E;
 		SCALE = 1;
@@ -25179,7 +22400,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "aluS[0]";
+		SIGNAL = "reg0[0]";
 		INDEX = 34;
 		FORMAT = E;
 		SCALE = 1;
@@ -25187,7 +22408,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array";
+		SIGNAL = "clk_cycle_count";
 		INDEX = 35;
 		FORMAT = T;
 		SCALE = 1;
@@ -25195,7 +22416,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[31]";
+		SIGNAL = "clk_cycle_count[31]";
 		INDEX = 36;
 		FORMAT = E;
 		SCALE = 1;
@@ -25203,7 +22424,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[30]";
+		SIGNAL = "clk_cycle_count[30]";
 		INDEX = 37;
 		FORMAT = E;
 		SCALE = 1;
@@ -25211,7 +22432,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[29]";
+		SIGNAL = "clk_cycle_count[29]";
 		INDEX = 38;
 		FORMAT = E;
 		SCALE = 1;
@@ -25219,7 +22440,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[28]";
+		SIGNAL = "clk_cycle_count[28]";
 		INDEX = 39;
 		FORMAT = E;
 		SCALE = 1;
@@ -25227,7 +22448,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[27]";
+		SIGNAL = "clk_cycle_count[27]";
 		INDEX = 40;
 		FORMAT = E;
 		SCALE = 1;
@@ -25235,7 +22456,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[26]";
+		SIGNAL = "clk_cycle_count[26]";
 		INDEX = 41;
 		FORMAT = E;
 		SCALE = 1;
@@ -25243,7 +22464,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[25]";
+		SIGNAL = "clk_cycle_count[25]";
 		INDEX = 42;
 		FORMAT = E;
 		SCALE = 1;
@@ -25251,7 +22472,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[24]";
+		SIGNAL = "clk_cycle_count[24]";
 		INDEX = 43;
 		FORMAT = E;
 		SCALE = 1;
@@ -25259,7 +22480,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[23]";
+		SIGNAL = "clk_cycle_count[23]";
 		INDEX = 44;
 		FORMAT = E;
 		SCALE = 1;
@@ -25267,7 +22488,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[22]";
+		SIGNAL = "clk_cycle_count[22]";
 		INDEX = 45;
 		FORMAT = E;
 		SCALE = 1;
@@ -25275,7 +22496,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[21]";
+		SIGNAL = "clk_cycle_count[21]";
 		INDEX = 46;
 		FORMAT = E;
 		SCALE = 1;
@@ -25283,7 +22504,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[20]";
+		SIGNAL = "clk_cycle_count[20]";
 		INDEX = 47;
 		FORMAT = E;
 		SCALE = 1;
@@ -25291,7 +22512,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[19]";
+		SIGNAL = "clk_cycle_count[19]";
 		INDEX = 48;
 		FORMAT = E;
 		SCALE = 1;
@@ -25299,7 +22520,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[18]";
+		SIGNAL = "clk_cycle_count[18]";
 		INDEX = 49;
 		FORMAT = E;
 		SCALE = 1;
@@ -25307,7 +22528,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[17]";
+		SIGNAL = "clk_cycle_count[17]";
 		INDEX = 50;
 		FORMAT = E;
 		SCALE = 1;
@@ -25315,7 +22536,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[16]";
+		SIGNAL = "clk_cycle_count[16]";
 		INDEX = 51;
 		FORMAT = E;
 		SCALE = 1;
@@ -25323,7 +22544,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[15]";
+		SIGNAL = "clk_cycle_count[15]";
 		INDEX = 52;
 		FORMAT = E;
 		SCALE = 1;
@@ -25331,7 +22552,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[14]";
+		SIGNAL = "clk_cycle_count[14]";
 		INDEX = 53;
 		FORMAT = E;
 		SCALE = 1;
@@ -25339,7 +22560,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[13]";
+		SIGNAL = "clk_cycle_count[13]";
 		INDEX = 54;
 		FORMAT = E;
 		SCALE = 1;
@@ -25347,7 +22568,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[12]";
+		SIGNAL = "clk_cycle_count[12]";
 		INDEX = 55;
 		FORMAT = E;
 		SCALE = 1;
@@ -25355,7 +22576,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[11]";
+		SIGNAL = "clk_cycle_count[11]";
 		INDEX = 56;
 		FORMAT = E;
 		SCALE = 1;
@@ -25363,7 +22584,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[10]";
+		SIGNAL = "clk_cycle_count[10]";
 		INDEX = 57;
 		FORMAT = E;
 		SCALE = 1;
@@ -25371,7 +22592,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[9]";
+		SIGNAL = "clk_cycle_count[9]";
 		INDEX = 58;
 		FORMAT = E;
 		SCALE = 1;
@@ -25379,7 +22600,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[8]";
+		SIGNAL = "clk_cycle_count[8]";
 		INDEX = 59;
 		FORMAT = E;
 		SCALE = 1;
@@ -25387,7 +22608,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[7]";
+		SIGNAL = "clk_cycle_count[7]";
 		INDEX = 60;
 		FORMAT = E;
 		SCALE = 1;
@@ -25395,7 +22616,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[6]";
+		SIGNAL = "clk_cycle_count[6]";
 		INDEX = 61;
 		FORMAT = E;
 		SCALE = 1;
@@ -25403,7 +22624,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[5]";
+		SIGNAL = "clk_cycle_count[5]";
 		INDEX = 62;
 		FORMAT = E;
 		SCALE = 1;
@@ -25411,7 +22632,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[4]";
+		SIGNAL = "clk_cycle_count[4]";
 		INDEX = 63;
 		FORMAT = E;
 		SCALE = 1;
@@ -25419,7 +22640,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[3]";
+		SIGNAL = "clk_cycle_count[3]";
 		INDEX = 64;
 		FORMAT = E;
 		SCALE = 1;
@@ -25427,7 +22648,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[2]";
+		SIGNAL = "clk_cycle_count[2]";
 		INDEX = 65;
 		FORMAT = E;
 		SCALE = 1;
@@ -25435,7 +22656,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[1]";
+		SIGNAL = "clk_cycle_count[1]";
 		INDEX = 66;
 		FORMAT = E;
 		SCALE = 1;
@@ -25443,1128 +22664,43 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "array[0]";
+		SIGNAL = "clk_cycle_count[0]";
 		INDEX = 67;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
-	LINE{
-		SIGNAL = "stall_sg";
-		INDEX = 68;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "stall_sg[3]";
-		INDEX = 69;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "stall_sg[2]";
-		INDEX = 70;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "stall_sg[1]";
-		INDEX = 71;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "stall_sg[0]";
-		INDEX = 72;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40";
-		INDEX = 73;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[31]";
-		INDEX = 74;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[30]";
-		INDEX = 75;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[29]";
-		INDEX = 76;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[28]";
-		INDEX = 77;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[27]";
-		INDEX = 78;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[26]";
-		INDEX = 79;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[25]";
-		INDEX = 80;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[24]";
-		INDEX = 81;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[23]";
-		INDEX = 82;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[22]";
-		INDEX = 83;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[21]";
-		INDEX = 84;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[20]";
-		INDEX = 85;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[19]";
-		INDEX = 86;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[18]";
-		INDEX = 87;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[17]";
-		INDEX = 88;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[16]";
-		INDEX = 89;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[15]";
-		INDEX = 90;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[14]";
-		INDEX = 91;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[13]";
-		INDEX = 92;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[12]";
-		INDEX = 93;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[11]";
-		INDEX = 94;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[10]";
-		INDEX = 95;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[9]";
-		INDEX = 96;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[8]";
-		INDEX = 97;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[7]";
-		INDEX = 98;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[6]";
-		INDEX = 99;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[5]";
-		INDEX = 100;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[4]";
-		INDEX = 101;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[3]";
-		INDEX = 102;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[2]";
-		INDEX = 103;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[1]";
-		INDEX = 104;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "out40[0]";
-		INDEX = 105;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2";
-		INDEX = 106;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[31]";
-		INDEX = 107;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[30]";
-		INDEX = 108;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[29]";
-		INDEX = 109;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[28]";
-		INDEX = 110;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[27]";
-		INDEX = 111;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[26]";
-		INDEX = 112;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[25]";
-		INDEX = 113;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[24]";
-		INDEX = 114;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[23]";
-		INDEX = 115;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[22]";
-		INDEX = 116;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[21]";
-		INDEX = 117;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[20]";
-		INDEX = 118;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[19]";
-		INDEX = 119;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[18]";
-		INDEX = 120;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[17]";
-		INDEX = 121;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[16]";
-		INDEX = 122;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[15]";
-		INDEX = 123;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[14]";
-		INDEX = 124;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[13]";
-		INDEX = 125;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[12]";
-		INDEX = 126;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[11]";
-		INDEX = 127;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[10]";
-		INDEX = 128;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[9]";
-		INDEX = 129;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[8]";
-		INDEX = 130;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[7]";
-		INDEX = 131;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[6]";
-		INDEX = 132;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[5]";
-		INDEX = 133;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[4]";
-		INDEX = 134;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[3]";
-		INDEX = 135;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[2]";
-		INDEX = 136;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[1]";
-		INDEX = 137;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "se_out2[0]";
-		INDEX = 138;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12";
-		INDEX = 139;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[31]";
-		INDEX = 140;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[30]";
-		INDEX = 141;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[29]";
-		INDEX = 142;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[28]";
-		INDEX = 143;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[27]";
-		INDEX = 144;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[26]";
-		INDEX = 145;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[25]";
-		INDEX = 146;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[24]";
-		INDEX = 147;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[23]";
-		INDEX = 148;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[22]";
-		INDEX = 149;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[21]";
-		INDEX = 150;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[20]";
-		INDEX = 151;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[19]";
-		INDEX = 152;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[18]";
-		INDEX = 153;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[17]";
-		INDEX = 154;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[16]";
-		INDEX = 155;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[15]";
-		INDEX = 156;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[14]";
-		INDEX = 157;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[13]";
-		INDEX = 158;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[12]";
-		INDEX = 159;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[11]";
-		INDEX = 160;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[10]";
-		INDEX = 161;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[9]";
-		INDEX = 162;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[8]";
-		INDEX = 163;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[7]";
-		INDEX = 164;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[6]";
-		INDEX = 165;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[5]";
-		INDEX = 166;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[4]";
-		INDEX = 167;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[3]";
-		INDEX = 168;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[2]";
-		INDEX = 169;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[1]";
-		INDEX = 170;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out12[0]";
-		INDEX = 171;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22";
-		INDEX = 172;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[31]";
-		INDEX = 173;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[30]";
-		INDEX = 174;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[29]";
-		INDEX = 175;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[28]";
-		INDEX = 176;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[27]";
-		INDEX = 177;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[26]";
-		INDEX = 178;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[25]";
-		INDEX = 179;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[24]";
-		INDEX = 180;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[23]";
-		INDEX = 181;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[22]";
-		INDEX = 182;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[21]";
-		INDEX = 183;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[20]";
-		INDEX = 184;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[19]";
-		INDEX = 185;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[18]";
-		INDEX = 186;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[17]";
-		INDEX = 187;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[16]";
-		INDEX = 188;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[15]";
-		INDEX = 189;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[14]";
-		INDEX = 190;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[13]";
-		INDEX = 191;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[12]";
-		INDEX = 192;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[11]";
-		INDEX = 193;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[10]";
-		INDEX = 194;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[9]";
-		INDEX = 195;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[8]";
-		INDEX = 196;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[7]";
-		INDEX = 197;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[6]";
-		INDEX = 198;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[5]";
-		INDEX = 199;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[4]";
-		INDEX = 200;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[3]";
-		INDEX = 201;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[2]";
-		INDEX = 202;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RS_out22[1]";
-		INDEX = 203;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
+}
+
+VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/CAP.vwf")
+{
+	ZOOM{
+		ZBEGIN = 0;
+		ZEND = 52000;
+		NUMERATOR = 20;
+		DENOMINATOR = 1000;
+		TOP_INDEX = 1;
 	}
-	LINE{
-		SIGNAL = "RS_out22[0]";
-		INDEX = 204;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
+	CLOCK{
+		PERIOD = 2500;
+		OFFSET = 0;
+		DUTY_CYCLE = 50;
 	}
-	LINE{
-		SIGNAL = "se_en2";
-		INDEX = 205;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
+	RANDOM_VALUE{
+		INTERVAL_TYPE = HALF_GRID;
 	}
 	LINE{
-		SIGNAL = "comp_satisfied";
-		INDEX = 206;
+		SIGNAL = "aclr";
+		INDEX = 0;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "branch";
-		INDEX = 207;
+		SIGNAL = "clk";
+		INDEX = 1;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26572,7 +22708,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0";
-		INDEX = 208;
+		INDEX = 2;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26580,7 +22716,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[31]";
-		INDEX = 209;
+		INDEX = 3;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26588,7 +22724,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[30]";
-		INDEX = 210;
+		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26596,7 +22732,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[29]";
-		INDEX = 211;
+		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26604,7 +22740,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[28]";
-		INDEX = 212;
+		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26612,7 +22748,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[27]";
-		INDEX = 213;
+		INDEX = 7;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26620,7 +22756,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[26]";
-		INDEX = 214;
+		INDEX = 8;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26628,7 +22764,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[25]";
-		INDEX = 215;
+		INDEX = 9;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26636,7 +22772,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[24]";
-		INDEX = 216;
+		INDEX = 10;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26644,7 +22780,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[23]";
-		INDEX = 217;
+		INDEX = 11;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26652,7 +22788,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[22]";
-		INDEX = 218;
+		INDEX = 12;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26660,7 +22796,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[21]";
-		INDEX = 219;
+		INDEX = 13;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26668,7 +22804,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[20]";
-		INDEX = 220;
+		INDEX = 14;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26676,7 +22812,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[19]";
-		INDEX = 221;
+		INDEX = 15;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26684,7 +22820,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[18]";
-		INDEX = 222;
+		INDEX = 16;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26692,7 +22828,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[17]";
-		INDEX = 223;
+		INDEX = 17;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26700,7 +22836,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[16]";
-		INDEX = 224;
+		INDEX = 18;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26708,7 +22844,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[15]";
-		INDEX = 225;
+		INDEX = 19;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26716,7 +22852,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[14]";
-		INDEX = 226;
+		INDEX = 20;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26724,7 +22860,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[13]";
-		INDEX = 227;
+		INDEX = 21;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26732,7 +22868,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[12]";
-		INDEX = 228;
+		INDEX = 22;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26740,7 +22876,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[11]";
-		INDEX = 229;
+		INDEX = 23;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26748,7 +22884,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[10]";
-		INDEX = 230;
+		INDEX = 24;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26756,7 +22892,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[9]";
-		INDEX = 231;
+		INDEX = 25;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26764,7 +22900,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[8]";
-		INDEX = 232;
+		INDEX = 26;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26772,7 +22908,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[7]";
-		INDEX = 233;
+		INDEX = 27;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26780,7 +22916,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[6]";
-		INDEX = 234;
+		INDEX = 28;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26788,7 +22924,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[5]";
-		INDEX = 235;
+		INDEX = 29;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26796,7 +22932,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[4]";
-		INDEX = 236;
+		INDEX = 30;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26804,7 +22940,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[3]";
-		INDEX = 237;
+		INDEX = 31;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26812,7 +22948,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[2]";
-		INDEX = 238;
+		INDEX = 32;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26820,7 +22956,7 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[1]";
-		INDEX = 239;
+		INDEX = 33;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -26828,375 +22964,271 @@ VECTOR("C:/Users/Lenovo/Desktop/CAP/FFFFFF_Hajabdolla/FF_E_Hajabdolla-fix/CAP/db
 	}
 	LINE{
 		SIGNAL = "reg0[0]";
-		INDEX = 240;
+		INDEX = 34;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3";
-		INDEX = 241;
+		SIGNAL = "clk_cycle_count";
+		INDEX = 35;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[31]";
-		INDEX = 242;
+		SIGNAL = "clk_cycle_count[31]";
+		INDEX = 36;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[30]";
-		INDEX = 243;
+		SIGNAL = "clk_cycle_count[30]";
+		INDEX = 37;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[29]";
-		INDEX = 244;
+		SIGNAL = "clk_cycle_count[29]";
+		INDEX = 38;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[28]";
-		INDEX = 245;
+		SIGNAL = "clk_cycle_count[28]";
+		INDEX = 39;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[27]";
-		INDEX = 246;
+		SIGNAL = "clk_cycle_count[27]";
+		INDEX = 40;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[26]";
-		INDEX = 247;
+		SIGNAL = "clk_cycle_count[26]";
+		INDEX = 41;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[25]";
-		INDEX = 248;
+		SIGNAL = "clk_cycle_count[25]";
+		INDEX = 42;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[24]";
-		INDEX = 249;
+		SIGNAL = "clk_cycle_count[24]";
+		INDEX = 43;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[23]";
-		INDEX = 250;
+		SIGNAL = "clk_cycle_count[23]";
+		INDEX = 44;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[22]";
-		INDEX = 251;
+		SIGNAL = "clk_cycle_count[22]";
+		INDEX = 45;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[21]";
-		INDEX = 252;
+		SIGNAL = "clk_cycle_count[21]";
+		INDEX = 46;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[20]";
-		INDEX = 253;
+		SIGNAL = "clk_cycle_count[20]";
+		INDEX = 47;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[19]";
-		INDEX = 254;
+		SIGNAL = "clk_cycle_count[19]";
+		INDEX = 48;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[18]";
-		INDEX = 255;
+		SIGNAL = "clk_cycle_count[18]";
+		INDEX = 49;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[17]";
-		INDEX = 256;
+		SIGNAL = "clk_cycle_count[17]";
+		INDEX = 50;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[16]";
-		INDEX = 257;
+		SIGNAL = "clk_cycle_count[16]";
+		INDEX = 51;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[15]";
-		INDEX = 258;
+		SIGNAL = "clk_cycle_count[15]";
+		INDEX = 52;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[14]";
-		INDEX = 259;
+		SIGNAL = "clk_cycle_count[14]";
+		INDEX = 53;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[13]";
-		INDEX = 260;
+		SIGNAL = "clk_cycle_count[13]";
+		INDEX = 54;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[12]";
-		INDEX = 261;
+		SIGNAL = "clk_cycle_count[12]";
+		INDEX = 55;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[11]";
-		INDEX = 262;
+		SIGNAL = "clk_cycle_count[11]";
+		INDEX = 56;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[10]";
-		INDEX = 263;
+		SIGNAL = "clk_cycle_count[10]";
+		INDEX = 57;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[9]";
-		INDEX = 264;
+		SIGNAL = "clk_cycle_count[9]";
+		INDEX = 58;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[8]";
-		INDEX = 265;
+		SIGNAL = "clk_cycle_count[8]";
+		INDEX = 59;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[7]";
-		INDEX = 266;
+		SIGNAL = "clk_cycle_count[7]";
+		INDEX = 60;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[6]";
-		INDEX = 267;
+		SIGNAL = "clk_cycle_count[6]";
+		INDEX = 61;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[5]";
-		INDEX = 268;
+		SIGNAL = "clk_cycle_count[5]";
+		INDEX = 62;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[4]";
-		INDEX = 269;
+		SIGNAL = "clk_cycle_count[4]";
+		INDEX = 63;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[3]";
-		INDEX = 270;
+		SIGNAL = "clk_cycle_count[3]";
+		INDEX = 64;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[2]";
-		INDEX = 271;
+		SIGNAL = "clk_cycle_count[2]";
+		INDEX = 65;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[1]";
-		INDEX = 272;
+		SIGNAL = "clk_cycle_count[1]";
+		INDEX = 66;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reg3[0]";
-		INDEX = 273;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "branch_not";
-		INDEX = 274;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "isBranch";
-		INDEX = 275;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "tt";
-		INDEX = 276;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "pc_en";
-		INDEX = 277;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "WBe";
-		INDEX = 278;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "FEQ";
-		INDEX = 108;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "FLT";
-		INDEX = 109;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "div_by_zero";
-		INDEX = 110;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "inexact";
-		INDEX = 111;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "overflow";
-		INDEX = 112;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "underflow";
-		INDEX = 113;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "QNaN";
-		INDEX = 114;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "SNaN";
-		INDEX = 115;
+		SIGNAL = "clk_cycle_count[0]";
+		INDEX = 67;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

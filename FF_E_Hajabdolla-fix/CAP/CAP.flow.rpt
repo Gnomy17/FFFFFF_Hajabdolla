@@ -1,5 +1,5 @@
 Flow report for CAP
-Sun Aug 02 23:48:54 2020
+Mon Aug 03 16:47:32 2020
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -38,17 +38,17 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +-------------------------------+-----------------------------------------+
-; Flow Status                   ; Successful - Sun Aug 02 23:48:44 2020   ;
+; Flow Status                   ; Successful - Mon Aug 03 16:47:24 2020   ;
 ; Quartus II Version            ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
 ; Revision Name                 ; CAP                                     ;
 ; Top-level Entity Name         ; CAP                                     ;
 ; Family                        ; Stratix II                              ;
 ; Met timing requirements       ; No                                      ;
 ; Logic utilization             ; 30 %                                    ;
-;     Combinational ALUTs       ; 2,847 / 12,480 ( 23 % )                 ;
-;     Dedicated logic registers ; 1,370 / 12,480 ( 11 % )                 ;
-; Total registers               ; 1370                                    ;
-; Total pins                    ; 270 / 343 ( 79 % )                      ;
+;     Combinational ALUTs       ; 2,828 / 12,480 ( 23 % )                 ;
+;     Dedicated logic registers ; 1,401 / 12,480 ( 11 % )                 ;
+; Total registers               ; 1401                                    ;
+; Total pins                    ; 66 / 343 ( 19 % )                       ;
 ; Total virtual pins            ; 0                                       ;
 ; Total block memory bits       ; 16,384 / 419,328 ( 4 % )                ;
 ; DSP block 9-bit elements      ; 8 / 96 ( 8 % )                          ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/02/2020 23:47:47 ;
+; Start date & time ; 08/03/2020 16:46:30 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CAP                 ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                                                  ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 93328258312094.159639586607072                         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 93328258312094.159645699017776                         ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; RAM: 2-PORT                                            ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_FF                                                 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_MUX                                                ; --            ; --          ; --             ;
@@ -136,6 +136,8 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                       ; LPM_FF                                                 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_COMPARE                                            ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                                             ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_COUNTER                                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
@@ -440,6 +442,11 @@ applicable agreement for further details.
 ; MISC_FILE                          ; dec16_bb.v                                             ; --            ; --          ; --             ;
 ; MISC_FILE                          ; dec16.inc                                              ; --            ; --          ; --             ;
 ; MISC_FILE                          ; dec16.cmp                                              ; --            ; --          ; --             ;
+; MISC_FILE                          ; resCounter.bsf                                         ; --            ; --          ; --             ;
+; MISC_FILE                          ; resCounter_inst.v                                      ; --            ; --          ; --             ;
+; MISC_FILE                          ; resCounter_bb.v                                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; resCounter.inc                                         ; --            ; --          ; --             ;
+; MISC_FILE                          ; resCounter.cmp                                         ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                                               ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                                                 ; --            ; --          ; Top            ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                                    ; --            ; --          ; eda_blast_fpga ;
@@ -451,11 +458,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:27     ; 1.0                     ; 306 MB              ; 00:00:27                           ;
-; Fitter                  ; 00:00:14     ; 1.0                     ; 312 MB              ; 00:00:13                           ;
+; Analysis & Synthesis    ; 00:00:24     ; 1.0                     ; 307 MB              ; 00:00:25                           ;
+; Fitter                  ; 00:00:13     ; 1.0                     ; 312 MB              ; 00:00:13                           ;
 ; Assembler               ; 00:00:03     ; 1.0                     ; 262 MB              ; 00:00:03                           ;
-; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 218 MB              ; 00:00:01                           ;
-; Total                   ; 00:00:45     ; --                      ; --                  ; 00:00:44                           ;
+; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 216 MB              ; 00:00:01                           ;
+; Total                   ; 00:00:41     ; --                      ; --                  ; 00:00:42                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
