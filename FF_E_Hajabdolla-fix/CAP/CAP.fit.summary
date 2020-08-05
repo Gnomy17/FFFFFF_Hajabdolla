@@ -1,17 +1,17 @@
-Fitter Status : Successful - Mon Aug 03 17:35:25 2020
+Fitter Status : Successful - Wed Aug 05 10:16:11 2020
 Quartus II Version : 9.0 Build 132 02/25/2009 SJ Web Edition
 Revision Name : CAP
 Top-level Entity Name : CAP
 Family : Stratix II
-Device : EP2S15F484C3
+Device : EP2S15F672C3
 Timing Models : Final
-Logic utilization : 30 %
-    Combinational ALUTs : 2,828 / 12,480 ( 23 % )
-    Dedicated logic registers : 1,401 / 12,480 ( 11 % )
-Total registers : 1401
-Total pins : 66 / 343 ( 19 % )
+Logic utilization : 46 %
+    Combinational ALUTs : 4,400 / 12,480 ( 35 % )
+    Dedicated logic registers : 2,845 / 12,480 ( 23 % )
+Total registers : 2845
+Total pins : 342 / 367 ( 93 % )
 Total virtual pins : 0
-Total block memory bits : 16,384 / 419,328 ( 4 % )
-DSP block 9-bit elements : 8 / 96 ( 8 % )
+Total block memory bits : 21,507 / 419,328 ( 5 % )
+DSP block 9-bit elements : 76 / 96 ( 79 % )
 Total PLLs : 0 / 6 ( 0 % )
 Total DLLs : 0 / 2 ( 0 % )
